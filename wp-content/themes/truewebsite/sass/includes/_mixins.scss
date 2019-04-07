@@ -1,0 +1,46 @@
+@mixin special-header () {
+    text-transform: capitalize;
+    z-index: 0;
+    position: relative;
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: "Shadows Into Light",cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    &:before{
+        content: '';
+        border: 0.125em solid $main-blue;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: .25em;
+        border-right: 0;
+        left: 0;
+    }
+    &:after{
+        content: '';
+        border: 0.125em solid $main-blue;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: .25em;
+        border-left: 0;
+        right: 0;
+    }
+}
+
+
+// Grid
+@mixin grid($column) {
+      width:(100% / 12) * $column;
+      margin:0 auto;
+}
+
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+      -webkit-transition: $attr $time $curve;
+      -moz-transition: $attr $time $curve;
+      -o-transition: $attr $time $curve;
+      -ms-transition: $attr $time $curve;
+      transition: $attr $time $curve;
+}

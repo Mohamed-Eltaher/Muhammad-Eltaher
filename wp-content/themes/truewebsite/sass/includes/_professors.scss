@@ -1,0 +1,22 @@
+/* single page */
+.professor-template-default{background: $main-gray}
+.professor{
+	.container{
+		border-bottom: none !important;
+		padding: 15px;
+	}
+	.image{float: left; margin-right: 10px;}
+	h1{@include special-header();
+		display: block;
+    	width: 16%;
+	}
+	h2{
+		font-size: 20px;
+		color: red;
+		margin: 0;
+	}
+	li{
+		font-size: 20px;
+
+	}
+}

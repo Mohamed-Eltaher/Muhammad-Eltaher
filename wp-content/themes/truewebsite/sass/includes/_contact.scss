@@ -1,0 +1,129 @@
+/* contact section */
+.contact {
+	background: $main-gray;
+	.container{
+		margin: auto;
+		text-align:center;
+		max-width:90%;
+	}
+	h1 {
+		font-size:4em;
+		text-transform:uppercase;
+		@include special-header ();
+	}
+	form{padding-top: 15px;}
+	.field{ width: 100%; }
+	input, textarea{
+		width: 350px;
+		padding: 11px;
+		margin-bottom: 21px;
+		border-radius: 3px;
+		font-size: 2rem;
+		border: none;
+		&:focus { border: 2px solid $main-blue; }
+	}
+	.button{
+		cursor: pointer;
+		color: #FFF;
+		background-color: $main-blue;
+		width: 26.5rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 3px solid #fff;
+		border-radius: .5rem;
+		transition: 300ms ease-in-out;
+		&:hover {
+			background-color: #FFF;
+			color: $main-blue;
+			border: 3px solid $main-blue;
+		}
+	}
+}
+
+
+// Contact form 
+.sunset-contact-form {
+	padding: 40px 0;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+
+	.form-group {
+		position: relative;
+		.form-control-msg {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 10px;
+		}
+
+		&.has-error {
+			&:before {
+				background-color: #a94442;
+			}
+		}
+	}
+}
+
+.sunset-form-control {
+	resize: vertical;
+	border: none;
+	border-radius: 0;
+	padding: 8px 15px;
+	outline: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+
+	&::-webkit-input-placeholder {
+		text-transform: uppercase;
+	}
+
+	&::-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-ms-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: none;
+	}
+}
+
+.btn-sunset-form {
+	background-color: $grey;
+	border-radius: 2px;
+	font-size: 26px;
+	padding: 14px 60px;
+	color: #fff;
+	font-weight: 100;
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: $main-blue;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+.form-control-msg {
+	display: none;
+}
+
+.has-error {
+	.form-control-msg {
+		display: block;
+	}
+}
+
+.js-show-feedback {
+	display: block;
+}

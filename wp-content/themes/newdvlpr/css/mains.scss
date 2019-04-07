@@ -1,0 +1,199 @@
+body{
+	background: #c1c1c138;
+}
+
+ul, li{
+	margin:0;
+	padding:0;
+}
+
+#navbarNav{
+	justify-content: flex-end;
+}
+
+
+.main-post{
+	background: #fff;
+    padding: 5px;
+    margin-top: 25px;
+    position:relative;
+    span{
+    	margin-left:5px;
+    }
+    .fa, .fas{
+    	margin-right: 2px;
+    }
+    img{
+    	margin-top: 5px;
+    }
+    p{
+    	margin-top: 8px
+    }
+    .categories i{
+    	float: left;
+    }
+
+
+	.post-categories{
+	list-style-type: none;
+	display: -webkit-inline-box;
+	}
+
+}
+
+.post-pagination{
+		padding:10px;
+	}
+
+
+
+/* serach form */
+
+form{
+	margin:4px 4px 0 0px;
+	input{
+		padding:0 4px;
+	}
+}
+/* single post */
+
+.main-post .the-content{
+	margin-top: 59px;
+}
+
+.main-post .post-edit{
+	position: absolute;
+    right: 0;
+    top:0;
+    background: #c1c1c138;
+    padding: 5px;
+    z-index: 9999999;
+}
+
+.posts-pagination span{
+	margin-right: 25px;
+}
+
+.author-info{
+	background: #fff;
+    padding: 10px;
+}
+
+/* single post */
+
+/* comments  */
+
+.posts-comments .comment-body{
+	background: #dcdbdb;
+	padding: 10px;
+	margin-bottom: 15px;
+	span{
+		display: none;
+	}
+	.comment-meta{
+		margin-top:8px;
+	}
+	p{
+		margin-bottom:0;
+	}
+}
+.posts-comments .children{
+	list-style-type: none;
+    margin-left: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+
+.comment-form-comment textarea,form input{
+	display: block;
+}
+
+
+/* comments */
+
+/* author page */
+
+.author-meta{
+	margin-top:30px;
+}
+
+
+.author-posts{
+	margin-top:40px;
+	 img{
+    	margin-top:28px;
+    }
+
+    .comment{
+	    background: #fff;
+	    padding: 5px;
+	    margin-bottom: 5px;
+    }
+    h4{
+    	margin:15px 0 -6px 0
+    }
+}
+
+.author-main{
+    padding: 7px 0px 0px 12px;
+    margin-top: 5px;
+
+}
+
+.rand-post{
+	padding: 7px;
+    margin: 20px 0 20px 0;
+}
+
+
+
+/* author page */
+
+
+/* category */
+
+.category-information .cat-desc{
+	text-align: center;
+}
+
+.category-information{
+	margin-top: 20px;
+}
+
+
+
+/* category */
+
+
+/* cat front */
+
+.front-post img{
+	max-width: 300px;
+}
+
+
+/* cat front */
+
+
+/* cat back */
+
+.post-contents{
+	margin-top:60px;
+}
+
+
+/* cat back  */
+
+/* footer */
+footer{
+	background: #0000002b;
+	position:absolute;
+	width:100%;
+}
+
+
+
+
+
+
