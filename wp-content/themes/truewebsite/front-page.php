@@ -14,7 +14,7 @@ get_header(); ?>
 	</video>
 		
 	<div class="cta">
-		<h1>WordPress Expert</h1>
+		<h1>WordPress Master</h1>
 	</div>
 
 </section> 
