@@ -43,7 +43,7 @@ get_header();
 			<span class="page-nav">
 				<?php 
 				previous_posts_link();
-				next_posts_link( 'Next Page', $the_query->max_num_pages);
+				next_posts_link( 'Next Page');
 				?>
 			</span>
 		<?php } ?>

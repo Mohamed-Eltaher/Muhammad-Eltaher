@@ -120,26 +120,33 @@ body {
 
 
 /* Home section */
-
-.custome-header img {
-    width: 100%;
-    height: 100vh;
-    //background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-    background-position: center top;
-    background-size:cover;
-}
-
 .custome-header{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: 0;
+        left: 0;
+    img{
+        width: 100%;
+        height: 100vh;
+        //background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+        background-position: center top;
+        background-size:cover;
+    }
+
     position: relative;
     width: 100%;
     height: 100%;
-    video{width: 100%; height: 100%;}
-    h1{
-        position: absolute;
+    //video{width: 100%; height: 100%;}
+    .intro{
         margin: 0;
-        top: 41%;
-        left: 29%;
-        font-size: 4vw; color: $main-blue
+        width: 100%;
+        font-size: 30px; color: $main-blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 }
 
@@ -514,3 +521,4 @@ body {
 }
 
 
+/* intro */

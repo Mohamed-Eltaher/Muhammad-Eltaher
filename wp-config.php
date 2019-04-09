@@ -30,6 +30,9 @@ if( file_exists(dirname(__FILE__) . '/local.php')) {
 	define('DB_PASSWORD', '');
 
 	define('DB_HOST', 'localhost');
+	
+	define('WP_HOME','http://localhost/wordpress');
+	define('WP_SITEURL','http://localhost/wordpress');
 } else {
 	//live database
 	define('DB_NAME', 'muhamm74_wp556');
@@ -87,7 +90,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 ;
 
 /* That's all, stop editing! Happy blogging. */

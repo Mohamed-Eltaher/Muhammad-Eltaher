@@ -7,14 +7,15 @@
 get_header(); ?>
 
 <section class="custome-header">
-	<!--<img alt="" style=" background-image:url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
-	-->
-	<video autoplay loop id="video-background" muted plays-inline>
-		<source src="<?php echo wp_get_attachment_url(get_theme_mod('video_option')); ?>" type="video/mp4">
-	</video>
+	<img alt="" style=" background-image:url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+	
+	<!--<video autoplay loop id="video-background" muted plays-inline>
+		<source src="<?php //echo wp_get_attachment_url(get_theme_mod('video_option')); ?>" type="video/mp4">
+	</video> -->
 		
-	<div class="cta">
-		<h1>WordPress Master</h1>
+	<div class="intro">
+		<h2>Hi, I'm Muhammad</h2>
+		<h2>An Experienced WordPress Developer.</h2>
 	</div>
 
 </section> 
