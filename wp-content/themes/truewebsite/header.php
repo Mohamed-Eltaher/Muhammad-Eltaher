@@ -39,45 +39,56 @@
 					<span>
 						<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
 						<?php echo get_avatar(get_current_user_id(), 60); ?></span>
-				<?php }else { ?>
-					<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
-					<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
-				<?php }
-				?>
-				
-			</div>
-
-
-			<div id="mainListDiv" class="main_list">
-				<ul class="navlinks">
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
+					<?php }else { ?>
+						<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
+						<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
+					<?php }
 					?>
-				</ul>
 
-				
+				</div>
+
+
+				<div id="mainListDiv" class="main_list">
+					<ul class="navlinks">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+						?>		
+					</ul>
+					<div class="registeration-mob"> 
+						<?php
+						if( is_user_logged_in()) { ?>
+							
+							<span>
+								<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
+								<?php echo get_avatar(get_current_user_id(), 60); ?></span>
+						<?php }else { ?>
+							<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
+							<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
+						<?php }
+						?>
+						
+					</div>
+				</div>
+				<span class="navTrigger">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
 			</div>
+		</nav>
 
-			<span class="navTrigger">
-				<i></i>
-				<i></i>
-				<i></i>
-			</span>
+		<!-- live search -->
+
+		<div class="live-search">
+			<div class="search-form">
+				<?php get_search_form(); ?>
+				<i class="fas fa-search fa-3x"></i>
+				<i class="fas fa-times-circle fa-3x"></i>
+			</div>
 		</div>
-	</nav>
-
-	<!-- live search -->
-
-	<div class="live-search">
-		<div class="search-form">
-			<?php get_search_form(); ?>
-			<i class="fas fa-search fa-3x"></i>
-			<i class="fas fa-times-circle fa-3x"></i>
-		</div>
-	</div>
 
 
 

@@ -1,13 +1,36 @@
 /* Footer Section */
 .site-footer{
-	background-color: #000;
+	background-color: #333;
 	padding: 10px;
 	color:#fff;
-	text-align: center;
+	//text-align: center;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	font-size: 2rem;
+	a{
+		color: $main-blue;
+		//margin-left: 80px;
+	}
+
+	.col-1{
+		display: inline-block;
+		float: left;
+	}
+	.col-2{
+		display: inline-block;
+		float: right;
+	}
+	@media screen and (max-width: 768px) {
+		.col-1, .col-2{
+			display: block;
+			float: none;	
+				
+		}
+		.col-2{display: table-header-group;}
+		.container{display: table;}
+		text-align: center;	
+	}
 }

@@ -20,19 +20,6 @@ get_header(); ?>
 
 </section> 
 
-<!-- About Me Section -->
-<section class="about">	
-	<div class="container">
-		<div class="about-content">
-			<h1 class="about-head"><?php echo get_theme_mod('head_option'); ?></h1>
-			<?php echo wpautop(get_theme_mod('text_option')); ?>
-		</div>
-		<div class="about-img">
-			<img src="<?php echo wp_get_attachment_url(get_theme_mod('me_custome_image')); ?>" alt="">
-		</div>
-	</div>
-</section>
-
 <!-- Blog Section -->
 <section class="bloge">
 	<div class="container">
@@ -69,7 +56,7 @@ $mainProjects = new WP_Query(array(
 ));
 
 if($mainProjects->have_posts()) { ?>
-<section class="bloge courses">
+<section class="bloge projects">
 	<div class="container page-margin">
 		<h1 class="blog-head">Latest Projects</h1>
 		<div class="blog-posts">
