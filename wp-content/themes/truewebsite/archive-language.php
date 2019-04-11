@@ -1,28 +1,18 @@
 <?php get_header(); ?>
 
-<!-- Blog Section -->
-<section class="bloge page-margin">
+<!-- Languages Section -->
+<section class="Languages page-margin">
 	<div class="container">		
-		<div>
-			<h1 class="blog-head">All Languages</h1>
-			<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>		
-		</div>
-
-		<!-- Languages Section -->
+		<h1>All <?php wp_title($sep = '') ?></h1>	
 		<?php
-		if(have_posts()) { ?>
-			<div class="blog-posts">
+		if(have_posts()) { ?>				
+			<ul>
 				<?php 
-				while(have_posts()) {
-					the_post(); ?>
-					<div class="single-post">				
-						<div class="post-content">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							
-						</div>
-					</div>		
+					while(have_posts()) {
+						the_post(); ?>
+					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				<?php } ?>
-			</div>
+			</ul>	
 			<span class="page-nav">
 				<?php 
 				previous_posts_link();

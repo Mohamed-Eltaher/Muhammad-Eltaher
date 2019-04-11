@@ -1,0 +1,38 @@
+// Projects
+
+.projects{
+	@media screen and (max-width: 768px) {
+		padding-bottom: 30px !important;
+	}
+	.blog-posts{
+		.single-post{
+			width: 100%;
+			.post-content{
+				width: 100% !important;
+				h2 a{width: 100%; display: block;}
+			}
+		}
+	}
+}
+
+//Languages
+
+.Languages{
+	span{
+		font-size: 20px;
+		display: block;
+		text-align: center;
+	}
+	ul{
+		li{
+			margin-bottom: 15px;
+			padding: 10px;
+			background-color: #fff;
+			font-size: 30px;
+			a{
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}

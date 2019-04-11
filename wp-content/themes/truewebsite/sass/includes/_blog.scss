@@ -2,11 +2,12 @@
 .bloge{
 	background: $main-gray;
 	padding-bottom: 0 !important;
+	@media screen and (max-width: 768px) { padding-bottom: 5% !important; }
 	.blog-head{ @include special-header(); }
 	.container{
 		padding-top: 15px;
 		margin: auto;
-		@media screen and (max-width: 768px) {  }
+		
 		
 		.blog-content{		
 			p{

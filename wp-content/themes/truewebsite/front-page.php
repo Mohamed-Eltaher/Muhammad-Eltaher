@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <section class="custome-header">
-	<img alt="" style=" background-image:url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+	<img alt="" style=" background-image:linear-gradient( to right bottom, rgba(125, 129, 111, .8), rgba(40, 0, 131, .8)), url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
 	
 	<!--<video autoplay loop id="video-background" muted plays-inline>
 		<source src="<?php //echo wp_get_attachment_url(get_theme_mod('video_option')); ?>" type="video/mp4">
@@ -68,7 +68,7 @@ if($mainProjects->have_posts()) { ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
 						
-						<div class="know-more">Project Date <?php the_field('project_date'); ?></div>
+						<div class="read-more">Project Date <?php the_field('project_date'); ?></div>
 						<div class="entry-footer">
 							<?php hamo_entry_footer(); ?>
 						</div>

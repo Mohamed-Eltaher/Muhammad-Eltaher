@@ -1,26 +1,13 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package hamo
- */
+<?php get_header(); ?>
 
-get_header();
-?>
-<!-- Blog Section -->
+<!-- Projects Section -->
 <section class="bloge page-margin">
 	<div class="container">		
 		<div class="blog-content blog-page-content">
-			<h1 class="blog-head">All Projects</h1>
-			<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>		
+			<h1 class="blog-head">All <?php wp_title($sep = '') ?></h1>
 		</div>
-
-		<!-- Projects Section -->
 		<?php
 		if(have_posts()) { ?>
-
 			<div class="blog-posts">
 				<?php 
 				while(have_posts()) {

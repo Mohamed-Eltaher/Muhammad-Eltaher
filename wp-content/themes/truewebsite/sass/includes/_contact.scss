@@ -1,6 +1,9 @@
 /* contact section */
 .contact {
 	background: $main-gray;
+	@media screen and (max-width:1100px) {
+		padding: 9% 0 !important;
+	}
 	.container{
 		margin: auto;
 		text-align:center;
