@@ -4,12 +4,31 @@
 	@media screen and (max-width: 768px) {
 		padding-bottom: 30px !important;
 	}
+	@media screen and (max-width: 768px) {
+		.front-projects{
+			padding-top:0 !important;
+		}
+	}
+	
 	.blog-posts{
 		.single-post{
 			width: 100%;
 			.post-content{
 				width: 100% !important;
 				h2 a{width: 100%; display: block;}
+				.project-date{
+					background: $main-blue;
+				    max-width: 239px;
+				    padding: 7px 7px;
+				    color: #fff;
+				    font-size: 20px;
+				    border-radius: 7px;
+				    display: inline-block;
+				}
+				.entry-footer{
+					display: inline;
+					float: right;
+				}
 			}
 		}
 	}

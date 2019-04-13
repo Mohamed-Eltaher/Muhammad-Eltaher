@@ -1,9 +1,7 @@
 /* contact section */
 .contact {
 	background: $main-gray;
-	@media screen and (max-width:1100px) {
-		padding: 9% 0 !important;
-	}
+	min-height: 100vh;
 	.container{
 		margin: auto;
 		text-align:center;
@@ -14,10 +12,9 @@
 		text-transform:uppercase;
 		@include special-header ();
 	}
-	form{padding-top: 15px;}
 	.field{ width: 100%; }
 	input, textarea{
-		width: 350px;
+		width: 450px;
 		padding: 11px;
 		margin-bottom: 21px;
 		border-radius: 3px;
@@ -47,7 +44,7 @@
 
 // Contact form 
 .sunset-contact-form {
-	padding: 40px 0;
+	padding-top: 10px;
 	max-width: 500px;
 	width: 100%;
 	margin: 0 auto;
@@ -124,9 +121,15 @@
 .has-error {
 	.form-control-msg {
 		display: block;
+		position: relative;
+		top: -10px;
 	}
 }
 
 .js-show-feedback {
 	display: block;
+	font-size: 20px;
+	margin-top: 17px;
+	color: green;
+	font-weight: 500;
 }

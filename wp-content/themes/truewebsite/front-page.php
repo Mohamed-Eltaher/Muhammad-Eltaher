@@ -23,7 +23,7 @@ get_header(); ?>
 <!-- Blog Section -->
 <section class="bloge">
 	<div class="container">
-		<h1 class="blog-head">LATEST POSTS</h1>		
+		<h1 class="blog-head">Latest Posts</h1>		
 		<?php if(have_posts()) { ?>
 			<div class="blog-posts">
 				<?php 
@@ -57,7 +57,7 @@ $mainProjects = new WP_Query(array(
 
 if($mainProjects->have_posts()) { ?>
 <section class="bloge projects">
-	<div class="container page-margin">
+	<div class="container page-margin front-projects">
 		<h1 class="blog-head">Latest Projects</h1>
 		<div class="blog-posts">
 			<?php 
@@ -68,7 +68,7 @@ if($mainProjects->have_posts()) { ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
 						
-						<div class="read-more">Project Date <?php the_field('project_date'); ?></div>
+						<div class="project-date">Project Date <?php the_field('project_date'); ?></div>
 						<div class="entry-footer">
 							<?php hamo_entry_footer(); ?>
 						</div>

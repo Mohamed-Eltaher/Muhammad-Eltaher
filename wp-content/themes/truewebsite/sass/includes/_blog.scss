@@ -19,11 +19,15 @@
 		}
 		.blog-posts{
 			padding-top: 15px;
-			.single-post:not(:last-child){ margin-bottom: 2%; }
+			.single-post:not(:last-child){
+				 margin-bottom: 2%;
+				 @media screen and (max-width: 768px) {margin-bottom: 5%;}
+			 }
 			.single-post{
 				display: flex;
 				&:hover .post-img { transform: scale(1.2); }
 				@media screen and (max-width: 768px) {display: block;}
+
 				.img-container{
 					width: 37%;
 					position: relative;

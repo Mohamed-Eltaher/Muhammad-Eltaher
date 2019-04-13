@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Projects Section -->
-<section class="bloge page-margin">
+<section class="bloge page-margin projects">
 	<div class="container">		
 		<div class="blog-content blog-page-content">
 			<h1 class="blog-head">All <?php wp_title($sep = '') ?></h1>
@@ -19,7 +19,7 @@
 								<?php hamo_posted_by(); ?>
 							</div>
 							<p><?php echo wp_trim_words(get_the_content(), 45) ?></p>
-							<div href="#" class="read-more">Project Date <?php the_field('project_date'); ?></div>
+							<div href="#" class="project-date">Project Date <?php the_field('project_date'); ?></div>
 							<div class="entry-footer">
 								<?php hamo_entry_footer(); ?>
 							</div>

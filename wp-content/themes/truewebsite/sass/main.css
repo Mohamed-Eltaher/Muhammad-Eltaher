@@ -61,7 +61,7 @@ body {
   text-decoration: none;
   color: #25a9de;
   font-weight: 500;
-  font-size: 25px; }
+  font-size: 22px; }
 
 .nav div.logo a:hover {
   color: #25a9de; }
@@ -163,7 +163,7 @@ body {
   .registeration-mob {
     display: block;
     position: absolute;
-    top: 401px;
+    top: 320px;
     text-align: center;
     width: 100%;
     font-size: 5vw; }
@@ -408,7 +408,7 @@ body {
 }
 */
 .expand-nav {
-  font-size: 30px !important;
+  font-size: 25px !important;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out; }
 
@@ -562,6 +562,9 @@ body {
       padding-top: 15px; }
       .bloge .container .blog-posts .single-post:not(:last-child) {
         margin-bottom: 2%; }
+        @media screen and (max-width: 768px) {
+          .bloge .container .blog-posts .single-post:not(:last-child) {
+            margin-bottom: 5%; } }
       .bloge .container .blog-posts .single-post {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -689,6 +692,10 @@ body {
   .projects {
     padding-bottom: 30px !important; } }
 
+@media screen and (max-width: 768px) {
+  .projects .front-projects {
+    padding-top: 0 !important; } }
+
 .projects .blog-posts .single-post {
   width: 100%; }
   .projects .blog-posts .single-post .post-content {
@@ -696,6 +703,17 @@ body {
     .projects .blog-posts .single-post .post-content h2 a {
       width: 100%;
       display: block; }
+    .projects .blog-posts .single-post .post-content .project-date {
+      background: #25a9de;
+      max-width: 239px;
+      padding: 7px 7px;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 7px;
+      display: inline-block; }
+    .projects .blog-posts .single-post .post-content .entry-footer {
+      display: inline;
+      float: right; }
 
 .Languages span {
   font-size: 20px;
@@ -768,10 +786,8 @@ body.login {
 
 /* contact section */
 .contact {
-  background: #f2f6f7; }
-  @media screen and (max-width: 1100px) {
-    .contact {
-      padding: 9% 0 !important; } }
+  background: #f2f6f7;
+  min-height: 100vh; }
   .contact .container {
     margin: auto;
     text-align: center;
@@ -805,12 +821,10 @@ body.login {
       width: .25em;
       border-left: 0;
       right: 0; }
-  .contact form {
-    padding-top: 15px; }
   .contact .field {
     width: 100%; }
   .contact input, .contact textarea {
-    width: 350px;
+    width: 450px;
     padding: 11px;
     margin-bottom: 21px;
     border-radius: 3px;
@@ -836,7 +850,7 @@ body.login {
       border: 3px solid #25a9de; }
 
 .sunset-contact-form {
-  padding: 40px 0;
+  padding-top: 10px;
   max-width: 500px;
   width: 100%;
   margin: 0 auto; }
@@ -886,10 +900,16 @@ body.login {
   display: none; }
 
 .has-error .form-control-msg {
-  display: block; }
+  display: block;
+  position: relative;
+  top: -10px; }
 
 .js-show-feedback {
-  display: block; }
+  display: block;
+  font-size: 20px;
+  margin-top: 17px;
+  color: green;
+  font-weight: 500; }
 
 /* Footer Section */
 .site-footer {
@@ -1068,7 +1088,8 @@ h1 {
   padding-top: 15px; }
   .comments-area .comments-title {
     background: #FFF;
-    padding: 11px; }
+    padding: 11px;
+    font-size: 20px; }
   .comments-area .comment-list li {
     margin-bottom: 17px;
     padding: 10px 0 0 15px;
