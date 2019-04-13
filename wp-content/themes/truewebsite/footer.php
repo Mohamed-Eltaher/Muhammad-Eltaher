@@ -17,7 +17,7 @@
 				Made By <strong>Muhammad Eltaher</strong> &copy; 2019
 			</div>
 			<div class="col-2">
-				<a href="">	
+				<a href="https://www.linkedin.com/in/muhammadeltaher/" target="blank">	
 					<i class="fab fa-linkedin"></i>
 				Connect On LinkedIn
 	 		 	</a>
