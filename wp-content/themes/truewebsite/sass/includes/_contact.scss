@@ -8,19 +8,19 @@
 		max-width:90%;
 	}
 	h1 {
-		font-size:4em;
+		font-size:4rem;
 		text-transform:uppercase;
 		@include special-header ();
 	}
 	.field{ width: 100%; }
 	input, textarea{
-		width: 450px;
-		padding: 11px;
-		margin-bottom: 21px;
-		border-radius: 3px;
+		width: 45rem;
+		padding: 1.1rem;
+		margin-bottom: 2.1rem;
+		border-radius: .3rem;
 		font-size: 2rem;
 		border: none;
-		&:focus { border: 2px solid $main-blue; }
+		&:focus { border: .2rem solid $main-blue; }
 	}
 	.button{
 		cursor: pointer;
@@ -44,8 +44,8 @@
 
 // Contact form 
 .sunset-contact-form {
-	padding-top: 10px;
-	max-width: 500px;
+	padding-top: 1rem;
+	max-width: 50rem;
 	width: 100%;
 	margin: 0 auto;
 
@@ -54,7 +54,7 @@
 		.form-control-msg {
 			text-transform: uppercase;
 			font-weight: 500;
-			font-size: 10px;
+			font-size: 1rem;
 		}
 
 		&.has-error {
@@ -69,7 +69,7 @@
 	resize: vertical;
 	border: none;
 	border-radius: 0;
-	padding: 8px 15px;
+	padding: .5rem 1.5rem;
 	outline: none;
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
@@ -100,8 +100,8 @@
 .btn-sunset-form {
 	background-color: $grey;
 	border-radius: 2px;
-	font-size: 26px;
-	padding: 14px 60px;
+	font-size: 2.5rem;
+	padding: 1.4rem 6rem;
 	color: #fff;
 	font-weight: 100;
 	border: none;
@@ -122,14 +122,14 @@
 	.form-control-msg {
 		display: block;
 		position: relative;
-		top: -10px;
+		top: -1rem;
 	}
 }
 
 .js-show-feedback {
 	display: block;
-	font-size: 20px;
-	margin-top: 17px;
+	font-size: 2rem;
+	margin-top: 1.4rem;
 	color: green;
 	font-weight: 500;
 }

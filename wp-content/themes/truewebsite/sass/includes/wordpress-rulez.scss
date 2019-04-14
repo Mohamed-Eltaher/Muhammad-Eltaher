@@ -36,7 +36,7 @@ h1{
 
     	.post-content{
     		font-size: 2rem;
-    		margin-top: 20px;
+    		margin-top: 2rem;
     	}
     }
 
@@ -49,20 +49,20 @@ h1{
 		// recent posts widget
 		.blog-posts{
 			background:$main-gray;
-			padding: 10px;
-			margin-top: 135px;
+			padding: 1rem;
+			margin-top: 13.5rem;
 			@media screen and (max-width: 768px) {
 				text-align: left;
-				padding: 0 20px;
+				padding: 0 2rem;
 				margin-top: 0;
 			}
-			h3{margin: 0; padding: 8px 0}
+			h3{margin: 0; padding: .8rem 0}
 			.single-post{
 				display: flex;
-				margin:10px 0;
+				margin:1rem 0;
 				.img-container{
 					width: 60%;
-					margin-right: 12px;
+					margin-right: 1.5rem;
 					@media screen and (max-width: 768px) {
 						width: 30% !important;
 						img{ width: 170px !important; }
@@ -70,7 +70,7 @@ h1{
 				}
 				.post-content{
 					width: 40%;
-					font-size: 1vw;
+					font-size: 1rem;
 					@media screen and (max-width: 768px) {
 						font-size: inherit;
 						width: 70%
@@ -83,14 +83,14 @@ h1{
 		.widget_categories{
 			padding: 0 !important; width: 100% !important;
 			@media screen and (max-width: 768px) {
-				padding: 15px !important;
+				padding: 1.5rem !important;
 			}
 			ul{width: 100%;
 				@media screen and (max-width: 768px) {
 					width: 100% !important;
 				}
 			}
-			li{ background: $main-gray; margin: 5px 0; padding: 5px; text-transform: uppercase;}
+			li{ background: $main-gray; margin: .5rem 0; padding: .5rem; text-transform: uppercase;}
 		}
 		//margin-top: 2%; box-shadow: 0 5px 20px 0 rgba(69,79,89,0.2);
 	 	//transition: box-shadow 300ms ease; border-radius: 5px; &:hover {box-shadow: 0 11px 54px 0 rgba(69,79,89,0.3)}
@@ -114,7 +114,7 @@ h1{
 		overflow: hidden;
 		padding: 10px;
 		a{
-			font-size: 16px;
+			font-size: 1.5rem;
 			color: $main-blue;
 			font-weight: 500;
 			background: #FFF;
@@ -130,13 +130,13 @@ h1{
 		.comments-title{
 			background: #FFF;
 			padding: 11px;
-			font-size: 20px;
+			font-size: 2rem;
 		}
 
 		.comment-list li{
 			margin-bottom: 17px;
 			padding: 10px 0 0 15px;
-			font-size: 18px;
+			font-size: 2rem;
 			.comment-author{
 				position: relative;
 				img{ border-radius: 50%; }
@@ -145,7 +145,7 @@ h1{
 					background: $main-gray;
 					padding: 7px;
 					position: absolute;
-					top:10px;
+					top:1rem;
 					border-radius: 10px;
 				}
 			}
@@ -153,21 +153,21 @@ h1{
 			.comment-body{
 				border-bottom: 1px solid #ccc;
 				background: #fff;
-				padding: 12px;
+				padding: 1.2rem;
 			}
 		}
 	}
 
 	.comment-form{ 
-		label{font-size: 15px; font-weight: 600;}
+		label{font-size: 1.5rem; font-weight: 600;}
 		input{
 			display: block;
-			font-size: 13px;
+			font-size: 1.3rem;
 			padding: 5px;
 		}
 
 		.form-textarea{
-			font-size: 13px;
+			font-size: 1.3rem;
 		}
 
 		.submit-btn{
@@ -209,7 +209,7 @@ h1{
 
 	/* Archive */
 
-	.archive-description{font-size: 20px;}
+	.archive-description{font-size: 2rem;}
 	.archive{background-color: #f2f6f7}
 
 
@@ -221,6 +221,6 @@ h1{
 	/* single project */
 
 	.single-project{
-		h2{font-size: 25px;}
-		ul li{font-size: 20px;}
+		h2{font-size: 2.5rem;}
+		ul li{font-size: 2rem;}
 	}

@@ -2,11 +2,12 @@
 
 .projects{
 	@media screen and (max-width: 768px) {
-		padding-bottom: 30px !important;
+		padding-bottom: 3rem !important;
 	}
 	@media screen and (max-width: 768px) {
 		.front-projects{
 			padding-top:0 !important;
+			padding-bottom: 15% !important;
 		}
 	}
 	
@@ -21,7 +22,7 @@
 				    max-width: 239px;
 				    padding: 7px 7px;
 				    color: #fff;
-				    font-size: 20px;
+				    font-size: 2rem;
 				    border-radius: 7px;
 				    display: inline-block;
 				}
@@ -38,16 +39,16 @@
 
 .Languages{
 	span{
-		font-size: 20px;
+		font-size: 2rem;
 		display: block;
 		text-align: center;
 	}
 	ul{
 		li{
 			margin-bottom: 15px;
-			padding: 10px;
+			padding: 1rem;
 			background-color: #fff;
-			font-size: 30px;
+			font-size: 3rem;
 			a{
 				width: 100%;
 				display: block;

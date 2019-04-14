@@ -57,6 +57,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	font-size: 62.5% !important;
+	 font-family: "Quicksand", sans-serif;
+
 }
 
 /* Sections

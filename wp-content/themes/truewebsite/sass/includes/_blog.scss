@@ -5,7 +5,7 @@
 	@media screen and (max-width: 768px) { padding-bottom: 5% !important; }
 	.blog-head{ @include special-header(); }
 	.container{
-		padding-top: 15px;
+		padding-top: 1.5rem;
 		margin: auto;
 		
 		
@@ -18,7 +18,7 @@
 			}
 		}
 		.blog-posts{
-			padding-top: 15px;
+			padding-top: 1.5rem;
 			.single-post:not(:last-child){
 				 margin-bottom: 2%;
 				 @media screen and (max-width: 768px) {margin-bottom: 5%;}
@@ -32,7 +32,7 @@
 					width: 37%;
 					position: relative;
 					overflow: hidden;
-					@media screen and (max-width: 768px) { width: 100%; height: 225px ;display: block; }
+					@media screen and (max-width: 768px) { width: 100%; height: 22.5rem ;display: block; }
 				}
 				.post-img{
 					transition: 300ms ease-in-out;
@@ -50,11 +50,11 @@
 				}
 				.post-content{
 					width:100%;
-					padding: 10px;
+					padding: 1rem;
 					background-color: #FFF;
-					@media screen and (max-width: 768px) { width: 100%; padding: 10px 5px  20px 5px; display: block; }
+					@media screen and (max-width: 768px) { width: 100%; padding: 1rem .5rem  2rem .5rem; display: block; }
 					h2{
-						margin: 0 0 5px 0;
+						margin: 0 0 .5rem 0;
 						font-size: 2.5rem;
 						font-weight: 900;
 						&:hover{					
@@ -79,7 +79,7 @@
 					p{
 						font-size: 2rem;
 						line-height: 1.75;
-						margin: 10px 0 !important;
+						margin: 1rem 0 !important;
 					}
 					.read-more{
 						float: left;
@@ -91,19 +91,19 @@
 						color: #fff;
 						cursor: pointer;
 						background: lighten($main-blue, 3%);  
-						border: 1px solid darken($main-blue, 4%);
-						box-shadow: 0px 2px 0 darken($main-blue, 5%), 2px 4px 6px darken($main-blue, 2%);
+						border: .1rem solid darken($main-blue, 4%);
+						box-shadow: 0px .2rem 0 darken($main-blue, 5%), .2rem .4rem .6rem darken($main-blue, 2%);
 						font-weight: 900;
-						letter-spacing: 1px;
+						letter-spacing: .1rem;
 						transition: 300ms ease-in-out;
 						&:hover{
 							transition: 300ms ease-in-out;				
 							background: darken($main-blue, 1.5%);
-							border: 1px solid rgba(#000, .05);
-							box-shadow: 1px 1px 2px rgba(#fff, .2);
+							border: .1rem solid rgba(#000, .05);
+							box-shadow: .1rem .1rem .2rem rgba(#fff, .2);
 							color: #000; 
 							text-decoration: none;
-							text-shadow: -1px -1px 0 darken($main-blue, 9.5%);
+							text-shadow: -.1rem -.1rem 0 darken($main-blue, 9.5%);
 						}	
 
 						@media screen and (max-width: 768px) { float: none; }		
@@ -112,7 +112,7 @@
 						font-size: 1.5rem;
 						text-align: right;
 						line-height: 3;
-						span{ padding: 0 5px; }
+						span{ padding: 0 .5rem; }
 						@media screen and (max-width: 768px) { display: none; }
 					}
 				}
@@ -121,7 +121,7 @@
 	}
 	.page-nav{
 		text-align: center;
-		padding: 10px 0;
+		padding: 1rem 0;
 		display: table;
 		margin: auto;
 		&:hover a{color: $main-blue;}

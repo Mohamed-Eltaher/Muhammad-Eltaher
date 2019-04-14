@@ -1,6 +1,8 @@
 /* Global */
 
-
+@media screen and (max-width:782px) {
+    html{font-size: 45% !important;}
+}
 .container{
     width: 90% !important;
     margin: auto;
@@ -10,11 +12,11 @@ h2 a{width: 100%; display: block;}
 
 .registeration{
     float: right;
-    a{font-size: 1.8vw; padding: 5px 18px 5px 0px;}
+    a{font-size: 1.8rem; padding: .5rem 1.5rem .5rem 0;}
     span{
         display: block;
-        .logout{float: right; font-size: 1.4vw;}
-        img{max-width: 30px; margin-top: 15px;}
+        .logout{float: right; font-size: 1.4rem;}
+        img{max-width: 3rem; margin-top: 1.5rem;}
     }
 }
 
@@ -22,26 +24,16 @@ h2 a{width: 100%; display: block;}
 /* Header Section */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
-}
-
 
 .nav {
     z-index: 9;
     width: 100%;
-    height: 65px;
+    height: 6.5rem;
     position: fixed;
-    line-height: 65px;
+    line-height: 6.5rem;
     text-align: center;
     background: $main-gray;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, 0.25);
 }
 
 
@@ -63,7 +55,7 @@ body {
     text-decoration: none;
     color: $main-blue;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 3rem;
 }
 
 .nav div.logo a:hover {
@@ -72,13 +64,13 @@ body {
 
 
 .nav div.main_list {
-    height: 65px;
+    height: 6.5rem;
     float: right;
 }
 
 .nav div.main_list ul {
     width: 100%;
-    height: 65px;
+    height: 6.5rem;
     display: flex;
     list-style: none;
     margin: 0;
@@ -88,7 +80,7 @@ body {
 
 .nav div.main_list ul li {
     width: auto;
-    height: 65px;
+    height: 6.5rem;
     padding: 0;
     padding-right: 3rem;
 }
@@ -96,7 +88,7 @@ body {
 .nav div.main_list ul li.active a{
     color: #000;
     background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
-    background-size: 75% 4px;
+    background-size: 75% .4rem;
     padding: 0.25rem 0.125rem;
     transition: 300ms ease-in-out;
 }
@@ -104,17 +96,17 @@ body {
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #000;
-    line-height: 65px;
-    font-size: 1.6vw;
+    line-height: 6.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     background: linear-gradient(#25a9de,#25a9de) bottom left no-repeat;
-    background-size: 0% 6px;
+    background-size: 0% .6rem;
 }
 
 .nav div.main_list ul li a:hover {
     color: $main-blue;
     background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
-    background-size: 75% 4px;
+    background-size: 75% .4rem;
     padding: 0.25rem 0.125rem;
     transition: 300ms ease-in-out; 
 }
@@ -126,7 +118,7 @@ body {
     width: 100%;
     height: auto;
     bottom: 0;
-    top: 5px;
+    top: .5rem;
     left: 0;
     background-color: $main-gray;
     img{
@@ -143,13 +135,20 @@ body {
     //video{width: 100%; height: 100%;}
     .intro{
         margin: 0;
-        width: 100%;
-        font-size: 30px; color: $main-blue;
+        width: 65%;
+        font-size: 3rem; color: $main-blue;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        h2:first-child{
+            animation: moveInLeft 1s ease-out;
+        }
+        h2:last-child{
+            animation: moveInRight 1s ease-out;
+        }
+        
     }
 }
 
@@ -158,7 +157,7 @@ body {
 }
 
 .nav {
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
@@ -181,13 +180,13 @@ body {
     .registeration-mob{
         display: block;
         position: absolute;
-        top: 320px;
+        top: 32rem;
         text-align: center;
         width: 100%;
-        font-size: 5vw;
+        font-size: 2rem;
         a{
             color: #fff;
-            padding: 10px;
+            padding: 1rem;
         }
     }
     html{margin-top: 0 !important;}
@@ -208,8 +207,8 @@ body {
         float: left;
         padding: 0;
         position: absolute;
-        top: 9px;
-        left: 21px;
+        top: .9rem;
+        left: 2.1rem;
     }
     .nav div.main_list {
         width: 100%;
@@ -235,12 +234,12 @@ body {
     }
     .nav div.main_list ul li {
         width: 100%;
-        margin-top: 15px !important;
+        margin-top: 1.5rem !important;
     }
     .nav div.main_list ul li a {
         text-align: center;
-        font-size: 5vw;
-        padding: 20px;
+        font-size: 3rem;
+        padding: 2rem;
         color:#FFF;
         &:hover{
             color: #000;
@@ -255,11 +254,11 @@ body {
 /* Animatio */
 .navTrigger {
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 3rem;
+    height: 2.5rem;
     margin: auto;
     position: absolute;
-    right: 30px;
+    right: 3rem;
     top: 0;
     bottom: 0;
 }
@@ -270,7 +269,7 @@ body {
     content: '';
     display: block;
     width: 100%;
-    height: 4px;
+    height: .4rem;
 }
 
 .navTrigger i:nth-child(1) {
@@ -442,6 +441,40 @@ body {
     }
 }
 
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .affix {
     background-color: $main-gray;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
@@ -456,7 +489,7 @@ body {
   text-align: justify;
   padding-left:15%;
   padding-right:15%;
-  font-size: 20px;
+  font-size: 2rem;
 }
 @media all and (max-width:700px){
   .myP {
@@ -480,7 +513,7 @@ body {
 */
 
 .expand-nav{
-    font-size: 25px !important;
+    font-size: 3.5rem !important;
     transition: 300ms ease-in-out;
 }
 
@@ -500,30 +533,36 @@ body {
         z-index: 99999999999;
         input{
             width: 100%;
-            padding: 15px 90px;
+            padding: 1.5rem 9rem;
             border: none;
             font-size: 4rem;
             color: red;
         }
     }
-    .fa-times-circle{
-        cursor: pointer;
-        color: $main-blue;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
+    
     .fa-search{
         position: absolute;
-        top: 30px;
-        left: 40px;
+        top: 3rem;
+        left: 4rem;
         color: $main-blue;
+       
     }
 }
 
 .nav .search{
     float: right;
-    padding: 6px 0;
+    padding: .6rem 0;
     cursor: pointer;
     color: $main-blue;
+     @media screen and (max-width: 768px) {
+            font-size: .7rem !important;
+        }
+}
+
+.fa-times-circle{
+    cursor: pointer;
+    color: #25a9de;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
