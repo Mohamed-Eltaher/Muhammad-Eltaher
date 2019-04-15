@@ -38,7 +38,8 @@
 					
 					<span>
 						<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
-						<?php echo get_avatar(get_current_user_id(), 60); ?></span>
+						<a href="<?php echo get_author_posts_url( get_the_author_meta( get_current_user_id() ))?>"><?php echo get_avatar(get_current_user_id(), 60); ?></a>
+					</span>
 					<?php }else { ?>
 						<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
 						<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>

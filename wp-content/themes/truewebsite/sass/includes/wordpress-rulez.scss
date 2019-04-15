@@ -1,7 +1,5 @@
 /* single post page */
-h1{
-	@include special-header ();
-}
+
 .singl{
 	
 	@media screen and (max-width: 768px) {
@@ -35,7 +33,6 @@ h1{
     	}
 
     	.post-content{
-    		font-size: 2rem;
     		margin-top: 2rem;
     	}
     }
@@ -70,7 +67,7 @@ h1{
 				}
 				.post-content{
 					width: 40%;
-					font-size: 1rem;
+					font-size: 1.3rem;
 					@media screen and (max-width: 768px) {
 						font-size: inherit;
 						width: 70%
@@ -100,7 +97,6 @@ h1{
 	 			padding-top: 25px !important;
 	 		}
 	 		background: #fff;
-	 		font-size: 1.5rem;
 	 		overflow: hidden;
 	 		section{
 	 			float: left;
@@ -114,29 +110,24 @@ h1{
 		overflow: hidden;
 		padding: 10px;
 		a{
-			font-size: 1.5rem;
 			color: $main-blue;
-			font-weight: 500;
 			background: #FFF;
 			padding: 8px;
 		}
 	}
 
 	/* comments page */
-	.logged-in-as{font-size: 14px}
 	.comments-area{
 		background: $main-gray;
 		padding-top: 15px;
 		.comments-title{
 			background: #FFF;
 			padding: 11px;
-			font-size: 2rem;
 		}
 
 		.comment-list li{
 			margin-bottom: 17px;
 			padding: 10px 0 0 15px;
-			font-size: 2rem;
 			.comment-author{
 				position: relative;
 				img{ border-radius: 50%; }
@@ -159,21 +150,13 @@ h1{
 	}
 
 	.comment-form{ 
-		label{font-size: 1.5rem; font-weight: 600;}
 		input{
 			display: block;
-			font-size: 1.3rem;
 			padding: 5px;
 		}
-
-		.form-textarea{
-			font-size: 1.3rem;
-		}
-
 		.submit-btn{
 			cursor: pointer;
 			text-transform: uppercase;
-			font-size: 1rem;
 			line-height: 1em;	    
 			padding: .7vw;
 			color: #fff;
@@ -181,7 +164,6 @@ h1{
 			background: lighten($main-blue, 3%);  
 			border: 1px solid darken($main-blue, 4%);
 			box-shadow: 0px 2px 0 darken($main-blue, 5%), 2px 4px 6px darken($main-blue, 2%);
-			font-weight: 900;
 			letter-spacing: 1px;
 			transition: 300ms ease-in-out;
 			&:hover{
@@ -209,18 +191,9 @@ h1{
 
 	/* Archive */
 
-	.archive-description{font-size: 2rem;}
 	.archive{background-color: #f2f6f7}
 
 
 	/* search page */
 
 	.search .page-margin{padding-bottom: 0 !important;}
-
-
-	/* single project */
-
-	.single-project{
-		h2{font-size: 2.5rem;}
-		ul li{font-size: 2rem;}
-	}

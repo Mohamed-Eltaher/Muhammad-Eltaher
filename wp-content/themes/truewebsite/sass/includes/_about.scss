@@ -14,13 +14,6 @@
 			text-align: center;
 			display: table-footer-group;	
 		}
-		.about-head{ @include special-header (); }
-
-		p{
-			font-size: 2rem !important;
-			line-height: 1.5 !important;
-			font-weight: 400 !important;
-		}
 	}
 
 	.about-img{

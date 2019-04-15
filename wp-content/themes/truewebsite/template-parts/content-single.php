@@ -1,5 +1,5 @@
 <div class="single-post-page">
-	<h1><?php the_title(); ?></h1>		
+	<h1 class="special-head"><?php the_title(); ?></h1>		
 	<div class="img-container">
 		<?php
 			the_post_thumbnail();

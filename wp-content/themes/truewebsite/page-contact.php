@@ -1,19 +1,8 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package hamo
- */
+<?php get_header(); ?>
 
-get_header();
-?>
-
-<!-- Contact Section -->
 <section id="hire" class="contact page-margin">
 	<div class="container">
-		<h1>Contact Me</h1>
+		<h1 class="special-head">Contact Me</h1>
 		<form id="sunsetContactForm" class="sunset-contact-form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 			<div class="form-group">

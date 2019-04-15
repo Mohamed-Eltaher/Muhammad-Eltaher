@@ -1,24 +1,13 @@
-/* contact section */
+/* contact Page */
 .contact {
 	background: $main-gray;
 	min-height: 100vh;
-	.container{
-		margin: auto;
-		text-align:center;
-		max-width:90%;
-	}
-	h1 {
-		font-size:4rem;
-		text-transform:uppercase;
-		@include special-header ();
-	}
-	.field{ width: 100%; }
+	text-align: center;
 	input, textarea{
 		width: 45rem;
 		padding: 1.1rem;
 		margin-bottom: 2.1rem;
 		border-radius: .3rem;
-		font-size: 2rem;
 		border: none;
 		&:focus { border: .2rem solid $main-blue; }
 	}
@@ -27,9 +16,6 @@
 		color: #FFF;
 		background-color: $main-blue;
 		width: 26.5rem;
-		font-size: 1.5rem;
-		font-weight: 700;
-		text-transform: uppercase;
 		border: 3px solid #fff;
 		border-radius: .5rem;
 		transition: 300ms ease-in-out;
@@ -48,7 +34,6 @@
 	max-width: 50rem;
 	width: 100%;
 	margin: 0 auto;
-
 	.form-group {
 		position: relative;
 		.form-control-msg {
@@ -63,73 +48,75 @@
 			}
 		}
 	}
-}
 
-.sunset-form-control {
-	resize: vertical;
-	border: none;
-	border-radius: 0;
-	padding: .5rem 1.5rem;
-	outline: none;
-	box-shadow: none !important;
-	-webkit-box-shadow: none !important;
+	.sunset-form-control {
+		resize: vertical;
+		border: none;
+		border-radius: 0;
+		padding: .5rem 1.5rem;
+		outline: none;
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
 
-	&::-webkit-input-placeholder {
-		text-transform: uppercase;
+		&::-webkit-input-placeholder {
+			text-transform: uppercase;
+		}
+
+		&::-moz-placeholder {
+			text-transform: uppercase;
+		}
+
+		&:-ms-placeholder {
+			text-transform: uppercase;
+		}
+
+		&:-moz-placeholder {
+			text-transform: uppercase;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			box-shadow: none;
+		}
 	}
 
-	&::-moz-placeholder {
-		text-transform: uppercase;
-	}
-
-	&:-ms-placeholder {
-		text-transform: uppercase;
-	}
-
-	&:-moz-placeholder {
-		text-transform: uppercase;
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		box-shadow: none;
-	}
-}
-
-.btn-sunset-form {
-	background-color: $grey;
-	border-radius: 2px;
-	font-size: 2.5rem;
-	padding: 1.4rem 6rem;
-	color: #fff;
-	font-weight: 100;
-	border: none;
-
-	&:hover,
-	&:focus {
-		background-color: $main-blue;
+	.btn-sunset-form {
+		background-color: $grey;
+		border-radius: 2px;
+		font-size: 2.5rem;
+		padding: 1.4rem 6rem;
 		color: #fff;
-		cursor: pointer;
+		font-weight: 100;
+		border: none;
+
+		&:hover,
+		&:focus {
+			background-color: $main-blue;
+			color: #fff;
+			cursor: pointer;
+		}
 	}
-}
 
-.form-control-msg {
-	display: none;
-}
-
-.has-error {
 	.form-control-msg {
-		display: block;
-		position: relative;
-		top: -1rem;
+		display: none;
 	}
+
+	.has-error {
+		.form-control-msg {
+			display: block;
+			position: relative;
+			top: -1rem;
+		}
+	}
+
+	.js-show-feedback {
+		display: block;
+		font-size: 2rem;
+		margin-top: 1.4rem;
+		color: green;
+		font-weight: 500;
+	}
+
 }
 
-.js-show-feedback {
-	display: block;
-	font-size: 2rem;
-	margin-top: 1.4rem;
-	color: green;
-	font-weight: 500;
-}

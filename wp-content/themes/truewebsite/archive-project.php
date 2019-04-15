@@ -4,7 +4,7 @@
 <section class="bloge page-margin projects">
 	<div class="container">		
 		<div class="blog-content blog-page-content">
-			<h1 class="blog-head">All <?php wp_title($sep = '') ?></h1>
+			<h1 class="blog-head special-head">All <?php wp_title($sep = '') ?></h1>
 		</div>
 		<?php
 		if(have_posts()) { ?>

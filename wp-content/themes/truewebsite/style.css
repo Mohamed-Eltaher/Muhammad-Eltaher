@@ -79,13 +79,12 @@ body {
  */
 
 h1 {
-	font-size: 2em;
 	margin: 0.67em 0;
 	font-family: BodoniSvtyTwoITCTT-Book !important
 }
 
 
-p{font-family: futurabt-book !important; font-size: 1.8rem !important; color: #000 !important; font-weight: 300 !important}
+p{font-family: futurabt-book !important; color: #000 !important; font-weight: 300 !important}
 
 /* Grouping content
 	 ========================================================================== */

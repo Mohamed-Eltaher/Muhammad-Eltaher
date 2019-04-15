@@ -38,10 +38,12 @@ $(document).ready(function(){
     $('#search-icon i').click(function () {
         $('.search-form').addClass('visible');
         $('body').addClass('no-scroll');
+        $('.live-search').css('display', 'block');
 
         $('.fa-times-circle').click(function() {
             $('.search-form').removeClass('visible');
             $('body').removeClass('no-scroll');
+            $('.live-search').css('display', 'none');
         });
         
     });

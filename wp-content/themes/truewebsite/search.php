@@ -15,7 +15,7 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 			<div class="wrapper-post">
 				<header class="page-header page-margin">
-					<h1 class="page-title">
+					<h1 class="page-title special-head">
 						<?php
 						/* translators: %s: search query. */
 						printf( esc_html__( 'Search Results for: %s', 'hamo' ), '<span>' . get_search_query() . '</span>' );

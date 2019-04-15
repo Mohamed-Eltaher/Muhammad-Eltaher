@@ -3,26 +3,15 @@
 	background: $main-gray;
 	padding-bottom: 0 !important;
 	@media screen and (max-width: 768px) { padding-bottom: 5% !important; }
-	.blog-head{ @include special-header(); }
 	.container{
 		padding-top: 1.5rem;
 		margin: auto;
-		
-		
-		.blog-content{		
-			p{
-				font-size: 2rem;
-				line-height: 1.5;
-				font-weight: 400;
-				padding-bottom: 1.5625rem;
-			}
-		}
 		.blog-posts{
 			padding-top: 1.5rem;
 			.single-post:not(:last-child){
-				 margin-bottom: 2%;
-				 @media screen and (max-width: 768px) {margin-bottom: 5%;}
-			 }
+				margin-bottom: 2%;
+				@media screen and (max-width: 768px) {margin-bottom: 5%;}
+			}
 			.single-post{
 				display: flex;
 				&:hover .post-img { transform: scale(1.2); }
@@ -53,18 +42,8 @@
 					padding: 1rem;
 					background-color: #FFF;
 					@media screen and (max-width: 768px) { width: 100%; padding: 1rem .5rem  2rem .5rem; display: block; }
-					h2{
-						margin: 0 0 .5rem 0;
-						font-size: 2.5rem;
-						font-weight: 900;
-						&:hover{					
-							a{color: $main-blue;}
-							transition: 300ms ease-in-out;
-							cursor: pointer;
-						}
-					}
+					
 					.post-info{
-						font-size: 1.5rem;
 						.entry-date{
 							transition: 300ms ease-in-out;
 							&:hover{color: $main-blue;}				
@@ -76,16 +55,11 @@
 					.entry-footer a{
 						&:hover { color: $main-blue; transition: 300ms ease-in-out; }
 					}
-					p{
-						font-size: 2rem;
-						line-height: 1.75;
-						margin: 1rem 0 !important;
-					}
+					
 					.read-more{
 						float: left;
 						width: auto;
 						text-transform: uppercase;
-						font-size: 1.2rem;
 						line-height: 1em;	    
 						padding: 1vw;
 						color: #fff;
@@ -109,7 +83,6 @@
 						@media screen and (max-width: 768px) { float: none; }		
 					}
 					.entry-footer{
-						font-size: 1.5rem;
 						text-align: right;
 						line-height: 3;
 						span{ padding: 0 .5rem; }
@@ -125,6 +98,5 @@
 		display: table;
 		margin: auto;
 		&:hover a{color: $main-blue;}
-		a{font-size: 2rem; font-weight: 500; transition: 300ms ease-in-out;}
 	}
 }

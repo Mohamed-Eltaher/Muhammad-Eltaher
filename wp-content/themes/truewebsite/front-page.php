@@ -23,7 +23,7 @@ get_header(); ?>
 <!-- Blog Section -->
 <section class="bloge">
 	<div class="container">
-		<h1 class="blog-head">Latest Posts</h1>		
+		<h1 class="blog-head special-head">Latest Posts</h1>		
 		<?php if(have_posts()) { ?>
 			<div class="blog-posts">
 				<?php 
@@ -58,7 +58,7 @@ $mainProjects = new WP_Query(array(
 if($mainProjects->have_posts()) { ?>
 <section class="bloge projects">
 	<div class="container page-margin front-projects">
-		<h1 class="blog-head">Latest Projects</h1>
+		<h1 class="blog-head special-head">Latest Projects</h1>
 		<div class="blog-posts">
 			<?php 
 			while($mainProjects->have_posts()) {

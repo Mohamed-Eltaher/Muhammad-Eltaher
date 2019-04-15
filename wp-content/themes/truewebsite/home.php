@@ -24,7 +24,7 @@ Set Posts page dropdown to "Blog" static page created in step 4
 	<section class="bloge page-margin">
 		<div class="container">	
 	  		<div class="blog-content">
-	  			<h1 class="blog-head">BLOG</h1>
+	  			<h1 class="blog-head special-head">BLOG</h1>
 	  			<p>That was many years ago and a lot has happened since then. I now get to do what I love every day. I get to write books that mean something to me, and I get to share my thoughts on this blog. I get to interview really incredible people on my top-10 rated podcast, “The James Altucher Show.” I contribute articles to sites like The Wall Street Journal, Yahoo! Finance, and Business Insider.
 				</p>
 	  		</div>

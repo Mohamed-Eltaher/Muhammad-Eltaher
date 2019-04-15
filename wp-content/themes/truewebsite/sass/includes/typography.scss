@@ -1,0 +1,168 @@
+/* Website Typography */
+
+@media screen and (max-width:782px) {
+	html{font-size: 45% !important;}
+}
+
+@media (max-width:950px) and (min-width:782px) {
+	html{font-size: 52% !important;}   
+}
+
+p{
+	font-size: 2rem;
+	line-height: 1.5 !important;
+	font-weight: 400 !important;
+}
+
+.archive-description{font-size: 2rem;}
+
+.special-head{ @include special-header (); }
+
+.post-content{
+	h2{
+		margin: 0 0 .5rem 0;
+		font-size: 2.5rem;
+		font-weight: 900;
+		&:hover{					
+			a{color: $main-blue;}
+			transition: 300ms ease-in-out;
+			cursor: pointer;
+		}
+	}
+
+	p{
+		margin: 1rem 0 !important; font-size: 2.5rem;
+		@media screen and (max-width: 768px) {
+			font-size: 3rem !important;
+		}
+	}
+
+	.post-info{ font-size: 1.5rem !important; }
+
+	.entry-footer{ font-size: 1.5rem; }
+	
+}
+
+.read-more{ font-size: 1.2rem; }
+
+.widget-area{
+	font-size: 1.5rem;
+	@media screen and (max-width: 768px){font-size: 2.5rem}
+}
+
+.post-navigation{
+	a{
+		font-size: 1.5rem;
+		font-weight: 500;
+		@media screen and (max-width: 768px){font-size: 2.5rem}
+	}
+}
+
+.logged-in-as{font-size: 1.5rem; @media screen and (max-width: 768px){font-size: 2.5rem}}
+.comment-reply-title{font-size: 2rem}
+.comments-area{
+	.comments-title{
+		font-size: 2rem;
+	}
+	.comment-list li{
+		font-size: 2rem;
+		@media screen and (max-width: 768px){font-size: 3rem}
+	}
+}
+
+.comment-form{ 
+	label{font-size: 1.5rem; font-weight: 600;}
+	input{
+		font-size: 1.3rem;
+	}
+
+	.form-textarea{
+		font-size: 1.3rem;
+	}
+
+	.submit-btn{
+		text-transform: uppercase;
+		font-size: 1rem;			
+		font-weight: 900;	
+	}
+}
+
+.page-nav{
+	a{font-size: 2rem; font-weight: 500; transition: 300ms ease-in-out;}
+}
+
+input, textarea{ font-size: 2rem; }
+
+.button{
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.registeration{
+	a{font-size: 1.8rem;}
+}
+
+.registeration-mob{
+	font-size: 2rem;
+}
+
+.nav div.logo a {
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+.nav div.main_list ul li a{
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+@media screen and (max-width:782px) {
+	.nav div.main_list ul li a{
+		font-size: 3rem;
+	}
+}
+
+.myH2 {
+	font-size: 4rem;
+}
+
+.myP{
+	font-size: 2rem;
+}
+
+.expand-nav{
+	font-size: 3.5rem !important;
+}
+
+.live-search{
+	input{font-size: 4rem;}
+
+	.fa-search{font-size: 3rem ;}
+}
+
+.intro{
+	font-size: 3rem;
+}
+
+.project-date{
+	font-size: 2rem;
+}
+
+.Languages{
+	span{
+		font-size: 2rem;
+	}
+
+	ul li{font-size: 3rem;}
+}
+
+.single-project{
+	h2{font-size: 2.5rem;}
+	ul li{font-size: 2rem;}
+}
+
+.about-content p{
+	@media screen and (max-width:782px) {font-size: 3rem;}
+}
+.site-footer{ font-size: 2rem; }
