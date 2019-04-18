@@ -7,8 +7,6 @@
 	}
 	
 	.container{
-        //border-bottom: 2px solid #CCC;
-        background: #fff;
         display: flex;
         @media screen and (max-width: 768px) {
         	display: block;
@@ -43,9 +41,10 @@
     	@media screen and (max-width: 768px) {
     		width: 100%;
     	};
+
+
 		// recent posts widget
 		.blog-posts{
-			background:$main-gray;
 			padding: 1rem;
 			margin-top: 13.5rem;
 			@media screen and (max-width: 768px) {
@@ -87,7 +86,7 @@
 					width: 100% !important;
 				}
 			}
-			li{ background: $main-gray; margin: .5rem 0; padding: .5rem; text-transform: uppercase;}
+			li{ margin: .5rem 0; padding: .5rem; text-transform: uppercase;}
 		}
 		//margin-top: 2%; box-shadow: 0 5px 20px 0 rgba(69,79,89,0.2);
 	 	//transition: box-shadow 300ms ease; border-radius: 5px; &:hover {box-shadow: 0 11px 54px 0 rgba(69,79,89,0.3)}
@@ -96,7 +95,6 @@
 	 		@media screen and (max-width: 768px) {
 	 			padding-top: 25px !important;
 	 		}
-	 		background: #fff;
 	 		overflow: hidden;
 	 		section{
 	 			float: left;
@@ -110,18 +108,14 @@
 		overflow: hidden;
 		padding: 10px;
 		a{
-			color: $main-blue;
-			background: #FFF;
 			padding: 8px;
 		}
 	}
 
 	/* comments page */
 	.comments-area{
-		background: $main-gray;
 		padding-top: 15px;
 		.comments-title{
-			background: #FFF;
 			padding: 11px;
 		}
 
@@ -133,7 +127,6 @@
 				img{ border-radius: 50%; }
 				.says{display: none}
 				.fn{
-					background: $main-gray;
 					padding: 7px;
 					position: absolute;
 					top:1rem;
@@ -143,7 +136,6 @@
 
 			.comment-body{
 				border-bottom: 1px solid #ccc;
-				background: #fff;
 				padding: 1.2rem;
 			}
 		}
@@ -188,11 +180,6 @@
 	@media screen and (max-width: 768px) {
 		.page-margin{ padding: 10% 0 !important;}
 	}
-
-	/* Archive */
-
-	.archive{background-color: #f2f6f7}
-
 
 	/* search page */
 

@@ -14,12 +14,11 @@
 	<div id="colophon" class="site-footer">
 		<div class="container">
 			<div class="col-1">
-				Made By <strong>Muhammad Eltaher</strong> &copy; 2019
+				<p>Made By <strong>Muhammad Eltaher</strong> &copy; 2019</p>
 			</div>
 			<div class="col-2">
 				<a href="https://www.linkedin.com/in/muhammadeltaher/" target="blank">	
-					<i class="fab fa-linkedin"></i>
-				Connect On LinkedIn
+					<i class="fab fa-linkedin fa-3x"></i>
 	 		 	</a>
 			</div>	
 		</div>

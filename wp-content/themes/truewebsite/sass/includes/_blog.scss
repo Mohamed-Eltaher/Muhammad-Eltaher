@@ -1,6 +1,5 @@
 /* Blog Section */
 .bloge{
-	background: $main-gray;
 	padding-bottom: 0 !important;
 	@media screen and (max-width: 768px) { padding-bottom: 5% !important; }
 	.container{
@@ -40,22 +39,8 @@
 				.post-content{
 					width:100%;
 					padding: 1rem;
-					background-color: #FFF;
 					@media screen and (max-width: 768px) { width: 100%; padding: 1rem .5rem  2rem .5rem; display: block; }
-					
-					.post-info{
-						.entry-date{
-							transition: 300ms ease-in-out;
-							&:hover{color: $main-blue;}				
-						}
-						.author{	
-							&:hover a{color: $main-blue; transition: 300ms ease-in-out;}
-						}
-					}
-					.entry-footer a{
-						&:hover { color: $main-blue; transition: 300ms ease-in-out; }
-					}
-					
+
 					.read-more{
 						float: left;
 						width: auto;
@@ -97,6 +82,5 @@
 		padding: 1rem 0;
 		display: table;
 		margin: auto;
-		&:hover a{color: $main-blue;}
 	}
 }

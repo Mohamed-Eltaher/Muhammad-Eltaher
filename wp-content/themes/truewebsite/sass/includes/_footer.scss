@@ -1,17 +1,16 @@
 /* Footer Section */
 .site-footer{
-	background-color: #333;
-	padding: 1rem;
-	color:#fff;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	a{ color: $main-blue; }
-
+	padding: 10px 0;
+	p{margin: 0 !important}
 	.col-1{ display: inline-block; float: left; }
-	.col-2{ display: inline-block; float: right; }
+	.col-2{ 
+		display: inline-block; float: right;
+	}
 	@media screen and (max-width: 768px) {
 		.col-1, .col-2{ display: block; float: none; }
 		.col-2{display: table-header-group;}

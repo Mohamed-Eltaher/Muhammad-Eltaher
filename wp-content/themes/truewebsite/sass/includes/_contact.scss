@@ -1,6 +1,5 @@
 /* contact Page */
 .contact {
-	background: $main-gray;
 	min-height: 100vh;
 	text-align: center;
 	input, textarea{
@@ -14,16 +13,10 @@
 	.button{
 		cursor: pointer;
 		color: #FFF;
-		background-color: $main-blue;
 		width: 26.5rem;
 		border: 3px solid #fff;
 		border-radius: .5rem;
 		transition: 300ms ease-in-out;
-		&:hover {
-			background-color: #FFF;
-			color: $main-blue;
-			border: 3px solid $main-blue;
-		}
 	}
 }
 
@@ -82,18 +75,11 @@
 	}
 
 	.btn-sunset-form {
-		background-color: $grey;
 		border-radius: 2px;
-		font-size: 2.5rem;
 		padding: 1.4rem 6rem;
-		color: #fff;
-		font-weight: 100;
 		border: none;
-
 		&:hover,
 		&:focus {
-			background-color: $main-blue;
-			color: #fff;
 			cursor: pointer;
 		}
 	}
@@ -112,10 +98,7 @@
 
 	.js-show-feedback {
 		display: block;
-		font-size: 2rem;
 		margin-top: 1.4rem;
-		color: green;
-		font-weight: 500;
 	}
 
 }

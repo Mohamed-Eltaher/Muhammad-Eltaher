@@ -14,8 +14,8 @@ get_header(); ?>
 	</video> -->
 		
 	<div class="intro">
-		<h2>Hi, I'm Muhammad</h2>
-		<h2>An Experienced WordPress Developer.</h2>
+		<h2>Hi, I'm Muhammad <br>
+		An Experienced WordPress Developer.</h2>
 	</div>
 
 </section> 
@@ -39,20 +39,11 @@ get_header(); ?>
 
 <!-- projects Section -->
 <?php
-$today = date('Ymd');
 $mainProjects = new WP_Query(array(
 	'post_type'  => 'project',
 	'meta_key'   => 'project_date',
 	'orderby'    => 'meta_value_num',
 	'order'      =>'ASC',
-	'meta_query' => array(
-		array(
-			'key'     => 'project_date',
-			'compare' => '>=',
-			'value'   => $today,
-			'type'    => 'numeric'
-		)
-	)
 ));
 
 if($mainProjects->have_posts()) { ?>
@@ -67,7 +58,6 @@ if($mainProjects->have_posts()) { ?>
 					<div class="post-content">
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
-						
 						<div class="project-date">Project Date <?php the_field('project_date'); ?></div>
 						<div class="entry-footer">
 							<?php hamo_entry_footer(); ?>
@@ -76,9 +66,9 @@ if($mainProjects->have_posts()) { ?>
 				</div>		
 			<?php } ?>
 		</div>
-		<?php } ?>
+		
 	</div>
 </section>
-
+<?php } ?>
 
 <?php get_footer(); ?>

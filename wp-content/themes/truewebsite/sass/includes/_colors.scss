@@ -1,0 +1,158 @@
+/* colors of website */
+
+.about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area{ background: $main-gray;}
+
+.nav div.logo a {
+    color: $main-blue;
+}
+
+.nav div.main_list ul li.active a{
+    color: #000;
+    background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
+}
+
+.nav div.main_list ul li a {
+    color: #000;
+    background: linear-gradient(#25a9de,#25a9de) bottom left no-repeat;
+}
+
+.nav div.main_list ul li a:hover {
+    color: $main-blue;
+    background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
+}
+
+@media screen and (max-width:782px) {
+	.nav div.main_list ul {
+		background-color: $main-blue;
+	}
+
+	.nav div.main_list ul li a {
+	    &:hover{
+	        color: #fff;
+	    }
+	}
+}
+
+
+.live-search{
+    .visible{
+        background: rgba(255, 255, 255, .96);
+        input{
+            color: red;
+        }
+    }
+    
+    .fa-search{
+        color: $main-blue;
+    }
+}
+
+.nav .search{
+    color: $main-blue;
+     
+}
+
+.fa-times-circle{
+    color: $main-blue;
+}
+
+.intro{
+    color: $main-blue;
+}    
+
+.post-content{background-color: #FFF;}
+
+.post-info{
+	.entry-date{
+		transition: 300ms ease-in-out;
+		&:hover{color: $main-blue;}				
+	}
+	.author{	
+		&:hover a{color: $main-blue; transition: 300ms ease-in-out;}
+	}
+}
+.entry-footer a{
+	&:hover { color: $main-blue; transition: 300ms ease-in-out; }
+}
+
+.page-nav{
+	&:hover a{color: $main-blue;}
+}
+
+
+.btn-sunset-form {
+	background-color: $grey;
+	color: #fff;
+	&:hover,
+	&:focus {
+		background-color: $main-blue;
+		color: #fff;
+	}
+}
+
+.js-show-feedback {
+	color: green;
+}
+
+
+.project-date{
+	background: $main-blue;
+	color: #fff;
+}
+
+.Languages{
+	ul{
+		li{
+			background-color: #fff;
+		}
+	}
+}
+
+.singl{
+	.container{
+        background: #fff;
+	}
+}
+
+.wrapper-aside{
+	.blog-posts{
+		background:$main-gray;
+	}
+
+	.widget_categories{
+		li{ background: $main-gray;}
+	}
+
+	.widget-area{
+		background: #fff;
+	}
+
+}
+
+.post-navigation{
+	a{
+		color: $main-blue;
+		background: #FFF;
+	}
+}
+
+
+.comments-title{
+	background: #FFF;
+}
+
+.comment-author{
+	.fn{
+		background: $main-gray;
+	}
+}
+
+.comment-body{
+	background: #fff;
+}
+
+.site-footer{
+	background-color: #333;
+	p{color:#fff !important;}
+	a{ color: $main-blue; }
+}
