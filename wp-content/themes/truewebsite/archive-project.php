@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Projects Section -->
-<section class="bloge page-margin projects">
+<section class="bloge projects">
 	<div class="container">		
 		<div class="blog-content blog-page-content">
 			<h1 class="blog-head special-head">All <?php wp_title($sep = '') ?></h1>
@@ -9,7 +9,7 @@
 		<?php
 		if(have_posts()) { ?>
 			<div class="blog-posts">
-				<?php 
+				<?php
 				while(have_posts()) {
 					the_post(); ?>
 					<div class="single-post">				
@@ -18,7 +18,7 @@
 							<div class="post-info">
 								<?php hamo_posted_by(); ?>
 							</div>
-							<p><?php echo wp_trim_words(get_the_content(), 45) ?></p>
+							<p><?php the_content(); ?></p>
 							<div href="#" class="project-date">Project Date <?php the_field('project_date'); ?></div>
 							<div class="entry-footer">
 								<?php hamo_entry_footer(); ?>

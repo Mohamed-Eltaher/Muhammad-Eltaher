@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="about page-margin">	
+<section class="about">	
 	<div class="container">
 		<div class="about-content">
 			<h1 class="special-head"><?php echo get_theme_mod('head_option'); ?></h1>

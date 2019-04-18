@@ -1,15 +1,3 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package hamo
- */
-
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -40,31 +28,30 @@
 						<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
 						<a href="<?php echo get_author_posts_url( get_the_author_meta( get_current_user_id() ))?>"><?php echo get_avatar(get_current_user_id(), 60); ?></a>
 					</span>
-					<?php }else { ?>
-						<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
-						<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
-					<?php }
-					?>
+				<?php }else { ?>
+					<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
+					<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
+				<?php }
+				?>
 
-				</div>
+			</div>
 
+			<div id="mainListDiv" class="main_list">
+				<ul class="navlinks">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+					?>		
+				</ul>
+				<div class="registeration-mob"> 
+					<?php
+					if( is_user_logged_in()) { ?>
 
-				<div id="mainListDiv" class="main_list">
-					<ul class="navlinks">
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						) );
-						?>		
-					</ul>
-					<div class="registeration-mob"> 
-						<?php
-						if( is_user_logged_in()) { ?>
-							
-							<span>
-								<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
-								<?php echo get_avatar(get_current_user_id(), 60); ?></span>
+						<span>
+							<a href="<?php echo wp_logout_url(); ?>" class="logout">LogOut</a>
+							<?php echo get_avatar(get_current_user_id(), 60); ?></span>
 						<?php }else { ?>
 							<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
 							<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>

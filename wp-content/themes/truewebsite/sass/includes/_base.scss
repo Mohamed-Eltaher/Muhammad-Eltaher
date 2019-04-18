@@ -1,0 +1,15 @@
+/* Base */
+.container{
+    width: 90% !important;
+    margin: auto;
+    @media screen and (max-width:782px) {
+    	width: 95% !important;
+    }
+}
+
+.page-template-default{
+    .nav{position: inherit !important}
+    .page-margin{ padding: 3% 0;}
+}
+
+h2 a{width: 100%; display: block;}

@@ -10,7 +10,7 @@
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<h1><?php the_title(); ?> Projects</h1>
+				<h2 class="special-head"><?php the_title(); ?> Projects</h2>
 				<?php
 				$mainProjects = new WP_Query(array(
 					'post_type'  => 'project',
@@ -28,7 +28,6 @@
 						<hr>
 					<?php }} ?>
 
-					<!-- related Projects -->
 	<?php   endwhile; ?>						
 	</div>
 </section>

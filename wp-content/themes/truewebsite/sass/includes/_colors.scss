@@ -1,66 +1,41 @@
 /* colors of website */
 
-.about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area{ background: $main-gray;}
+.about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area, body.login{ background: $main-gray;}
 
-.nav div.logo a {
-    color: $main-blue;
-}
+.nav div.logo a, .fa-search, .nav .search, .fa-times-circle, .intro { color: $main-blue; }
 
 .nav div.main_list ul li.active a{
-    color: #000;
-    background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
+	color: #000;
+	background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
 }
 
 .nav div.main_list ul li a {
-    color: #000;
-    background: linear-gradient(#25a9de,#25a9de) bottom left no-repeat;
+	color: #000;
+	background: linear-gradient(#25a9de,#25a9de) bottom left no-repeat;
 }
 
 .nav div.main_list ul li a:hover {
-    color: $main-blue;
-    background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
+	color: $main-blue;
+	background: linear-gradient($main-blue,$main-blue) bottom left no-repeat;
 }
 
 @media screen and (max-width:782px) {
-	.nav div.main_list ul {
-		background-color: $main-blue;
-	}
+	.nav div.main_list ul { background-color: $main-blue; }
 
 	.nav div.main_list ul li a {
-	    &:hover{
-	        color: #fff;
-	    }
+		&:hover{ color: $white; }
 	}
 }
 
 
 .live-search{
-    .visible{
-        background: rgba(255, 255, 255, .96);
-        input{
-            color: red;
-        }
-    }
-    
-    .fa-search{
-        color: $main-blue;
-    }
+	.visible{
+		background: rgba(255, 255, 255, .96);
+		input{ color: red; }
+	}
 }
 
-.nav .search{
-    color: $main-blue;
-     
-}
-
-.fa-times-circle{
-    color: $main-blue;
-}
-
-.intro{
-    color: $main-blue;
-}    
-
-.post-content{background-color: #FFF;}
+.post-content{background-color: $white;}
 
 .post-info{
 	.entry-date{
@@ -75,84 +50,60 @@
 	&:hover { color: $main-blue; transition: 300ms ease-in-out; }
 }
 
-.page-nav{
-	&:hover a{color: $main-blue;}
-}
+.page-nav{ &:hover a{color: $main-blue;} }
 
 
 .btn-sunset-form {
 	background-color: $grey;
-	color: #fff;
+	color: $white;
 	&:hover,
 	&:focus {
 		background-color: $main-blue;
-		color: #fff;
+		color: $white;
 	}
 }
 
-.js-show-feedback {
-	color: green;
-}
+.js-show-feedback { color: green; }
 
-
-.project-date{
-	background: $main-blue;
-	color: #fff;
-}
+.project-date{ background: $main-blue; color: $white; }
 
 .Languages{
 	ul{
-		li{
-			background-color: #fff;
-		}
+		li{ background-color: $white; }
 	}
 }
 
 .singl{
-	.container{
-        background: #fff;
-	}
+	.container{ background: $white; }
 }
 
 .wrapper-aside{
-	.blog-posts{
-		background:$main-gray;
-	}
+	.blog-posts{ background:$main-gray; }
 
-	.widget_categories{
-		li{ background: $main-gray;}
-	}
+	.widget_categories{ li{ background: $main-gray;} }
 
-	.widget-area{
-		background: #fff;
-	}
+	.widget-area{ background: $white; }
 
 }
 
 .post-navigation{
-	a{
-		color: $main-blue;
-		background: #FFF;
-	}
+	a{ color: $main-blue; background: $white; }
 }
 
-
-.comments-title{
-	background: #FFF;
-}
+.comments-title{ background: $white; }
 
 .comment-author{
-	.fn{
-		background: $main-gray;
-	}
+	.fn{ background: $main-gray; }
 }
 
-.comment-body{
-	background: #fff;
-}
+.comment-body{ background: $white; }
 
 .site-footer{
 	background-color: #333;
-	p{color:#fff !important;}
-	a{ color: $main-blue; }
+	p{color: $white !important;}
+	a{ 
+		color: $white;
+		.fa-linkedin:hover{color: $main-blue; transition: 300ms ease-in-out;}
+		.fa-github:hover{color: orange; transition: 300ms ease-in-out;}
+	 }
 }

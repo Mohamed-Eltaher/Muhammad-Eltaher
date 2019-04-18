@@ -1,7 +1,9 @@
 /* contact Page */
+.page-id-32{background-color: $main-gray}
 .contact {
-	min-height: 100vh;
+	max-height: 100vh;
 	text-align: center;
+	padding: 5% 0 7% 0;
 	input, textarea{
 		width: 45rem;
 		padding: 1.1rem;
@@ -12,9 +14,9 @@
 	}
 	.button{
 		cursor: pointer;
-		color: #FFF;
+		color: $white;
 		width: 26.5rem;
-		border: 3px solid #fff;
+		border: 3px solid $white;
 		border-radius: .5rem;
 		transition: 300ms ease-in-out;
 	}
@@ -36,9 +38,7 @@
 		}
 
 		&.has-error {
-			&:before {
-				background-color: #a94442;
-			}
+			&:before { background-color: #a94442; }
 		}
 	}
 
@@ -79,14 +79,10 @@
 		padding: 1.4rem 6rem;
 		border: none;
 		&:hover,
-		&:focus {
-			cursor: pointer;
-		}
+		&:focus { cursor: pointer; }
 	}
 
-	.form-control-msg {
-		display: none;
-	}
+	.form-control-msg { display: none; }
 
 	.has-error {
 		.form-control-msg {

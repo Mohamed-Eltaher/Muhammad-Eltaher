@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="hire" class="contact page-margin">
+<section id="hire" class="contact">
 	<div class="container">
 		<h1 class="special-head">Contact Me</h1>
 		<form id="sunsetContactForm" class="sunset-contact-form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">

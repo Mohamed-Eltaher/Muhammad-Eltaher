@@ -1,32 +1,4 @@
-/* Global */
-html{margin-top: 0 !important;}
-
-.container{
-    width: 90% !important;
-    margin: auto;
-}
-
-.page-template-default{
-    .nav{position: inherit !important}
-    .page-margin{ padding: 3% 0;}
-}
-
-h2 a{width: 100%; display: block;}
-
-.registeration{
-    float: right;
-    a{padding: .5rem 1.5rem .5rem 0;}
-    span{
-        display: block;
-        .logout{float: right; margin-left: 5px}
-        img{max-width: 4rem; vertical-align: middle; border-radius: 50%}
-    }
-}
-
-.registeration-mob{display: none;}
 /* Header Section */
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 .nav {
     z-index: 9;
@@ -36,15 +8,11 @@ h2 a{width: 100%; display: block;}
     line-height: 6.5rem;
     text-align: center;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, 0.25);
+    padding-bottom: 2rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-
-.container
-{
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-}
 .nav div.logo {
     float: left;
     width: auto;
@@ -63,7 +31,6 @@ h2 a{width: 100%; display: block;}
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .nav div.main_list ul li {
@@ -90,8 +57,18 @@ h2 a{width: 100%; display: block;}
     transition: 300ms ease-in-out; 
 }
 
+.registeration{
+    float: right;
+    a{padding: .5rem 1.5rem .5rem 0;}
+    span{
+        display: block;
+        .logout{float: right; margin-left: 5px}
+        img{max-width: 4rem; vertical-align: middle; border-radius: 50%}
+    }
+}
 
-/* Home section */
+.registeration-mob{display: none;}
+
 .custome-header{
     position: relative;
     width: 100%;
@@ -111,7 +88,7 @@ h2 a{width: 100%; display: block;}
     
     .intro{
         margin: 0;
-        width: 100%;
+        width: 80%;
         position: absolute;
         top: 40%;
         left: 50%;
@@ -122,35 +99,17 @@ h2 a{width: 100%; display: block;}
         }
         h2:last-child{
             animation: moveInRight 1s ease-out;
-        }
-        
+        }  
     }
 }
 
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-bottom: 2rem;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
+.navTrigger { display: none; }
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: auto;
-    }
-}
-
 @media screen and (max-width:782px) {
-
-    .registeration{
-        display: none !important;
-    }
+    nav .container{width: 99% !important;}
+    .registeration{display: none !important; }
 
     .registeration-mob{
         display: block;
@@ -159,23 +118,14 @@ h2 a{width: 100%; display: block;}
         text-align: center;
         width: 100%;
         display: block;
-         a{
+        a{
             padding: 1rem;
             &:hover{color: #fff}
         }
         img{border-radius: 50%; vertical-align: middle;}
-       
     }
     
-    .blog .container{
-        max-width: 100% !important;
-    }
-    .container{
-        width: 95% !important;
-    }
-    .navTrigger {
-        display: block;
-    }
+    .navTrigger { display: block; }
     .nav div.logo {
         float: none;
         display: inline;
@@ -204,7 +154,6 @@ h2 a{width: 100%; display: block;}
         right: 0;
         left: 0;
         bottom: 0;
-        /*same background color of navbar*/
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -215,29 +164,21 @@ h2 a{width: 100%; display: block;}
         text-align: center;
         padding: 2rem;
     }
-    .nav div.media_button {
-        display: block;
-    }
+    .nav div.media_button { display: block; }
 }
 
+.affix { box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25); }
 
-.affix {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
-}
+.myH2 { text-align:center; }
 
-
-.myH2 {
-  text-align:center;
-}
 .myP {
   text-align: justify;
   padding-left:15%;
   padding-right:15%;
 }
+
 @media all and (max-width:700px){
-  .myP {
-    padding:2%;
-}
+  .myP { padding:2%; }
 }
 
 
@@ -255,9 +196,7 @@ h2 a{width: 100%; display: block;}
 }
 */
 
-.expand-nav{
-    transition: 300ms ease-in-out;
-}
+.expand-nav{ transition: 300ms ease-in-out; }
 
 /* search */
 .no-scroll{overflow: hidden !important;}

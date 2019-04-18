@@ -1,9 +1,10 @@
-
+/* About me page */
 .about{
+	padding: 15px 0 80px 0;
 	.container{display: table !important;}
 	.about-content{
-		max-width: 60%;
-		margin-right: 1%;
+		max-width: 65%;
+		margin-right: 5%;
 		float: left;
 		clear: both;
 		@media screen and (max-width: 768px) {
@@ -16,9 +17,8 @@
 
 	.about-img{
 		float: right;
-		max-width: 39%;
-		margin-top: 3.5rem;
-		text-align: right;
+		max-width: 30%;
+		margin-top: 4rem;
 		@media screen and (max-width: 768px) {
 			float: none;
 			max-width: 100%;

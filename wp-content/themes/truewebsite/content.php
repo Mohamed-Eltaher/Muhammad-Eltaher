@@ -1,7 +1,7 @@
 <div class="single-post">		
 	<div class="img-container">
 		<?php
-			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 
 		echo '<a href="' . get_the_permalink() .'" class="post-img" style="background-image: url('. $url.')"></a>';
 		?>

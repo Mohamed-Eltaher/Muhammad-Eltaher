@@ -10,7 +10,7 @@
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<h1>Language(s) Used</h1>
+				<h2>Language(s) Used</h2>
 				<?php
 				$relatedLanguages = get_field('related_language');
 				if($relatedLanguages) {

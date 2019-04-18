@@ -1,12 +1,6 @@
 <?php
 /*
-your blog posts index page template
-*/
-
-/*
-
 Step-by-step:
-
 Create front-page.php as your custom front-page template
 Create home.php as your blog posts index page template
 Leave index.php alone
@@ -15,7 +9,6 @@ Go to Dashboard -> Settings -> Reading
 Set Front Page Displays to a static page
 Set Front page dropdown to "Front Page" static page created in step 4
 Set Posts page dropdown to "Blog" static page created in step 4
-
 */
 ?>
 <?php get_header(); ?>
