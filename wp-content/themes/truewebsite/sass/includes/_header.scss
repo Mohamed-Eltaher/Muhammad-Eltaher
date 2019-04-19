@@ -94,10 +94,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        h2:first-child{
+        span{display: block;}
+        h2 span:first-child{
             animation: moveInLeft 1s ease-out;
         }
-        h2:last-child{
+        h2 span:last-child{
             animation: moveInRight 1s ease-out;
         }  
     }

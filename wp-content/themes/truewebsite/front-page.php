@@ -14,8 +14,8 @@ get_header(); ?>
 	</video> -->
 		
 	<div class="intro">
-		<h2>Hi, I'm Muhammad <br>
-		An Experienced WordPress Developer.</h2>
+		<h2><span>Hi, I'm Muhammad </span>
+		<span>An Experienced WordPress Developer.</span></h2>
 	</div>
 
 </section> 
@@ -48,7 +48,7 @@ $mainProjects = new WP_Query(array(
 
 if($mainProjects->have_posts()) { ?>
 <section class="bloge projects">
-	<div class="container page-margin front-projects">
+	<div class="container front-projects">
 		<h1 class="blog-head special-head">Latest Projects</h1>
 		<div class="blog-posts">
 			<?php 

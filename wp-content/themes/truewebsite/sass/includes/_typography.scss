@@ -36,7 +36,7 @@ p{
 		margin: 1rem 0 !important; font-size: 2.5rem;
 	}
 
-	.post-info{ font-size: 1.5rem !important; }
+	.post-info{ font-size: 2rem !important; }
 
 	.entry-footer{ font-size: 1.5rem; }
 	
@@ -57,7 +57,7 @@ p{
 	}
 }
 
-.logged-in-as{font-size: 1.5rem; @media screen and (max-width: 768px){font-size: 2.5rem}}
+.logged-in-as{font-size: 2rem; @media screen and (max-width: 768px){font-size: 2.5rem}}
 .comment-reply-title{font-size: 2rem}
 .comments-area{
 	.comments-title{
@@ -70,18 +70,13 @@ p{
 }
 
 .comment-form{ 
-	label{font-size: 1.5rem; font-weight: 600;}
-	input{
-		font-size: 1.3rem;
-	}
+	label{font-size: 2rem; font-weight: 600;}
 
-	.form-textarea{
-		font-size: 1.3rem;
-	}
+	input, textarea{ font-size: 2rem; }
 
 	.submit-btn{
 		text-transform: uppercase;
-		font-size: 1rem;			
+		font-size: 1.5rem;			
 		font-weight: 900;	
 	}
 }
@@ -90,7 +85,6 @@ p{
 	a{font-size: 2rem; font-weight: 500; transition: 300ms ease-in-out;}
 }
 
-input, textarea{ font-size: 2rem; }
 
 .button{
 	font-size: 1.5rem;
@@ -162,6 +156,9 @@ input, textarea{ font-size: 2rem; }
 }
 
 
+.sunset-contact-form{
+	input, textarea{font-size: 2rem !important;}
+}
 .btn-sunset-form {font-size: 2.5rem; font-weight: 100;}
 
 .js-show-feedback {

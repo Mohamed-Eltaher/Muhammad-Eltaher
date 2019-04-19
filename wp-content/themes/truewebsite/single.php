@@ -1,42 +1,23 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package hamo
- */
-
-get_header();
-?>
-	<section class="singl page-margin">
-		<div class="container">
-			<div class="wrapper-post">
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main site-blog">
-						<?php
-						while ( have_posts() ) :
-							the_post();
-							get_template_part( 'template-parts/content-single', get_post_type() );	
-						?>
-						
-					</main>
-				</div>
-			</div>
-			<div class="wrapper-aside"> <?php get_sidebar(); ?> </div>
-		</div>
-	</section>
-
+<?php get_header(); ?>
+<section class="singl">
 	<div class="container">
-			<?php the_post_navigation(); ?>
+		<div class="wrapper-post">
+		<?php
+			while ( have_posts() ) :
+			the_post();
+			get_template_part( 'template-parts/content-single', get_post_type() );	
+		?>					
+		</div>
+		<div class="wrapper-aside"> <?php get_sidebar(); ?> </div>
 	</div>
+</section>
 
 	<?php 
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
+	if ( comments_open() || get_comments_number() ) :
+		comments_template();
+	endif;
 
-				endwhile; // End of the loop.
+			endwhile;
 	?>					
 
 <?php get_footer(); ?>
