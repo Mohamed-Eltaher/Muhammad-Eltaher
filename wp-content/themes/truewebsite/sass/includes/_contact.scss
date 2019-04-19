@@ -44,7 +44,7 @@
 
 	.sunset-form-control {
 		resize: vertical;
-		border: none;
+		border: none !important;
 		border-radius: 0;
 		padding: .5rem 1.5rem;
 		outline: none;
@@ -72,6 +72,9 @@
 		&:active {
 			box-shadow: none;
 		}
+		
+		&:focus{border-bottom: 3px solid $main-blue !important;}
+		&:focus:invalid{border-bottom: 3px solid #ff7730 !important;}
 	}
 
 	.btn-sunset-form {

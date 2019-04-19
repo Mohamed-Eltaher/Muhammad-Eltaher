@@ -626,6 +626,13 @@ p {
     .custome-header .intro h2 span:last-child {
       -webkit-animation: moveInRight 1s ease-out;
               animation: moveInRight 1s ease-out; }
+    .custome-header .intro h2 {
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+      .custome-header .intro h2:hover {
+        -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+                transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navTrigger {
   display: none; }
@@ -966,7 +973,7 @@ p {
       background-color: #a94442; }
   .sunset-contact-form .sunset-form-control {
     resize: vertical;
-    border: none;
+    border: none !important;
     border-radius: 0;
     padding: .5rem 1.5rem;
     outline: none;
@@ -983,6 +990,10 @@ p {
     .sunset-contact-form .sunset-form-control:hover, .sunset-contact-form .sunset-form-control:focus, .sunset-contact-form .sunset-form-control:active {
       -webkit-box-shadow: none;
               box-shadow: none; }
+    .sunset-contact-form .sunset-form-control:focus {
+      border-bottom: 3px solid #25a9de !important; }
+    .sunset-contact-form .sunset-form-control:focus:invalid {
+      border-bottom: 3px solid #ff7730 !important; }
   .sunset-contact-form .btn-sunset-form {
     border-radius: 2px;
     padding: 1.4rem 6rem;
