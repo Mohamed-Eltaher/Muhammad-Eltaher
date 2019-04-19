@@ -98,6 +98,7 @@
 	 /* comments page */
 	 .comments-area{
 	 	padding: 1rem 0 5rem 0;
+	 	@media screen and (max-width: 768px) {padding: 1rem 0 10rem 0;}
 	 	.comments-title{ padding: 11px;}
 	 	.comment-list li{
 	 		margin-bottom: 17px;
@@ -154,8 +155,8 @@
 	 .page-margin{ padding: 5% 0;}
 
 	 @media screen and (max-width: 768px) {
-	 	.page-margin{ padding: 10% 0 !important;}
+	 	.page-margin{ padding: 10% 0 20% 0 !important;}
 	 }
 
 	 /* search page */
-	 .search .page-margin{padding-bottom: 0 !important;}
+	 .search {padding-bottom: 0 !important;}
