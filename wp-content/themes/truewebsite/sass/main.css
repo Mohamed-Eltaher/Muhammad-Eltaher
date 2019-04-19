@@ -81,7 +81,7 @@ p {
   font-size: 2.5rem; }
 
 .post-content .post-info {
-  font-size: 2rem !important; }
+  font-size: 2rem; }
 
 .post-content .entry-footer {
   font-size: 1.5rem; }
@@ -171,7 +171,7 @@ p {
   font-size: 3.5rem !important; }
 
 .live-search input {
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 .live-search .fa-search {
   font-size: 3rem; }
@@ -442,7 +442,7 @@ p {
 .live-search .visible {
   background: rgba(255, 255, 255, 0.96); }
   .live-search .visible input {
-    color: red; }
+    color: #000; }
 
 .post-content {
   background-color: #FFF; }
@@ -607,15 +607,13 @@ p {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 131, 0.8)));
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)); }
   .custome-header .intro {
     margin: 0;
     width: 80%;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -744,7 +742,7 @@ p {
       border: none; }
   .live-search .fa-search {
     position: absolute;
-    top: 3rem;
+    top: 2.4rem;
     left: 4rem; }
 
 .nav .search {
@@ -794,7 +792,7 @@ p {
   padding: 0; }
 
 .bloge {
-  padding: 8% 0 0 0; }
+  padding: 6% 0 0 0; }
   @media screen and (max-width: 768px) {
     .bloge {
       padding: 13% 0 16% 0; } }
@@ -1094,6 +1092,8 @@ p {
         width: 48%;
         font-size: 1.3rem;
         padding: .5rem; }
+        .singl .wrapper-aside .blog-posts .single-post .post-content .post-info {
+          font-size: 1.5rem; }
         @media screen and (max-width: 768px) {
           .singl .wrapper-aside .blog-posts .single-post .post-content {
             font-size: inherit;
