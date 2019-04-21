@@ -176,6 +176,13 @@ p {
 .live-search .fa-search {
   font-size: 3rem; }
 
+.search-results .singl .page-title {
+  font-size: 3rem; }
+
+.no-results input {
+  font-size: 2rem;
+  padding: 1%; }
+
 .intro {
   font-size: 3rem; }
 
@@ -1209,10 +1216,8 @@ p {
 .search {
   padding-bottom: 0 !important; }
 
-.search-results .singl .page-title {
-  font-size: 3rem; }
-  .search-results .singl .page-title span {
-    color: #25a9de; }
+.search-results .singl .page-title span {
+  color: #25a9de; }
 
 @media screen and (max-width: 768px) {
   .search-results .singl {
