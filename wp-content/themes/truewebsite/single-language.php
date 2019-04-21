@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<section class="page-margin single-project">
-	<div class="container">
+<section class="single-project">
+	<div class="container page-margin">
 		<?php
 			while ( have_posts() ) :
 				the_post(); ?>

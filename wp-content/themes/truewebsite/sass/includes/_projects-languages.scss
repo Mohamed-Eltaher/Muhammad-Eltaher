@@ -31,6 +31,14 @@
 	}
 }
 
+.single-project{
+	.page-margin{
+		padding: 8% 0 !important;
+	@media screen and (max-width: 500px) {
+		padding: 17% 0 23% 0 !important;
+		}
+	}
+}
 
 //Languages
 

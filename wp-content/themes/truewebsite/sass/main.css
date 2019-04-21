@@ -412,7 +412,7 @@ p {
             transform: translateX(0); } }
 
 /* colors of website */
-.about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area, body.login {
+.about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area, body.login, .category {
   background: #f2f6f7; }
 
 .nav div.logo a, .fa-search, .nav .search, .fa-times-circle, .intro {
@@ -626,13 +626,6 @@ p {
     .custome-header .intro h2 span:last-child {
       -webkit-animation: moveInRight 1s ease-out;
               animation: moveInRight 1s ease-out; }
-    .custome-header .intro h2 {
-      -webkit-transition: all .2s;
-      transition: all .2s; }
-      .custome-header .intro h2:hover {
-        -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-                transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navTrigger {
   display: none; }
@@ -659,6 +652,8 @@ p {
       vertical-align: middle; }
   .navTrigger {
     display: block; }
+  .navTrigger i {
+    height: 4px; }
   .nav div.logo {
     float: none;
     display: inline; }
@@ -921,6 +916,12 @@ p {
     .projects .blog-posts .single-post .post-content .entry-footer {
       display: inline;
       float: right; }
+
+.single-project .page-margin {
+  padding: 8% 0 !important; }
+  @media screen and (max-width: 500px) {
+    .single-project .page-margin {
+      padding: 17% 0 23% 0 !important; } }
 
 .Languages span {
   display: block;
