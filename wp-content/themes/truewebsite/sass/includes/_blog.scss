@@ -39,32 +39,6 @@
 					padding: 1rem;
 					@media screen and (max-width: 768px) { width: 100%; padding: 2rem 1rem; display: block; }
 
-					.read-more{
-						float: left;
-						width: auto;
-						text-transform: uppercase;
-						line-height: 1em;	    
-						padding: 1vw;
-						color: #fff;
-						cursor: pointer;
-						background: lighten($main-blue, 3%);  
-						border: .1rem solid darken($main-blue, 4%);
-						box-shadow: 0px .2rem 0 darken($main-blue, 5%), .2rem .4rem .6rem darken($main-blue, 2%);
-						font-weight: 900;
-						letter-spacing: .1rem;
-						transition: 300ms ease-in-out;
-						&:hover{
-							transition: 300ms ease-in-out;				
-							background: darken($main-blue, 1.5%);
-							border: .1rem solid rgba(#000, .05);
-							box-shadow: .1rem .1rem .2rem rgba(#fff, .2);
-							color: #000; 
-							text-decoration: none;
-							text-shadow: -.1rem -.1rem 0 darken($main-blue, 9.5%);
-						}	
-
-						@media screen and (max-width: 768px) { float: none; }		
-					}
 					.entry-footer{
 						text-align: right;
 						line-height: 3;

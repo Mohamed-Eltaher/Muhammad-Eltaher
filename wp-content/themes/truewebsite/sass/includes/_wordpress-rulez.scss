@@ -162,3 +162,32 @@
 
 	 /* search page */
 	 .search {padding-bottom: 0 !important;}
+	 .search-results .singl{
+	 	.page-title{
+	 		font-size: 3rem;
+	 		span{color: $main-blue}
+	 	}
+	 	 @media screen and (max-width: 768px) {
+			padding: 10% 0 15% 0 !important;
+	 	 }
+	 	 .wrapper-aside{ padding: 22% 0 0 0;}
+	 	 .wrapper-post .single-post-page{margin-bottom: 8%;}
+	 	 @media screen and (max-width: 768px) {
+			.wrapper-aside {padding: 0}
+	 	 }
+	 }
+	 .no-results{
+	 	width: 70%;
+	 	padding: 8% 0 0 0;
+	 	@media screen and (max-width: 768px) {
+	 		padding: 15% 0 0 0 !important;
+	 		width: 100%;
+	 	}
+	 	
+	 }
+
+	 .search-no-results{
+	 	@media screen and (max-width: 768px){
+			.singl{ padding: 2% 0 17% 0;}
+	 	}
+	 }
