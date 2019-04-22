@@ -8,6 +8,10 @@ var gulp = require('gulp'),
 
     uglify = require('gulp-uglify'),
 
+    cleanCSS = require('gulp-clean-css'),
+
+    htmlmin = require('gulp-htmlmin'),
+
     glob = require("glob"),
 
     livereload = require('gulp-livereload');
@@ -27,10 +31,19 @@ gulp.task('sass', function() {
 	.pipe(sass({errLogToConsole: true}))
 	.pipe(concat('main.css'))
 	.pipe(prefix('last 2 versions'))
+	.pipe(cleanCSS())
 	.pipe(gulp.dest('../sass'))
 	.pipe(livereload())
 
-})
+});
+
+
+gulp.task('uglify', function () {
+  return gulp.src('../js/*.js')
+  	.pipe(concat('bundle.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('../js/min-js'));
+});
 
 
 // Watch Files
@@ -39,6 +52,7 @@ gulp.task('watch', function() {
 	livereload.listen();
 	gulp.watch("../sass/**/*.scss", ['sass']);
 	gulp.watch("../**/*.php", ['html']);
+	gulp.watch("../js/*.js", ['uglify']);
 		
 })
 

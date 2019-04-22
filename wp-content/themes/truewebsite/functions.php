@@ -154,13 +154,9 @@ function hamo_scripts() {
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', NULL, microtime() );
 	wp_enqueue_style( 'hamo-style', get_template_directory_uri() . '/sass/main.css' );
 
-	wp_enqueue_script( 'hamo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '', true );
-
-	wp_enqueue_script( 'hamo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '', true );
-
 	wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", array(), '', true );
 
-	wp_enqueue_script( 'hamo-js', get_template_directory_uri() . '/js/main.js', array(), microtime(), true );
+	wp_enqueue_script( 'bundle-js', get_template_directory_uri() . '/js/min-js/bundle.min.js', array(), microtime(), true );
 
 	wp_enqueue_script( 'hamo-live', "http://localhost:35729/livereload.js", array(), '', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -298,6 +294,7 @@ function my_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 */
 
+// Website speed optimization
 
 function defer_parsing_of_js ( $url ) {
   if ( FALSE === strpos( $url, '.js' ) ) return $url;
