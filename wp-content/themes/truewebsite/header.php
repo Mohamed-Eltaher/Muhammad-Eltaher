@@ -69,12 +69,13 @@
 		</nav>
 
 		<!-- live search -->
-
-		<div class="live-search">
-			<div class="search-form">
-				<?php get_search_form(); ?>
-				<i class="fas fa-search fa-3x"></i>
-				<i class="fas fa-times-circle fa-3x"></i>
+		<div class="container">
+			<div class="live-search">
+				<div class="search-form">
+					<?php get_search_form(); ?>
+					<i class="fas fa-search fa-3x"></i>
+					<i class="fas fa-times-circle fa-3x"></i>
+				</div>
 			</div>
 		</div>
 

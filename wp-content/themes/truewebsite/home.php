@@ -19,8 +19,6 @@ Set Posts page dropdown to "Blog" static page created in step 4
 	<div class="container">	
 		<div class="blog-content">
 			<h1 class="special-head">BLOG</h1>
-			<p>That was many years ago and a lot has happened since then. I now get to do what I love every day. I get to write books that mean something to me, and I get to share my thoughts on this blog. I get to interview really incredible people on my top-10 rated podcast, “The James Altucher Show.” I contribute articles to sites like The Wall Street Journal, Yahoo! Finance, and Business Insider.
-			</p>
 		</div>
 		
 		<?php if(have_posts()) {
@@ -29,7 +27,7 @@ Set Posts page dropdown to "Blog" static page created in step 4
 				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
 				$args = array(
-					'posts_per_page' => 3,
+					'posts_per_page' => 5,
 					'paged' => $paged,
 				); 
 				$the_query = new WP_Query( $args );

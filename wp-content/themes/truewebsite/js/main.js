@@ -50,9 +50,9 @@ $(document).ready(function(){
 
     var clear;
     $('.search-form input').on('keydown', function() {
-         
-        clearTimeout(clear);
-        clear = setTimeout(function() {console.log('this is timeout');}, 2000)
+        
+        //clearTimeout(clear);
+        //clear = setTimeout(getResults(), 2000);
         
     });
 

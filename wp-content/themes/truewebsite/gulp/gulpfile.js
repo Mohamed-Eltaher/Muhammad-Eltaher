@@ -29,10 +29,10 @@ gulp.task('sass', function() {
 
 	return gulp.src('../sass/main.scss')
 	.pipe(sass({errLogToConsole: true}))
-	.pipe(concat('main.css'))
+	.pipe(concat('style.css'))
 	.pipe(prefix('last 2 versions'))
 	.pipe(cleanCSS())
-	.pipe(gulp.dest('../sass'))
+	.pipe(gulp.dest('../'))
 	.pipe(livereload())
 
 });

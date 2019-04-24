@@ -151,8 +151,7 @@ add_filter('excerpt_length', 'hamo_extend_excerpt_length');
  */
 function hamo_scripts() {
 
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', NULL, microtime() );
-	wp_enqueue_style( 'hamo-style', get_template_directory_uri() . '/sass/main.css' );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', NULL);
 
 	wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", array(), '', true );
 
