@@ -77,7 +77,7 @@ endif;
 
 /* My Own Customization */
 
-
+/*
 function video_customize_register($wp_customize){
 
 	// About me customization
@@ -106,4 +106,4 @@ function video_customize_register($wp_customize){
    
 };
     add_action('customize_register', 'video_customize_register');
-
+*/

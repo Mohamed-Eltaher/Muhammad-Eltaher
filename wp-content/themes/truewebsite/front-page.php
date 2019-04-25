@@ -13,11 +13,10 @@ get_header(); ?>
 		<source src="<?php //echo wp_get_attachment_url(get_theme_mod('video_option')); ?>" type="video/mp4">
 	</video> -->
 		
-	<div class="intro">
+	<div class="intro site-description">
 		<h2><span>Hi, I'm Muhammad </span>
 		<span>An Experienced WordPress Developer.</span></h2>
 	</div>
-
 </section> 
 
 <!-- Blog Section -->

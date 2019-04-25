@@ -12,8 +12,8 @@
 	<!-- Header Section -->
 	<nav class="nav">	
 		<div class="container">
-			<div class="logo">
-				<a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a>
+			<div class="logo site-title">
+				<a href="<?php bloginfo('url') ?>" style="color: <?php echo get_header_textcolor(); ?>"><?php bloginfo('name') ?></a>
 			</div>
 
 			<div id="search-icon" class="search">

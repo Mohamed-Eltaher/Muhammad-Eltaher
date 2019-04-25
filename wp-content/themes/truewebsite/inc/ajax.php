@@ -1,9 +1,6 @@
 <?php
 
 /*
-
-@package sunsettheme
-
     ========================
         AJAX Contact form FUNCTIONS
     ========================
