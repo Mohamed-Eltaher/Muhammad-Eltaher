@@ -18,8 +18,8 @@
 							<div class="post-info">
 								<?php hamo_posted_by(); ?>
 							</div>
-							<p><?php the_content(); ?></p>
-							<div href="#" class="project-date">Project Date <?php the_field('project_date'); ?></div>
+							<p><?php the_excerpt(); ?></p>
+							<a href="<?php the_permalink(); ?>" class="read-more">See Project</a>
 							<div class="entry-footer">
 								<?php hamo_entry_footer(); ?>
 							</div>

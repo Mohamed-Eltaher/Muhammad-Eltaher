@@ -129,6 +129,7 @@ $(document).ready(function(){
 
     });
 
+    // function to defer parsing js of youtube embed
     function init() {
       var vidDefer = document.getElementsByTagName('iframe');
       for (var i=0; i<vidDefer.length; i++) {
