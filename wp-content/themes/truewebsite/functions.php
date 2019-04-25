@@ -294,4 +294,4 @@ function defer_parsing_of_js ( $url ) {
     return "$url' defer ";
 }
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 ); 
-*/ 
+*/
