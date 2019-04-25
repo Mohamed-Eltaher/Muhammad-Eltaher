@@ -15,7 +15,14 @@
 				$mainProjects = new WP_Query(array(
 					'post_type'  => 'project',
 					'orderby'    => 'meta_value_num',
-					'order'      =>'ASC',	
+					'order'      =>'ASC',
+					'meta_query' => array(
+					  array(
+					    'key' => 'related_language',
+					    'compare' => 'LIKE',
+					    'value' => '"' . get_the_ID() . '"'
+					  )
+					)	
 				));
 
 				if($mainProjects->have_posts()) { 
