@@ -145,7 +145,7 @@ function hamo_scripts() {
 
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', NULL);
 
-	wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", array(), '', true );
+	wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js", array(), '', true );
 
 	wp_enqueue_script( 'bundle-js', get_template_directory_uri() . '/js/min-js/bundle.min.js', array(), '', true );
 
@@ -287,11 +287,27 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 */
 
 // Website speed optimization
-/*
+
 function defer_parsing_of_js ( $url ) {
   if ( FALSE === strpos( $url, '.js' ) ) return $url;
   if ( strpos( $url, 'jquery.js' ) ) return $url;
     return "$url' defer ";
 }
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 ); 
-*/
+
+// remove gutenberg css
+function wpassist_remove_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+} 
+add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
+
+
+// remove emoji script
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+// remove wp-embed that used to embed posts from other websites
+function my_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
