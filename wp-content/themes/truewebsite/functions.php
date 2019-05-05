@@ -286,6 +286,15 @@ function my_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 */
 
+add_filter( 'wp_default_scripts', 'remove_jquery_migrate' );
+
+function remove_jquery_migrate( &$scripts){
+    if(!is_admin()){
+        $scripts->remove( 'jquery');
+        $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.2.1' );
+    }
+}
+
 // Website speed optimization
 /*
 function defer_parsing_of_js ( $url ) {
