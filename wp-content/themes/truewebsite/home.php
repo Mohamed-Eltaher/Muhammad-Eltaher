@@ -31,7 +31,7 @@ Set Posts page dropdown to "Blog" static page created in step 4
 					'paged' => $paged,
 				); 
 				$the_query = new WP_Query( $args );
-				query_posts('post_type=post');
+				//query_posts('post_type=post');
 				while($the_query->have_posts()) {
 					$the_query->the_post();
 					get_template_part('content', get_post_format());
@@ -40,8 +40,9 @@ Set Posts page dropdown to "Blog" static page created in step 4
 			</div>
 			<span class="page-nav">
 				<?php 
-				previous_posts_link();
-				next_posts_link( 'Next Page', $the_query->max_num_pages);
+				the_posts_pagination( array( 'mid_size'  => 2 ) );
+				//previous_posts_link();
+				//next_posts_link( 'Next Page', $the_query->max_num_pages);
 				?>
 			</span>
 		<?php } ?>

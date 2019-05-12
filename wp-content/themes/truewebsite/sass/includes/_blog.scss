@@ -1,5 +1,8 @@
 /* Blog Section */
-.home .bloge{padding: 0}
+.home .bloge{ 
+	padding: 1rem 0 4rem 0;
+	@media screen and (max-width: 768px) { padding: 1rem 0 12rem 0; }
+}
 .bloge{
 	padding: 6% 0 0 0;
 	@media screen and (max-width: 768px) { padding: 13% 0 16% 0; }

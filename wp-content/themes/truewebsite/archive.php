@@ -1,25 +1,11 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package hamo
- */
-
-get_header();
-?>
-<!-- Blog Section -->
+<?php get_header(); ?>
 <section class="bloge">
 	<div class="container">
-		
 		<div class="blog-content blog-page-content">
 			<?php the_archive_title('<h1 class="blog-head special-head">', '</h1>'); ?>
-			<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
-			
+			<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>	
 		</div>		
-		<?php if(have_posts()) {
-			?>
+		<?php if(have_posts()) { ?>
 			<div class="blog-posts">
 				<?php
 				while(have_posts()) {
@@ -29,13 +15,9 @@ get_header();
 				} ?>
 			</div>
 			<span class="page-nav">
-				<?php 
-				previous_posts_link();
-				next_posts_link( 'Next Page');
-				?>
+				<?php the_posts_pagination( array( 'mid_size'  => 2 ) ); ?>
 			</span>
-		<?php } ?>
-		
+		<?php } ?>	
 	</div>
 </section>
 

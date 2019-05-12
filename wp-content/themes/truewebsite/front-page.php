@@ -36,8 +36,10 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<!-- projects Section -->
+		<!-- projects Section 
+
 		<?php
+		/*
 		$mainProjects = new WP_Query(array(
 			'post_type'  => 'project',
 			'orderby'    => 'meta_value_num',
@@ -67,6 +69,6 @@ get_header(); ?>
 
 				</div>
 			</section>
-		<?php } ?>
+		<?php } */ ?> -->
 
 		<?php get_footer(); ?>

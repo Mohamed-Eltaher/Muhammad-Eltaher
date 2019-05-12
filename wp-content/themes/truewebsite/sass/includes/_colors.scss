@@ -50,7 +50,11 @@
 	&:hover { color: $main-blue; transition: 300ms ease-in-out; }
 }
 
-.page-nav{ &:hover a{color: $main-blue;} }
+.page-nav{ 
+	a{margin:0 3px;}
+	a:hover{color: $main-blue; }
+	.current{ color: $main-blue; font-size: 3rem;}
+}
 
 
 .btn-sunset-form {
