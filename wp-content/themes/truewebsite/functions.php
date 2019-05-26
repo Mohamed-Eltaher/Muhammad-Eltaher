@@ -362,3 +362,10 @@ function wpse_mime_types_webp( $mimes ) {
 
   return $mimes;
 }
+
+
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );

@@ -1,0 +1,250 @@
+# Copyright (C) 2016 PayPal IPN for WordPress
+# This file is distributed under the same license as the PayPal IPN for WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PayPal IPN for WordPress 1.0.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/paypal-ipn-for-wordpress\n"
+"POT-Creation-Date: 2016-10-12 08:53:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:49
+msgid "PayPal IPN Primary URL:"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:55
+msgid "Take a look at the <a target=\"_blank\" href=\"%s\">PayPal IPN Configuration Guide</a> for details on setting up IPN with this URL."
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:64
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:70
+msgid "Debug Log"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:72
+msgid "Enable logging"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:73
+msgid "Log PayPal events, such as IPN requests, inside"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:76
+msgid "Log directory (<code>%s</code>) is not writable. To allow logging, make this writable or define a custom <code>PAYPAL_IPN_FOR_WORDPRESS_LOG_DIR</code>."
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-general-setting.php:86
+msgid "Save changes"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-html-output.php:321
+msgid "Select a page&hellip;"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:56
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:58
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:59
+msgid "PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:60
+msgctxt "Admin menu name"
+msgid "PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:61
+msgid "Search PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:62
+msgid "All PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:63
+msgid "Parent PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:64
+msgid "Parent PayPal IPN Types:"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:65
+msgid "Edit PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:66
+msgid "Update PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:67
+msgid "Add New PayPal IPN Types"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:68
+msgid "New PayPal IPN Types Name"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:93
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:94
+msgid "PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:95
+msgctxt "Admin menu name"
+msgid "PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:96
+msgid "Add PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:97
+msgid "Add New PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:98
+msgid "Edit"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:99
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:101
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:102
+msgid "View PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:100
+msgid "New PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:103
+msgid "Search PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:104
+msgid "No PayPal IPN found"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:105
+msgid "No PayPal IPN found in trash"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:106
+msgid "Parent PayPal IPN"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:108
+msgid "This is where you can add new IPN to your store."
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:166
+msgid "Show All Transaction"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:184
+msgid "Show all Payment Statuses"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:272
+msgctxt "paypal-ipn"
+msgid "Transaction ID"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:273
+msgctxt "paypal-ipn"
+msgid "Invoice ID"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:274
+msgctxt "paypal-ipn"
+msgid "Date"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:275
+msgctxt "paypal-ipn"
+msgid "Name / Company"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:276
+msgid "Amount"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:277
+msgid "Transaction Type"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:278
+msgid "Payment Status"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:448
+msgid "PayPal IPN Fields"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:461
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:467
+msgid "IPN Field Name"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:462
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:468
+msgid "IPN Field Value"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:513
+msgid "PayPal IPN Raw Data"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:523
+msgid "Hook Function Snippet"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:550
+msgid "Extending PayPal IPN for WordPress"
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:551
+msgid "PayPal IPN for WordPress provides a <a target=\"_blank\" href=\"https://www.angelleye.com/paypal-ipn-wordpress-hooks/?utm_source=paypal_ipn_for_wordpress&utm_medium=docs_link_ipn_details&utm_campaign=paypal_ipn_for_wordpress\">wide variety of developer hooks</a> that you can use within your theme or plugins to trigger your own function(s).  There are hooks available based on the IPN type as well as the payment status of a transaction."
+msgstr ""
+
+#: admin/partials/class-paypal-ipn-for-wordpress-post-types.php:552
+msgid "The code snippet below is a template that you can use to quickly setup your own hook functions.  You can see that it prepares all of the possible data for the IPN in PHP variables for you for easy access to the values within your code.  Just set the \"hook_name\" to the hook you would like to use to trigger the function, and set the \"function_name\" to the name of the function you’re using in your theme/plugin."
+msgstr ""
+
+#: includes/class-paypal-ipn-for-wordpress.php:94
+msgid "Configure"
+msgstr ""
+
+#: includes/class-paypal-ipn-for-wordpress.php:95
+msgid "Docs"
+msgstr ""
+
+#: includes/class-paypal-ipn-for-wordpress.php:96
+msgid "Support"
+msgstr ""
+
+#: includes/class-paypal-ipn-for-wordpress.php:97
+msgid "Write a Review"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "PayPal IPN for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.angelleye.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A PayPal Instant Payment Notification toolkit that helps you automate tasks in real-time when transactions hit your PayPal account."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Angell EYE"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.angelleye.com/"
+msgstr ""

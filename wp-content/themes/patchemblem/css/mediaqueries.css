@@ -1,0 +1,149 @@
+@charset "utf-8";@media (min-width:320px) and (max-width:1024px){-webkit-appearance:none;}
+@media (min-width:1024px) and (max-width:1199px){.logo{width:80%;top:8px;}
+.logo img{width:100%;display:block;}
+.headtop_contact{width:100%;}
+.top_phonebox, .top_mailbox{font-size:17px;}
+.top_phonebox{margin-right:20px;margin-bottom:5px;margin-left:25px;}
+.navbar-default .navbar-nav > li > a{font-size:17px;}
+.textwidget{padding:2px 94px 0 0;}
+.testimonials .slider_main .bx-wrapper .bx-pager, .testimonials .slider_main .bx-wrapper .bx-controls-auto{bottom:-45px;}
+}
+@media (max-width:767px){footer .v-first-ftr-bx .footer-menu li{width:100%;}
+.mrg_lft-top{max-width:100px;}
+.site-header .logo{top:35px !important;}
+.mobile_view_hp{display:flex !important;align-items:center;margin-right:12px;margin-top:-3px;}
+.banner .bannerNew2Area4clnt{width:92% !important;margin:0 auto!important;position:relative;display:block;float:none!important;}
+.only_on_home{background:url(https://patchemblem-8hxoj88asvb7ooj6.netdna-ssl.com/wp-content/themes/patchemblem/images/patch-emblem-desT.png) !important;}
+.header_ss{position:inherit!important;}
+.top_phonebox{padding-right:10px !important;}
+.top_mailbox{padding-right:10px !important;}
+.header-top-ss .container > div{display:flex;flex-direction:row;}
+.header-top-ss .container > div .col-sm-3{width:30%;}
+.header-top-ss .container > div .col-sm-9{width:70%;}
+.headtop_contact aside.widget_text .textwidget{width:100% !important;margin-top:10px !important;}
+.logo_sec{background-color:#f16327;float:none !important;position:relative;width:100%;padding:10px 0px !important;}
+.header_ss{top:93px;bottom:0 !important;display:none;width:100%!important;}
+#mobilE_nav .nav.navbar-nav.navbar-right.classet{background-color:#333;}
+.top_phonebox{padding-bottom:5px !important;}
+.top_phonebox::before{display:none !important;}
+.toggle_bar{display:block !important;}
+.toggle_bar{color:#fff;font-size:25px;position:relative;right:18px;top:0;cursor:pointer;align-self:center;}
+.bannerbase .pull-right{float:none !important;}
+.freequote_banner_form{margin-top:15px !important;width:100% !important;max-width:100%;}
+.bannerform_positionbox{padding-left:15px;padding-right:15px;}
+.hto_content .sec1 .col-sm-8, .hto_content .sec2 .col-sm-8{position:initial !important;right:0px !important;top:0px !important;transform:initial !important;z-index:9;}
+.bannerbase .banner{padding:25px 0px 5px !important;}
+.info_sec .headtop_contact aside.widget_text .textwidget{text-align:left !important;}
+.row.sec2{display:flex;flex-direction:column-reverse;}
+.header_ss > div{width:100%;padding:0px;}
+.banner .bannerNew2Area4clnt::before{display:none;}
+.banner .bannerNew2Area4clnt::after{display:none;}
+.bannerNew2Area4clnt{background:none rgba(31, 29, 29, 0.6);padding-top:0px !important;padding-left:15px;}
+.surity_container .row > div{margin-bottom:20px;}
+.surity_container{margin-top:20px;}
+.bannerbase{/*background-attachment:fixed !important;*/}
+.banner > div{width:100%;padding:0px !important;}
+.mrg_lft-top{max-width:100% !important;margin:0 auto;}
+.mobile_view_hp{display:none !important;}
+}
+@media (min-width:768px) and (max-width:1023px){.logo_base{width:180px;height:180px;background-size:120% 100%;}
+.logo{width:70%;top:8px;}
+.logo img{width:100%;display:block;}
+.top_phonebox{margin-right:20px;margin-bottom:0;margin-top:0;}
+.left_quote_pt, .md_quote_pt, .right_quote_pt{height:44px;}
+.md_quote_pt{font-size:20px;line-height:30px;}
+.navbar-default .navbar-nav > li > a{font-size:16px;}
+.navigation_bar{background-size:12px 66%;}
+.navigation_bar .navbar-nav{display:table;}
+.navbar{margin-bottom:0;}
+.headtop_contact{width:100%;}
+.header_top{height:120px;background-repeat:repeat;}
+.our-products-items .pro-item img{padding:20px 10px;max-width:100%;}
+.header_top_right{width:70%;}
+.nav.navbar-nav.navbar-right{}
+a.quoteAnchor, a.quoteAnchor:hover{bottom:30px;}
+.testimonials .slider_main .bx-wrapper .bx-pager, .testimonials .slider_main .bx-wrapper .bx-controls-auto{bottom:-40px;}
+}
+@media (min-width:320px) and (max-width:767px){header{height:auto;}
+.header_top{height:auto;background-repeat:repeat;}
+.logo_base{width:92%;height:142px;float:none;margin:0 auto;display:table;background-size:80%;}
+.logo{width:160px;height:142px;top:0;left:24%;padding:20px 30px;}
+.logo img{width:100%;display:block;}
+.header_top{height:auto;}
+.header_top_right{width:100%;}
+.top_quote{float:none;margin:130px auto 15px auto;display:table;background-position:-5px -4px;}
+.left_quote_pt, .md_quote_pt, .right_quote_pt{height:44px;}
+.md_quote_pt{font-size:20px;line-height:30px;}
+.headtop_contact{margin:0 !important;float:none !important;display:table;}
+.top_phonebox, .top_mailbox{float:none;margin:2px auto;}
+.top_phonebox, .top_mailbox{font-size:16px;}
+.navigation_bar{height:auto;background:#cf4032;}
+.navbar-header{margin-top:0;}
+.navbar{margin-bottom:0;}
+.navbar-nav{margin:0;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border:0;}
+.navbar-default .navbar-nav > li > a{font-size:16px;padding:2px 8px;}
+.bx-wrapper .bx-prev, .bx-wrapper .bx-next, .bx-wrapper a:hover.bx-prev, .bx-wrapper a:hover.bx-next{background-size:50%;}
+.your-idea h1{font-size:26px;}
+.how-it-work h2, .our-products h2, .testimonials h2{font-size:30px;}
+footer .footer-menu a{font-size:12px;line-height:20px;margin-right:15px;}
+footer .copyright{font-size:12px;line-height:20px;margin-bottom:15px;}
+.site-header .logo{left:-15px !important;}
+}
+@media (max-width:640px) and (max-width:767px){.logo{left:38%;}
+.top_phonebox, .top_mailbox{font-size:16px;}
+.top_phonebox{margin:0;}
+.top_mailbox{margin:0 0 5px 0;}
+}
+@media (max-width:480px) and (max-width:639px){.logo{left:32%;}
+}
+@media (min-width:360px) and (max-width:479px){.logo{left:26%;}
+}
+@media (min-width:320px) and (max-width:479px){.logo{left:24%;}
+.top_quote{padding:10px 0;}
+.md_quote_pt{padding:7px 15px;}
+.md_quote_pt a{font-size:18px;}
+.site-header .logo{top:100px !important;}
+}
+@media only screen and (max-width:1199px) and (min-width:992px){.header_ss > div{width:100%;padding:0px;}
+.navbar-nav > li > a{font-size:14px;padding:15px 10px !important;}
+.request_quote h3{font-size:16px;}
+}
+@media only screen and (max-width:991px) and (min-width:768px){.top_phonebox{padding-right:10px !important;}
+.top_mailbox{padding-right:10px !important;}
+.header_ss > div{width:100%;padding:0px;}
+.navbar-nav > li > a{font-size:14px;padding:15px 10px !important;}
+.request_quote h3{font-size:16px;}
+/*.header_wrap .col-sm-9{width:100%;}*/
+/*.nav.navbar-nav.navbar-right.classet{display:flex;justify-content:center;}*/
+.top_phonebox::before{display:none;}
+.slider .slick-next{margin-left:0px !important;}
+.slick-prev.slick-arrow{margin-left:0px !important;}
+.hto_content .sec1 .col-sm-8, .hto_content .sec2 .col-sm-8{position:initial !important;right:0px !important;top:0px !important;transform:initial !important;z-index:9;}
+.navbar-nav > li > a{text-align:center;}
+.navbar-nav > li > a i{display:block;}
+.logo_sec a img{padding:0px 6px;}
+/*.req_sec{max-width:200px;float:right;}*/
+}
+@media(max-width:992px){/*.freequote_banner_form .freeQuoteArea .wufoo ul li span{width:100%;margin:0 0 14px 0;}*/
+.freequote_banner_form .freeQuoteArea .wufoo ul li{padding-bottom:0;}
+}
+@media(max-width:767px){.bannerbase .banner .row{display:block !important;}
+.bannerbase .banner .row .col-sm-5.pull-right{padding-right:15px !important;}
+section.body-sec{margin-top:100px !important;}
+.free_ship_back.surity_content:before,
+.free_ship_back.surity_content:after{display:none;}
+.col_next-nav-BaR{width:70% !important;}
+.logo_sec-nav-Bar{width:25% !important;}
+#dEskTop_nav{display:none !important;}
+.nav.navbar-nav.navbar-right.classet{background-color:#333;}
+}
+@media (max-width:480px){.toggle_bar:before{content:"Menu";font-size:20px;text-transform:uppercase;margin-right:10px;position:relative;top:-1px;font-weight:bold;}
+.header-top-ss .container > div .col-sm-9{display:none;}
+.toggle_bar{width:70%;text-align:right;}
+.header-top-ss .container > div .col-sm-3{background-color:#f26327;}
+.slider ul li, .slider p{font-size:14px !important;line-height:20px !important;}
+.col_next-nav-BaR{display:none !important;}
+}
+@media (max-width:382px){.bannerbase .banner{padding:15px 0px 5px !important;}
+}

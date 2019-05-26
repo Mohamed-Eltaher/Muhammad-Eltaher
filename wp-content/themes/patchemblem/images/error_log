@@ -1,0 +1,1 @@
+[05-Dec-2018 18:14:29 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home/patchem1/public_html/wp-content/themes/patchemblem/images/header.php on line 12

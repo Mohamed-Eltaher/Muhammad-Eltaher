@@ -1,0 +1,127 @@
+/*
+Theme Name: Patchemblem
+Theme URI: 
+Author: UIPL team
+Author URI: http://unifiedinfotech.net/
+Description: Our Patchemblem default theme is clean, Website-focused, and designed for clarity. Patchemblem's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: patchemblem
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+
+.pricingArea .coverageArea table tr td:first-child{
+    background: transparent;
+    color: #767676;
+}
+.pricingArea .coverageArea table tr td.bg_color{
+background: #2c80a2; 
+vertical-align: middle;
+color: #fff;
+}
+.pricingArea .coverageArea table tr th:nth-child(2), .pricingArea .coverageArea table tr td:nth-child(2)
+{
+    padding-left: 8px;
+    text-align: center;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    text-align: center;
+}
+
+.es_msg { display: none; }
+
+#wonderplugincarousel-1 .amazingcarousel-nav { display: none !important; }
+
+#wonderplugincarousel-1 .amazingcarousel-title {
+    display: none;
+}
+.product-wrap {
+    clear: both;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.pro-img {text-align: center;}
+.pro-name, .our-products h2.pro-name{
+    color: #4b4b4b;
+    font-size: 20px;
+    font-family: 'LatoBold';
+    font-weight: normal;
+    text-align: left;
+    padding: 0 0 20px;
+}
+.home-first-heading h2{text-align-center;}
+.v-newsltr-outer p{margin-bottom: 5px;}
+.testimonial-wrap{text-align: center; padding-top: 28px;}
+.testimonial-video{margin-top:40px;}
+.testimonial-video .wp-video{margin: 0 auto;}
+.view-more-testi{
+font-size: 16px;
+display: inline-block;
+padding: 5px 10px;
+border-radius: 4px;
+background-color: #f26327;
+color: #fff;
+margin-top: 20px;
+}
+.view-more-testi:hover, .view-more-testi:focus{
+padding: 5px 10px;
+margin-top: 20px;
+background-color: #000;
+color: #fff;
+}
+.bannerNew2Area4clnt{margin-top: 35px;}
+.testimonial-video iframe {
+    width: 60%;
+    height: 320px;
+}
+.videogallery .the-title, .navigationThumb-content{text-align:left;}
+.navigationThumb-content img{padding-right:5px;}
+.theme-default .nivo-directionNav a{background: url('http://www.patch-emblem.com/wp-content/uploads/2017/01/arrows.png') !important;}
+.theme-default a.nivo-nextNav{background-position: 32px 0 !important; right: 0 !important;}
+
+@media screen and (max-width:767px){
+.testimonial-video .pull-right{float: none !important;}
+.testimonial-video{text-align:center;}
+}

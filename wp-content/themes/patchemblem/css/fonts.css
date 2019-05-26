@@ -1,0 +1,36 @@
+@charset "utf-8";@font-face{font-family:'LatoBlack';src:url('../fonts/lato-black.eot');src:url('../fonts/lato-black.eot') format('embedded-opentype'),
+url('../fonts/lato-black.woff2') format('woff2'),
+url('../fonts/lato-black.woff') format('woff'),
+url('../fonts/lato-black.ttf') format('truetype'),
+url('../fonts/lato-black.svg#LatoBlack') format('svg');}
+@font-face{font-family:'LatoBold';src:url('../fonts/lato-bold.eot');src:url('../fonts/lato-bold.eot') format('embedded-opentype'),
+url('../fonts/lato-bold.woff2') format('woff2'),
+url('../fonts/lato-bold.woff') format('woff'),
+url('../fonts/lato-bold.ttf') format('truetype'),
+url('../fonts/lato-bold.svg#LatoBold') format('svg');}
+@font-face{font-family:'LatoHairline';src:url('../fonts/lato-hairline.eot');src:url('../fonts/lato-hairline.eot') format('embedded-opentype'),
+url('../fonts/lato-hairline.woff2') format('woff2'),
+url('../fonts/lato-hairline.woff') format('woff'),
+url('../fonts/lato-hairline.ttf') format('truetype'),
+url('../fonts/lato-hairline.svg#LatoHairline') format('svg');}
+@font-face{font-family:'LatoItalic';src:url('../fonts/lato-italic.eot');src:url('../fonts/lato-italic.eot') format('embedded-opentype'),
+url('../fonts/lato-italic.woff2') format('woff2'),
+url('../fonts/lato-italic.woff') format('woff'),
+url('../fonts/lato-italic.ttf') format('truetype'),
+url('../fonts/lato-italic.svg#LatoItalic') format('svg');}
+@font-face{font-family:'LatoLight';src:url('../fonts/lato-light.eot');src:url('../fonts/lato-light.eot') format('embedded-opentype'),
+url('../fonts/lato-light.woff2') format('woff2'),
+url('../fonts/lato-light.woff') format('woff'),
+url('../fonts/lato-light.ttf') format('truetype'),
+url('../fonts/lato-light.svg#LatoLight') format('svg');}
+@font-face{font-family:'LatoRegular';src:url('../fonts/lato-regular.eot');src:url('../fonts/lato-regular.eot') format('embedded-opentype'),
+url('../fonts/lato-regular.woff2') format('woff2'),
+url('../fonts/lato-regular.woff') format('woff'),
+url('../fonts/lato-regular.ttf') format('truetype'),
+url('../fonts/lato-regular.svg#LatoRegular') format('svg');}
+@font-face{font-family:'NexaRustSans-Black';src:url('../fonts/NexaRustSans-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustSans-Black.otf') format('opentype'),
+url('../fonts/NexaRustSans-Black.woff') format('woff'), url('../fonts/NexaRustSans-Black.ttf') format('truetype'), url('../fonts/NexaRustSans-Black.svg#NexaRustSans-Black') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Cambria-Italic';src:url('../fonts/Cambria-Italic_gdi.eot');src:url('../fonts/Cambria-Italic_gdi.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Cambria-Italic_gdi.woff') format('woff'),
+url('../fonts/Cambria-Italic_gdi.ttf') format('truetype'),
+url('../fonts/Cambria-Italic_gdi.svg#Cambria-Italic') format('svg');font-weight:400;font-style:italic;font-stretch:normal;unicode-range:U+000D-25CA;}

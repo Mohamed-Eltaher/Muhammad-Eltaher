@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LatoItalic';
+    src: url('lato-italic.eot');
+    src: url('lato-italic.eot') format('embedded-opentype'),
+         url('lato-italic.woff2') format('woff2'),
+         url('lato-italic.woff') format('woff'),
+         url('lato-italic.ttf') format('truetype'),
+         url('lato-italic.svg#LatoItalic') format('svg');
+}
