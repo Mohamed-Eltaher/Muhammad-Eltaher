@@ -364,8 +364,22 @@ function wpse_mime_types_webp( $mimes ) {
 }
 
 
+// WooCommerce functions
+
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+add_filter( 'woocommerce_product_tabs', 'my_custom_tabs_function' );
+
+function my_custom_tabs_function($tabs) {
+
+	unset($tabs['additional_information']);
+	return $tabs;
+
+}
