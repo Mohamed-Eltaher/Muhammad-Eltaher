@@ -1,0 +1,8 @@
+2019-06-09T10:45:48+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 163
+
+2019-06-09T10:54:25+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woo-photo-reviews\includes\support.php on line 320
+
+2019-06-09T10:56:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woo-photo-reviews\includes\support.php on line 320
+
+2019-06-09T11:43:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woo-photo-reviews\includes\support.php on line 320
+

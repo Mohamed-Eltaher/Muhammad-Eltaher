@@ -18,10 +18,14 @@
 
 			<div id="search-icon" class="search">
 				<i class="fas fa-search fa-3x"></i>
+					<a href="<?php echo wc_get_cart_url(); ?>">
+						<i class="fas fa-shopping-cart fa-3x"></i>
+					</a>
 			</div>
 			
+			<!--
 			<div class="registeration"> 
-				<?php
+				<?php /*
 				if( is_user_logged_in()) { ?>
 					
 					<span>
@@ -32,10 +36,10 @@
 					<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
 					<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
 				<?php }
-				?>
+				*/ ?>
 
 			</div>
-
+			-->
 			<div id="mainListDiv" class="main_list">
 				<ul class="navlinks">
 					<?php
@@ -45,8 +49,9 @@
 					) );
 					?>		
 				</ul>
+				<!--
 				<div class="registeration-mob"> 
-					<?php
+					<?php /*
 					if( is_user_logged_in()) { ?>
 
 						<span>
@@ -56,9 +61,9 @@
 							<a href="<?php echo wp_login_url(); ?>" class="login">LogIn</a>
 							<a href="<?php echo wp_registration_url(); ?>" class="signup">SignUp</a>
 						<?php }
-						?>
+						*/ ?>
 						
-					</div>
+				</div> -->
 				</div>
 				<span class="navTrigger">
 					<i></i>

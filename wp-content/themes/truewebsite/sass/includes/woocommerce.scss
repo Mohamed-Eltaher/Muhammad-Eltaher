@@ -1,10 +1,63 @@
-.woocommerce-page .site-main{font-size: 1.7rem;}
+.woocommerce-page{
+	.site-main, input{
+	font-size: 1.7rem;
+	#coupon_code{width: 123px;}
+	}
+}
 .woocommerce{
-	.site-main{font-size: 1.7rem;}
 	.woocommerce-breadcrumb {font-size: 2rem;}
 	.woocommerce-ordering select{font-size: 2rem;}
 	.site-main{
+		font-size: 1.7rem;
 		width: 90%;
-		margin: 7% auto 2%;
+		margin: 7% auto 5%;
+			@media screen and (max-width: 768px) { margin: 7% auto 20%; }
+		.qty{padding: 6px}
+		.variations select{font-size: 1.5rem;}
 	}
+	.star-rating span::before{color: yellow;}
+	.star-rating {float: none;}
+
+	#reviews #comments ol.commentlist li .comment-text{margin: 0; height: auto; padding: 0 3%}
+	#reviews #comments ol.commentlist li{
+		float: left;
+		width: 49%;
+		background-color: $main-gray;
+		margin: 0 1% 2% 0;
+		@media screen and (max-width: 768px) { float: none; width: 100%; }
+		img{
+			float: none;
+			display: block;
+			width: 230px;
+			height: 100%;
+		}
+
+		.kt-wc-reviews-images-wrap-wrap{display: inline-block;}
+	}
+
+	form .form-row  #order_comments{font-size: 1.5rem}
+
+		.live-search{
+	    position: relative;	
+		}
+		.search-form .fa-search{
+	        position: absolute;
+	        top: 1.4rem;
+	        right: 2rem;
+	    }
+}
+
+#post-456 {width: 60%;}
+
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img{
+	width: 100px;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+	background-color: $main-blue;
+	&:hover{ background-color: $main-blue; opacity: .9}
+}
+
+
+.woocommerce div.product div.images .flex-control-thumbs {
+  display: block;
 }

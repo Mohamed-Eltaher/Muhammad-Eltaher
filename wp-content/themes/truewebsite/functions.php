@@ -51,6 +51,7 @@ if ( ! function_exists( 'hamo_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'hamo' ),
+			'menu-2' => esc_html__( 'Footer', 'hamo' ),
 		) );
 
 		/*
@@ -366,20 +367,67 @@ function wpse_mime_types_webp( $mimes ) {
 
 // WooCommerce functions
 
+// declaring woocommerce support
 function mytheme_add_woocommerce_support() {
-    add_theme_support( 'woocommerce' );
+	add_theme_support( 'woocommerce', array(
+		'thumbnail_image_width' => 150,
+		'single_image_width'    => 300,
+        'product_grid'          => array(
+            'default_rows'    => 3,
+            'min_rows'        => 2,
+            'max_rows'        => 8,
+            'default_columns' => 4,
+            'min_columns'     => 2,
+            'max_columns'     => 5,
+        ),
+	) );
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
-
+// remove ralated products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+// remove adational info tap
 add_filter( 'woocommerce_product_tabs', 'my_custom_tabs_function' );
 
 function my_custom_tabs_function($tabs) {
-
 	unset($tabs['additional_information']);
 	return $tabs;
-
 }
+
+// remove desc tap
+add_filter( 'woocommerce_product_tabs', 'my_custom_desc_function' );
+
+function my_custom_desc_function($desc) {
+	unset($desc['description']);
+	return $desc;
+}
+
+// theme woocommerce support
+add_action( 'after_setup_theme', 'bctheme_setup' );
+
+function bctheme_setup() {
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+}
+
+// changing desc location
+add_filter('woocommerce_single_product_summary', 'description', 70);
+
+function description() {
+	the_content();
+}
+
+// remove review gravatar
+remove_action( 'woocommerce_review_before', 'woocommerce_review_display_gravatar', 10 );
+
+// use this if you want to change add to cart text
+ add_filter('woocommerce_product_single_add_to_cart_text', 'woo_custom_single_add_to_cart_text');
+
+function woo_custom_single_add_to_cart_text() {
+	return __('buy now', 'woocommerce');
+} 
+
+

@@ -2,7 +2,7 @@
 
 <section id="hire" class="contact">
 	<div class="container">
-		<h1 class="special-head">Contact Me</h1>
+		<h1 class="special-head">Contact Us</h1>
 		<form id="sunsetContactForm" class="sunset-contact-form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 			<div class="form-group">

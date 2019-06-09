@@ -35,7 +35,7 @@ $(document).ready(function(){
         }
     }); */
 
-    $('#search-icon i').click(function () {
+    $('#search-icon .fa-search').click(function () {
         $('.search-form').addClass('visible');
         $('body').addClass('no-scroll');
         $('.live-search').css('display', 'block');

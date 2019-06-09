@@ -1,0 +1,41 @@
+2019-06-03T14:57:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 163
+
+2019-06-03T14:57:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 163
+
+2019-06-03T15:50:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 410 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:405
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php(410): add_action('woocommerce_aft...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): description('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(60): do_action('woocommerce_sin...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('C:\\xampp\\htdocs...', false)
+#7 C:\xampp\htdoc in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 405
+
+2019-06-03T15:55:58+00:00 CRITICAL Uncaught Error: Call to undefined function get_description() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php:410
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): description('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(60): do_action('woocommerce_sin...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#7 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs. in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 410
+
+2019-06-03T15:56:20+00:00 CRITICAL syntax error, unexpected ')' in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 411
+
+2019-06-03T15:56:30+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php:410
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): description('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(60): do_action('woocommerce_sin...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#7 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs.. in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 410
+
+2019-06-03T15:58:48+00:00 CRITICAL Cannot redeclare my_custom_tabs_function() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php:392) in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 404
+

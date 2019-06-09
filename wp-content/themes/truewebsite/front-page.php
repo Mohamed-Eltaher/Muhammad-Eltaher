@@ -36,9 +36,15 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php 
+		// echo do_shortcode('[product_page id="486"]');
+		?>
+			
+
 		<!-- projects Section 
 
 		<?php
+
 		/*
 		$mainProjects = new WP_Query(array(
 			'post_type'  => 'project',

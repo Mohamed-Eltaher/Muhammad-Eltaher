@@ -1,18 +1,32 @@
 /* Footer Section */
 .site-footer{
+	.container{overflow: hidden;}
 	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: -100px;
 	left: 0;
 	right: 0;
-	padding: 10px 0;
-	p{margin: 0 !important}
-	.col-1{ display: inline-block; float: left; }
-	.col-2{ display: inline-block; float: right; }
-	@media screen and (max-width: 768px) {
-		.col-1, .col-2{ display: block; float: none; }
-		.col-2{display: table-header-group;}
-		.container{display: table;}
-		text-align: center;	
+	padding: 15px 0;
+	p{margin-bottom: 0 !important}
+	.col-1{ 
+		display: inline-block;
+		li{
+			//font-size: 1.5rem;
+		   width: 33%;
+		   display: inline-block;
+		   text-align: center;
+		   padding: 5px 5%;
+		   
+		   a:hover{color: $main-blue; transition: 300ms ease-in-out;}
+		}
 	}
+	.col-2{ display: block; text-align: center;}
+
+	@media screen and (max-width: 768px) {
+		.col-1{
+			li{width: 49%;}
+		}
+		p{font-size: 2rem;}
+	}
+	
 }

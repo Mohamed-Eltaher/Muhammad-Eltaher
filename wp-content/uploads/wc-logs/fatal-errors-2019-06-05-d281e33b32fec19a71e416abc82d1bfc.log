@@ -1,0 +1,133 @@
+2019-06-05T00:39:03+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_product_query() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 39
+
+2019-06-05T00:40:09+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-funct in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:40:56+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-funct in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:43:13+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(55): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xamp in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:47:43+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 2007
+
+2019-06-05T00:51:25+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-funct in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:52:03+00:00 CRITICAL syntax error, unexpected ''woocommerce/single-product.ph' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41
+
+2019-06-05T00:52:20+00:00 CRITICAL syntax error, unexpected ''single-product.php'' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41
+
+2019-06-05T00:52:39+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template.php(724): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-funct in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:55:11+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1561): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(50): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xamp in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\sale-flash.php on line 25
+
+2019-06-05T00:57:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:570
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(41): remove_action('woocommerce_aft...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 570
+
+2019-06-05T00:57:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:570
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(41): remove_action('woocommerce_aft...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 570
+
+2019-06-05T00:58:00+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:570
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(41): remove_action('woocommerce_aft...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 570
+
+2019-06-05T01:09:56+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shop_loop() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:41
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41
+
+2019-06-05T01:09:57+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shop_loop() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:41
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41
+
+2019-06-05T01:09:57+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shop_loop() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:41
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 41
+

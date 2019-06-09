@@ -1,0 +1,11 @@
+2019-06-04T02:44:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product-reviews.php on line 34 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:405
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product-reviews.php(34): add_action('woocommerce_tem...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\comment-template.php(1510): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\woocommerce\single-product\tabs\tabs.php(42): comments_template('reviews', Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1496): wc_get_template('single-product/...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_output_product_d in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 405
+
+2019-06-04T16:41:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 163
+
