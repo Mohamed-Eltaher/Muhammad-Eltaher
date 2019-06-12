@@ -1,0 +1,96 @@
+2019-06-12T14:44:51+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:52+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:52+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:52+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:53+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:53+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:44:54+00:00 CRITICAL Uncaught Error: Call to undefined function shop_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:53:33+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_return_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:53:33+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_return_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:53:34+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_return_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:53:51+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
+2019-06-12T14:54:06+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_url() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php on line 19
+
