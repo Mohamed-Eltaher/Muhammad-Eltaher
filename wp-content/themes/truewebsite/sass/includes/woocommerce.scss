@@ -11,7 +11,7 @@
 		font-size: 1.7rem;
 		width: 90%;
 		margin: 7% auto 5%;
-			@media screen and (max-width: 768px) { margin: 7% auto 20%; }
+			@media screen and (max-width: 768px) { margin: 12% auto 20%; }
 		.qty{padding: 6px}
 		.variations select{font-size: 1.5rem;}
 	}
@@ -62,9 +62,15 @@
   display: block;
 }
 
-.flex-viewport{height: 500px !important}
+.flex-viewport{
+	height: 500px !important;
+	@media screen and (max-width: 768px) { height: 375px !important; }
+}
+
 
 .wcpr-overall-rating-and-rating-count, .wcpr-filter-container{display: none;}
 .woocommerce-product-details__short-description{margin-bottom: 15px;}
+.woocommerce span.onsale{z-index: 1}
 
 .woocommerce div.product .woocommerce-product-rating, .woocommerce div.product .product_title{margin-bottom: 0 !important;}
+.best-seller{padding-bottom: 1px !important;}
