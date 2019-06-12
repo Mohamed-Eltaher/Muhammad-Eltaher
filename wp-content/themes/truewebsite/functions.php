@@ -430,4 +430,8 @@ function woo_custom_single_add_to_cart_text() {
 	return __('buy now', 'woocommerce');
 } 
 
+//removing breadcrumb
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 
+// removing SKU, categ, ..
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );

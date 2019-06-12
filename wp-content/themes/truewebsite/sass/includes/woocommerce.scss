@@ -15,13 +15,13 @@
 		.qty{padding: 6px}
 		.variations select{font-size: 1.5rem;}
 	}
-	.star-rating span::before{color: yellow;}
+	.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;}
 
 	#reviews #comments ol.commentlist li .comment-text{margin: 0; height: auto; padding: 0 3%}
 	#reviews #comments ol.commentlist li{
 		float: left;
-		width: 49%;
+		width: 23.3333%;
 		background-color: $main-gray;
 		margin: 0 1% 2% 0;
 		@media screen and (max-width: 768px) { float: none; width: 100%; }
@@ -61,3 +61,10 @@
 .woocommerce div.product div.images .flex-control-thumbs {
   display: block;
 }
+
+.flex-viewport{height: 500px !important}
+
+.wcpr-overall-rating-and-rating-count, .wcpr-filter-container{display: none;}
+.woocommerce-product-details__short-description{margin-bottom: 15px;}
+
+.woocommerce div.product .woocommerce-product-rating, .woocommerce div.product .product_title{margin-bottom: 0 !important;}
