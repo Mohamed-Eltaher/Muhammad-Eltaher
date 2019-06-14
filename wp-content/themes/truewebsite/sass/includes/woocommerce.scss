@@ -70,7 +70,14 @@
 
 .wcpr-overall-rating-and-rating-count, .wcpr-filter-container{display: none;}
 .woocommerce-product-details__short-description{margin-bottom: 15px;}
-.woocommerce span.onsale{z-index: 1}
+.woocommerce span.onsale, .woocommerce div.product div.images .woocommerce-product-gallery__trigger{z-index: 1; background-color: $main-blue}
 
 .woocommerce div.product .woocommerce-product-rating, .woocommerce div.product .product_title{margin-bottom: 0 !important;}
 .best-seller{padding-bottom: 1px !important;}
+
+.woocommerce ul.products li.product .onsale {background-color: $main-blue; }
+
+.woocommerce ul.products li.product .button{
+	color: #FFF; background-color: $main-blue;
+	&:hover{ background-color: $main-blue; opacity: .9}
+	}

@@ -37,6 +37,18 @@ get_header(); ?>
 
 			</div>
 		</section>
+<!--
+		<section class="bloge best-seller">
+			<div class="container">
+				<h1 class="blog-head special-head">testimonial</h1>
+				<div class="blog-posts">
+					
+
+				</div>
+
+			</div>
+		</section>
+-->
 		<!-- Blog Section -->
 		<section class="bloge">
 			<div class="container">

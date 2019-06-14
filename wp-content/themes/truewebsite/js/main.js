@@ -8,6 +8,9 @@ $(document).ready(function(){
 
     });
 
+  $('#wpmenucartli').on('click', function() {
+    $(this).addClass('active');
+  });
 	// Function used to shrink nav bar removing paddings and adding black background
 
 	$(window).scroll(function() {

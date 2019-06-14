@@ -18,9 +18,9 @@
 
 			<div id="search-icon" class="search">
 				<i class="fas fa-search fa-3x"></i>
-					<a href="<?php echo wc_get_cart_url(); ?>">
+					<!--<a href="<?php // echo wc_get_cart_url(); ?>">
 						<i class="fas fa-shopping-cart fa-3x"></i>
-					</a>
+					</a> -->
 			</div>
 			
 			<!--
