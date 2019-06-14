@@ -77,7 +77,20 @@
 
 .woocommerce ul.products li.product .onsale {background-color: $main-blue; }
 
-.woocommerce ul.products li.product .button{
-	color: #FFF; background-color: $main-blue;
-	&:hover{ background-color: $main-blue; opacity: .9}
+.woocommerce ul.products li.product .button, .woocommerce #review_form #respond .form-submit input, button, .wc-forward {
+	color: #FFF !important; background-color: $main-blue !important;
+	&:hover{ background-color: $main-blue !important; opacity: .9 !important}
 	}
+.woocommerce-message {
+    border-top-color: $main-blue;
+}	
+
+.woocommerce-message::before {
+    color: $main-blue;
+}
+
+
+.woocommerce ul.products li.product a img:hover{
+	transform: scale(1.1);
+	transition: 300ms ease;
+}
