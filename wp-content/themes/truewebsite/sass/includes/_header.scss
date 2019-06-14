@@ -83,7 +83,7 @@
         background-position: center;
         background-size:cover;
         //clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-        background-image: linear-gradient( to right bottom, rgba(126, 213, 111, .8), rgba(40, 180, 131, .8));
+       // background-image: linear-gradient( to right bottom, rgba(126, 213, 111, .8), rgba(40, 180, 131, .8));
     }
     
     .intro{
@@ -238,4 +238,18 @@
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+
+.upper-bar{
+    width: 100%;
+    z-index: 9999999999999999999;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+    background-color: $main-blue;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
 }

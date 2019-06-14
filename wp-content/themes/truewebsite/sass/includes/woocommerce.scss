@@ -11,29 +11,12 @@
 		font-size: 1.7rem;
 		width: 90%;
 		margin: 7% auto 5%;
-			@media screen and (max-width: 768px) { margin: 12% auto 20%; }
-		.qty{padding: 6px}
+			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
+		.qty{padding: 5px}
 		.variations select{font-size: 1.5rem;}
 	}
 	.star-rating span::before{color: #ffb600;}
-	.star-rating {float: none;}
-
-	#reviews #comments ol.commentlist li .comment-text{margin: 0; height: auto; padding: 0 3%}
-	#reviews #comments ol.commentlist li{
-		float: left;
-		width: 23.3333%;
-		background-color: $main-gray;
-		margin: 0 1% 2% 0;
-		@media screen and (max-width: 768px) { float: none; width: 100%; }
-		img{
-			float: none;
-			display: block;
-			width: 230px;
-			height: 100%;
-		}
-
-		.kt-wc-reviews-images-wrap-wrap{display: inline-block;}
-	}
+	.star-rating {float: none;} 
 
 	form .form-row  #order_comments{font-size: 1.5rem}
 
@@ -67,8 +50,6 @@
 	@media screen and (max-width: 768px) { height: 375px !important; }
 }
 
-
-.wcpr-overall-rating-and-rating-count, .wcpr-filter-container{display: none;}
 .woocommerce-product-details__short-description{margin-bottom: 15px;}
 .woocommerce span.onsale, .woocommerce div.product div.images .woocommerce-product-gallery__trigger{z-index: 1; background-color: $main-blue}
 
@@ -98,4 +79,11 @@
 .added_to_cart{
 	margin-top: 6px;
 	padding: 9px 13px;
+}
+
+.woocommerce div.product form.cart .button{width: 70%;}
+.woocommerce-Price-amount{
+	color: $main-blue;
+	font-size: 2.3rem;
+	font-weight: bolder;
 }
