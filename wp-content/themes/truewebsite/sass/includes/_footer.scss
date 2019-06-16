@@ -1,4 +1,32 @@
 /* Footer Section */
+.before-footer{
+	border-top: 1px solid $main-blue;
+    background: #fbfbfb;
+	padding: 40px 0 75px 0;
+	@media screen and (max-width: 768px){
+		padding: 30px 0 105px 0;
+	}
+	.gurantee{
+		overflow: hidden;
+		padding: 10px 0 0 0;
+		li{float: left; width: 25%; font-weight: bolder;
+			@media screen and (max-width: 768px){
+				width: 100%;
+				float: none;
+				padding: 0 0 32px 0;
+				font-size: 3rem;
+			}
+		}
+		i{float: left; margin: -4px 10px 0 0 ; color: $main-blue;
+			@media screen and (max-width: 768px){
+				float: none;
+			}
+		}
+		@media screen and (max-width: 768px){
+			ul{text-align: center;}
+		}
+	}
+}
 .site-footer{
 	.container{overflow: hidden;}
 	width: 100%;
@@ -6,10 +34,11 @@
 	bottom: -100px;
 	left: 0;
 	right: 0;
-	padding: 15px 0;
+	padding: 15px 0 0 0;
 	p{margin-bottom: 0 !important}
 	.col-1{ 
 		display: inline-block;
+		padding: 17px 0 30px 0;
 		li{
 			//font-size: 1.5rem;
 		   width: 33%;
@@ -20,7 +49,12 @@
 		   a:hover{color: $main-blue; transition: 300ms ease-in-out;}
 		}
 	}
-	.col-2{ display: block; text-align: center;}
+	.col-2{ display: block; background-color: #FFF; padding: 5px 0 20px 0; border-top: 1px solid #25a9de;
+    background: #fbfbfb !important;
+		@media screen and (max-width: 768px){text-align: center;}
+		p{color: #191919 !important; float: left; @media screen and (max-width: 768px){float: none;}}
+		img{float: right; margin-top: 20px; @media screen and (max-width: 768px){float: none;}}
+	 }
 
 	@media screen and (max-width: 768px) {
 		.col-1{

@@ -87,3 +87,21 @@
 	font-size: 2.3rem;
 	font-weight: bolder;
 }
+
+/* adjust product gallery */
+
+@media screen and (min-width: 768px){
+	.flex-viewport{
+		width: 73%;
+		float: right;
+	}
+
+	.woocommerce div.product div.images .flex-control-thumbs{
+		float: left;
+		width: 25%;
+	}
+
+	.woocommerce div.product div.images .flex-control-thumbs li{
+		width: 100%;
+	}
+}
