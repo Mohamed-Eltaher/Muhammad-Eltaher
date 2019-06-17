@@ -436,3 +436,24 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 )
 
 // removing SKU, categ, ..
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+
+// add numeric rating
+add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_rating', 10);
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+
+// checkout cart
+
+add_action( 'woocommerce_after_checkout_form', 'bbloomer_cart_on_checkout_page_only', 5 );
+ 
+function bbloomer_cart_on_checkout_page_only() {
+ 
+echo do_shortcode('[woocommerce_cart]');
+
+//woocommerce_order_review();
+
+}

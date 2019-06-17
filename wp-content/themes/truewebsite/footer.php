@@ -24,6 +24,7 @@
 	</div>
 	<div class="col-2">
 		<div class="container">
+			
 			<p> 2019 Copyright &copy; Eltaher.com . All Rights Reserved.</p>
 			<img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.patch-emblem.com/wp-content/themes/patchemblem/images/payment-methods-icons.png" alt="">
 		</div>
