@@ -87,7 +87,7 @@
     }
     
     .intro{
-        .read-more{float: none;}
+        .read-more{float: none; @media screen and (max-width: 768px){ font-size: 2rem; padding: 10px 30px; } }
         margin: 0;
         width: 80%;
         position: absolute;

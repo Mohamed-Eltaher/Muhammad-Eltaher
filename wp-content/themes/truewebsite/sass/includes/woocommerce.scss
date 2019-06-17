@@ -1,10 +1,11 @@
 .woocommerce-page{
 	.site-main, input{
 	font-size: 1.7rem;
-	#coupon_code{width: 123px;}
+	#coupon_code{width: 123px; @media screen and (min-width: 768px) {padding: 1px 6px 1px} }
 	}
 }
 .woocommerce{
+	.entry-summary{font-size: 2rem;}
 	.woocommerce-breadcrumb {font-size: 2rem;}
 	.woocommerce-ordering select{font-size: 2rem;}
 	.site-main{
@@ -12,8 +13,8 @@
 		width: 90%;
 		margin: 7% auto 5%;
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
-		.qty{padding: 5px}
-		.variations select{font-size: 1.5rem;}
+		.qty{padding: 9px; @media screen and (max-width: 768px){padding: 6px;}}
+		.variations select{font-size: 2.5rem;}
 	}
 	.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;} 
@@ -101,7 +102,11 @@ form.checkout {
 .best-seller{padding-bottom: 1px !important;}
 
 .woocommerce ul.products li.product .onsale {background-color: $main-blue; }
-
+.woocommerce span.onsale{
+	@media screen and (min-width: 768px){
+		position: absolute; left: 10.5em !important;
+	}
+}
 .woocommerce ul.products li.product .button, .woocommerce #review_form #respond .form-submit input, button, .wc-forward {
 	color: #FFF !important; background-color: $main-blue !important;
 	&:hover{ background-color: $main-blue !important; opacity: .9 !important}
@@ -114,11 +119,15 @@ form.checkout {
     color: $main-blue;
 }
 
-
 .woocommerce ul.products li.product a img:hover{
 	transform: scale(1.1);
 	transition: 300ms ease;
 }
+
+.woocommerce ul.products li.product a img{
+	transition: 300ms ease;
+}
+
 
 .added_to_cart{
 	margin-top: 6px;
@@ -148,4 +157,13 @@ form.checkout {
 	.woocommerce div.product div.images .flex-control-thumbs li{
 		width: 100%;
 	}
+}
+
+.scroll-top {
+  position: fixed;
+  right: 26px;
+  bottom: 25px;
+  display: none;
+  font-size: 1.5rem;
+  z-index: 9999999999999;
 }

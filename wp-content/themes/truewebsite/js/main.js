@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+   $(window).scroll(function () {
+
+     // scroll to top button
+     var scrollTop = $('.scroll-top');
+      if ($(window).scrollTop() >= 1000) {
+      if(scrollTop.is(":hidden")) {
+          scrollTop.fadeIn(400);
+       }  
+      } else{
+       scrollTop.fadeOut(400);
+      }
+    });
+  // scroll to top button on click
+  $('.scroll-top').click(function (e) {
+   e.preventDefault();
+   $('html, body').animate({
+   scrollTop: 0 
+  }, 1000);
+  });
+
 	$('.navTrigger').click(function () {
         $(this).toggleClass('active');
         console.log("Clicked menu");

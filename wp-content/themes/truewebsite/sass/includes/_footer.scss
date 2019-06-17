@@ -1,5 +1,9 @@
 /* Footer Section */
-.single-post .before-footer{padding: 25px 0 0 0;}
+.single-post .site-footer{bottom: -96px;}
+
+.single-post .before-footer{  margin-top: 50px; @media screen and (min-width: 768px){padding: 20px 0 0 0;}}
+.single-post .before-footer{ @media screen and (max-width: 768px){padding: 0;}}
+
 .single-post .gurantee{
 	@media screen and (max-width: 768px){
 		padding-bottom: 25px !important;
@@ -8,9 +12,9 @@
 .before-footer{
 	border-top: 1px solid $main-blue;
     background: #fbfbfb;
-	padding: 30px 0 75px 0;
+	padding: 30px 0 50px 0;
 	@media screen and (max-width: 768px){
-		padding: 30px 0 105px 0;
+		padding: 0 0 90px 0;
 	}
 	.gurantee{
 		overflow: hidden;
@@ -20,8 +24,9 @@
 			@media screen and (max-width: 768px){
 				width: 100%;
 				float: none;
-				padding: 0 0 32px 0;
+				padding: 32px 0 32px 0;
 				font-size: 3rem;
+				border-bottom: 1px solid $main-blue;
 			}
 		}
 		i{float: left; margin: -4px 10px 0 0 ; color: $main-blue;
@@ -38,7 +43,7 @@
 	.container{overflow: hidden;}
 	width: 100%;
 	position: absolute;
-	bottom: -100px;
+	bottom: -120px;
 	left: 0;
 	right: 0;
 	padding: 15px 0 0 0;

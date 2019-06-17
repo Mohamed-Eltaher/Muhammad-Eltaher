@@ -1,3 +1,7 @@
+<a class="scroll-top" href="#">
+	<i class="fa fa-chevron-up fa-2x"></i>
+</a>
+
 <div class="before-footer">
 	<div class="container">
 		<div class="gurantee">
