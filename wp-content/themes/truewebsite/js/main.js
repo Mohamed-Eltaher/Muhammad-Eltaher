@@ -79,6 +79,11 @@ $(document).ready(function(){
         
     });
 
+    $('.flex-control-nav li').on('click', function() {
+        $(this).addClass('product-border').siblings().removeClass('product-border');
+    });
+
+
     /* contact form submission */
     $('#sunsetContactForm').on('submit', function(e){
 

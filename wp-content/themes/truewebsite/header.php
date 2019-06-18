@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 
 	<!-- Header Section -->
-	<div class="upper-bar">50% OFF REGULAR PRICES TODAY</div>
+	<div class="upper-bar">Free Shipping Worldwide </div>
 	<nav class="nav">	
 		<div class="container">
 			<div class="logo site-title">

@@ -95,7 +95,8 @@ form.checkout {
 	@media screen and (max-width: 768px) { height: 375px !important; }
 }
 
-.woocommerce-product-details__short-description{margin-bottom: 15px;}
+.woocommerce-product-details__short-description{margin-bottom: 15px; font-weight: bold;
+    font-size: 2.5rem;}
 .woocommerce span.onsale, .woocommerce div.product div.images .woocommerce-product-gallery__trigger{z-index: 1; background-color: $main-blue}
 
 .woocommerce div.product .woocommerce-product-rating, .woocommerce div.product .product_title{margin-bottom: 0 !important;}
@@ -166,4 +167,19 @@ form.checkout {
   display: none;
   font-size: 1.5rem;
   z-index: 9999999999999;
+}
+
+.product-border{border: 3px solid $main-blue;}
+.wcpr-comment-author:after{
+	content: "\2713";
+    border-radius: 50%;
+    color: #FFF;
+    background: #14BFF4;
+    font-size: 1.2rem;
+    padding: 1px;
+}
+
+.product-single__description{
+	border: 1px solid $main-blue;
+	padding: 0px 5px;
 }
