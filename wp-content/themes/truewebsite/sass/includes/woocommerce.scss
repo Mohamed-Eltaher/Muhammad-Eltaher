@@ -1,7 +1,7 @@
 .woocommerce-page{
 	.site-main, input{
 	font-size: 1.7rem;
-	#coupon_code{width: 123px; @media screen and (min-width: 768px) {padding: 1px 6px 1px} }
+	#coupon_code{width: 123px; @media screen and (max-width: 768px) {padding: 3px;} }
 	}
 }
 .woocommerce{
@@ -76,6 +76,22 @@ form.checkout {
 		margin-top: 0; font-size: 2rem;
 	}
 }
+
+.woocommerce-checkout{
+	#coupon_code{ padding: 1px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
+	.upper-bar, nav, .before-footer, .site-footer{display: none;}
+	.page-margin{padding: 0;}
+	input:focus{
+		border: .2rem solid $main-blue;
+	}
+	input{padding: 8px 5px;}
+	form.woocommerce-checkout label{display: none;}
+}
+
+.woocommerce-additional-fields{display: none;}
+
+.checkout-logo{color: $main-blue; margin:-7px 0 40px 0}
+/* end checkout */
 
 #add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img{
 	width: 100px;
@@ -170,6 +186,10 @@ form.checkout {
 }
 
 .product-border{border: 3px solid $main-blue;}
+
+.woocommerce div.product div.images .flex-control-thumbs li:hover{
+	border: 3px solid $main-blue;
+}
 .wcpr-comment-author:after{
 	content: "\2713";
     border-radius: 50%;
@@ -177,9 +197,65 @@ form.checkout {
     background: #14BFF4;
     font-size: 1.2rem;
     padding: 1px;
+    margin: 5px;
 }
 
 .product-single__description{
-	border: 1px solid $main-blue;
-	padding: 0px 5px;
+	border: 1px solid $main-gray;
+	padding: 0px 10px;
 }
+
+
+/* testmonials*/
+
+//@import url("https://use.typekit.net/ivq4uiu.css");
+
+.testm .container, .is-multiline{overflow: hidden;}
+.container .testimonial-wrapper {
+  margin: 1% 2% 2% .5%;
+  transition: all 0.3s ease-in-out;
+  width: 47.5%;
+  float: left;
+  overflow: hidden;
+  @media screen and (max-width: 768px){
+  	width: 100%;
+  	float: none;
+  }
+}
+.container .testimonial-wrapper:hover {
+  box-shadow: 0 2px 7px $main-blue;
+}
+.container .testimonial-wrapper .testimonial {
+  background: #FFF;
+  border-radius: 4px;
+  padding: 0 15px;
+  overflow: hidden;
+  font-size: 2rem;
+}
+.container .testimonial-wrapper .testimonial .quote {
+  font-size: 2rem;
+  color: #f2f2f2;
+  z-index: 1;
+  font-family: halyard-text, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.02rem;
+}
+.container .testimonial-wrapper .testimonial .attribution {
+  color: #d78118;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding-top: 15px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+
+.fa-star:before {
+    content: "\f005";
+
+}
+
+.stars{color: #FFBE3E}

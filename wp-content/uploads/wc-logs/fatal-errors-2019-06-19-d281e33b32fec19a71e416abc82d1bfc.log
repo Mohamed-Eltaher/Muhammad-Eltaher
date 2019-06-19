@@ -1,0 +1,8 @@
+2019-06-19T10:53:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 163
+
+2019-06-19T11:24:54+00:00 CRITICAL syntax error, unexpected 'cart' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 457
+
+2019-06-19T11:24:54+00:00 CRITICAL syntax error, unexpected 'cart' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 457
+
+2019-06-19T11:25:14+00:00 CRITICAL syntax error, unexpected 'View' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 457
+

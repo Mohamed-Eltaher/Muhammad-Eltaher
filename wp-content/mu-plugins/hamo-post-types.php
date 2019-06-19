@@ -18,17 +18,17 @@ function hamo_post_types() {
   ));
 */
   //project
-  register_post_type('project', array(
+  register_post_type('testimonial', array(
     'supports'  => array('title', 'editor', 'excerpt'),
-    'rewrite' => array('slug' => 'projects'),
+    'rewrite' => array('slug' => 'testimonials'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'projects',
-      'add_new_item' => 'Add New project',
-      'edit_item' => 'Edit project',
-      'all_items' => 'All projects',
-      'singular_name' => 'project'
+      'name' => 'testimonials',
+      'add_new_item' => 'Add New testimonial',
+      'edit_item' => 'Edit testimonial',
+      'all_items' => 'All testimonials',
+      'singular_name' => 'testimonial'
     ),
     'menu_icon' => 'dashicons-calendar'
   ));

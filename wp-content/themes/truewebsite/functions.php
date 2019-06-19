@@ -440,7 +440,9 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 
 // add numeric rating
-add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_rating', 10);
+add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_rating', 5);
+
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
@@ -454,6 +456,30 @@ function bbloomer_cart_on_checkout_page_only() {
  
 echo do_shortcode('[woocommerce_cart]');
 
-//woocommerce_order_review();
+}
 
+// print your logo on checkout page
+add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
+
+function mylogo() {
+	echo "<h1 class='checkout-logo'>Flexposture</h1>";
+}
+
+// Custome checkout fields
+add_filter('woocommerce_default_address_fields', 'override_default_address_checkout_fields', 20, 1);
+function override_default_address_checkout_fields( $address_fields ) {
+    $address_fields['first_name']['placeholder'] = 'First Name';
+    $address_fields['last_name']['placeholder'] = 'Last Name';
+    $address_fields['address_1']['placeholder'] = 'Street address[House number and street name]';
+    $address_fields['state']['placeholder'] = 'State / Country';
+    $address_fields['postcode']['placeholder'] = 'Postcode / ZIP';
+    $address_fields['city']['placeholder'] = 'City';
+    return $address_fields;
+}
+
+add_filter( 'woocommerce_checkout_fields' , 'override_billing_checkout_fields', 20, 1 );
+function override_billing_checkout_fields( $fields ) {
+    //$fields['billing']['billing_phone']['placeholder'] = 'Telefon';
+    $fields['billing']['billing_email']['placeholder'] = 'Email';
+    return $fields;
 }

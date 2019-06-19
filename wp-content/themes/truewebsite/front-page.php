@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-	<section class="custome-header">
+<section class="custome-header">
 	<img alt="" style=" background-image:linear-gradient( to right bottom, rgba(125, 129, 111, .9), rgba(40, 0, 131, .3)), url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
 	
 	<!--<video autoplay loop id="video-background" muted plays-inline>
@@ -37,18 +37,46 @@ get_header(); ?>
 
 			</div>
 		</section>
-<!--
-		<section class="bloge best-seller">
-			<div class="container">
-				<h1 class="blog-head special-head">testimonial</h1>
-				<div class="blog-posts">
-					
 
+
+		<!-- testimonial Section -->
+
+		<?php
+		
+		$mainTestimonials = new WP_Query(array(
+			'post_type'  => 'testimonial',
+			'orderby'    => 'meta_value_num',
+			'order'      =>'ASC',
+		));
+
+		if($mainTestimonials->have_posts()) { ?>
+			<section class="bloge testm">
+				<div class="container">
+					<h1 class="blog-head special-head">testimonial</h1>
+					<div class="columns has-text-centered is-multiline">		
+						<?php 
+						while($mainTestimonials->have_posts()) {
+							$mainTestimonials->the_post(); ?>
+							<div class="column is-4 testimonial-wrapper">
+								<div class="testimonial">
+									<p class="quote"><?php the_content(); ?> </p>
+									<span class="stars">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+									<p class="attribution"><?php the_title(); ?></p>
+
+								</div>
+							</div>		
+						<?php } ?>	
+					</div>
 				</div>
+			</section>
+		<?php }  ?> 
 
-			</div>
-		</section>
--->
 		<!-- Blog Section -->
 		<section class="bloge">
 			<div class="container">
@@ -66,4 +94,4 @@ get_header(); ?>
 			</div>
 		</section>
 
-<?php get_footer(); ?>
+		<?php get_footer(); ?>
