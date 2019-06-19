@@ -6,3 +6,5 @@
 
 2019-06-19T11:25:14+00:00 CRITICAL syntax error, unexpected 'View' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\functions.php on line 457
 
+2019-06-19T16:26:18+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+

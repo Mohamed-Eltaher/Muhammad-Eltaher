@@ -14,8 +14,8 @@ get_header(); ?>
 		</video> -->
 		
 		<div class="intro site-description">
-			<h2><span>flexposture </span>
-				<span>Easily Improve Your Posture.</span></h2>
+			<h2><span>BodyCheers </span>
+				<span>Easily Improve Your Body.</span></h2>
 				<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="read-more">Shop Now</a>
 			</div>
 		</section> 
