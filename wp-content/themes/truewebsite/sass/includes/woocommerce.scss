@@ -131,6 +131,13 @@ form.checkout {
 		position: absolute; left: 6.5em !important;
 	}
 }
+
+.archive span.onsale{
+	@media screen and (min-width: 768px){
+		position: absolute; left: 12.5em !important;
+	}
+}
+
 .woocommerce ul.products li.product .button, .woocommerce #review_form #respond .form-submit input, button, .wc-forward {
 	color: #FFF !important; background-color: $main-blue !important;
 	&:hover{ background-color: $main-blue !important; opacity: .9 !important}
@@ -191,6 +198,10 @@ form.checkout {
   display: none;
   font-size: 1.5rem;
   z-index: 9999999999999;
+  background-color: $main-blue;
+  padding: 5px;
+  color: #000;
+  &:hover{color: #FFF; cursor: pointer;}
 }
 
 .product-border{border: 3px solid $main-blue;}
@@ -208,6 +219,8 @@ form.checkout {
     margin: 3px;
 }
 
+
+.page-id-514 .site-main{background-color: $main-gray}
 
 /* testmonials*/
 
