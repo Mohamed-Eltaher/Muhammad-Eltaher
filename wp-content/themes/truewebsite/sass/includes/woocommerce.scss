@@ -5,7 +5,23 @@
 	}
 }
 .woocommerce{
-	.entry-summary{font-size: 2rem;}
+	.entry-summary{
+		font-size: 2rem;
+		.quantity{
+			float: none !important;
+			.qty{
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+		.single_add_to_cart_button{width: 100%;}
+		@media screen and (max-width: 768px) {
+		 font-size: 3rem !important;
+			//.woocommerce .site-main .qty{padding: 14px !important;}
+			.woocommerce div.product form.cart .button{width: 100% !important}
+		 }
+
+	}
 	.woocommerce-breadcrumb {font-size: 2rem;}
 	.woocommerce-ordering select{font-size: 2rem;}
 	.site-main{
@@ -13,7 +29,7 @@
 		width: 90%;
 		margin: 7% auto 5%;
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
-		.qty{padding: 9px; @media screen and (max-width: 768px){padding: 6px;}}
+		.qty{padding: 7px; @media screen and (max-width: 768px){padding: 7px;}}
 		.variations select{font-size: 2.5rem;}
 	}
 	.star-rating span::before{color: #ffb600;}
@@ -82,8 +98,20 @@ form.checkout {
 }
 
 .woocommerce-checkout{
+	.content-area{background-color: $main-gray;}
+	@media screen and (max-width: 768px) {
+		.page-margin{padding: 0 !important}
+		.wpmc-tabs-wrapper .wpmc-tab-text{ display: block !important; }
+	}
 	#coupon_code{ padding: 1px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
-	.upper-bar, nav, .before-footer, .site-footer{display: none;}
+	.upper-bar, nav, .site-footer{display: none;}
+	.before-footer { 
+		padding: 45px 0 0 0 !important;
+		@media screen and (max-width: 768px) {
+			padding: 0 !important;
+			margin-bottom: -50px !important;
+		}
+	}
 	.page-margin{padding: 0;}
 	input:focus{
 		border: .2rem solid $main-blue;
@@ -150,22 +178,21 @@ form.checkout {
     color: $main-blue;
 }
 
-.woocommerce ul.products li.product a img:hover{
-	transform: scale(1.1);
+.woocommerce ul.products li{
 	transition: 300ms ease;
+	padding: 10px !important;
 }
 
-.woocommerce ul.products li.product a img{
+.woocommerce ul.products li:hover{
 	transition: 300ms ease;
+	box-shadow: 0 3px 6px -4px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 }
-
 
 .added_to_cart{
 	margin-top: 6px;
 	padding: 9px 13px;
 }
 
-.woocommerce div.product form.cart .button{width: 70%;}
 .woocommerce-Price-amount{
 	color: $main-blue;
 	font-size: 2.3rem;
@@ -221,6 +248,10 @@ form.checkout {
 
 
 .page-id-514 .site-main{background-color: $main-gray}
+
+@media screen and (max-width: 768px){
+	.page-id-514 .page-margin{padding-top: 15% !important;}
+}
 
 /* testmonials*/
 

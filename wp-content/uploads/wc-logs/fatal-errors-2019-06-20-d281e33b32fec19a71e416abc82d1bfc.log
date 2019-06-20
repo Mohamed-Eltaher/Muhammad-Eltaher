@@ -1,0 +1,36 @@
+2019-06-20T15:29:01+00:00 CRITICAL Uncaught Error: Call to undefined function page_link() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\page-about.php(15): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php on line 9
+
+2019-06-20T15:29:01+00:00 CRITICAL Uncaught Error: Call to undefined function page_link() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\page-about.php(15): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php on line 9
+
+2019-06-20T15:29:01+00:00 CRITICAL Uncaught Error: Call to undefined function page_link() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\page-about.php(15): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\footer.php on line 9
+
