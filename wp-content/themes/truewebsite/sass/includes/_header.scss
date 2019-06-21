@@ -199,8 +199,7 @@
 }
 */
 
-.expand-nav{ transition: 300ms ease-in-out; }
-
+.expand-nav, .logo{ transition: 300ms ease-in-out; }
 /* search */
 .no-scroll{overflow: hidden !important;}
 .live-search{

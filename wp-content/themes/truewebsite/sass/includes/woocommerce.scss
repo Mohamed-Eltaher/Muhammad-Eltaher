@@ -100,11 +100,19 @@ form.checkout {
 .woocommerce-checkout{
 	.content-area{background-color: $main-gray;}
 	@media screen and (max-width: 768px) {
-		.page-margin{padding: 0 !important}
+		.page-margin{padding-top: 14% !important}
 		.wpmc-tabs-wrapper .wpmc-tab-text{ display: block !important; }
 	}
 	#coupon_code{ padding: 1px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
-	.upper-bar, nav, .site-footer{display: none;}
+	.upper-bar, .main_list, .search, .site-footer{display: none;}
+	@media screen and (max-width: 782px){
+	.navTrigger {
+	    display: none;
+		}
+	}
+	nav{background-color: $main-blue;}
+	nav .logo{float: none;}
+	nav .logo a{color: #FFF;}
 	.before-footer { 
 		padding: 45px 0 0 0 !important;
 		@media screen and (max-width: 768px) {
@@ -112,7 +120,6 @@ form.checkout {
 			margin-bottom: -50px !important;
 		}
 	}
-	.page-margin{padding: 0;}
 	input:focus{
 		border: .2rem solid $main-blue;
 	}
@@ -143,13 +150,16 @@ form.checkout {
 	@media screen and (max-width: 768px) { height: 375px !important; }
 }
 
+.woocommerce div.product div.images .flex-control-thumbs li img{opacity: 1 !important;}
 .woocommerce-product-details__short-description{margin-bottom: 15px; font-weight: bold;
     font-size: 2.5rem;}
 .woocommerce span.onsale, .woocommerce div.product div.images .woocommerce-product-gallery__trigger{z-index: 1;}
 .woocommerce span.onsale{background-color: $main-blue}
 .woocommerce div.product .woocommerce-product-rating, .woocommerce div.product .product_title{margin-bottom: 0 !important;}
-.best-seller{padding-bottom: 1px !important;}
-
+.home .best-seller {
+	padding: 2rem 0 0 0 !important;
+}
+.best-seller .container .blog-posts{padding: 0 !important;}
 .woocommerce ul.products li.product .onsale {background-color: $main-blue; }
 .home .woocommerce span.onsale{
 	@media screen and (min-width: 768px){ position: absolute; left: 12.5em !important; }
@@ -256,7 +266,7 @@ form.checkout {
 /* testmonials*/
 
 //@import url("https://use.typekit.net/ivq4uiu.css");
-
+.testm{padding: 0 !important;}
 .testm .container, .is-multiline{overflow: hidden;}
 .container .testimonial-wrapper {
   margin: 1% 2% 2% .5%;
