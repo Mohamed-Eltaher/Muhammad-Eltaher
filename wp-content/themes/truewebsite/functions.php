@@ -483,3 +483,22 @@ function override_billing_checkout_fields( $fields ) {
     $fields['billing']['billing_email']['placeholder'] = 'Email';
     return $fields;
 }
+
+
+
+// WooCommerce Checkout Fields Hook
+add_filter('woocommerce_checkout_fields','custom_wc_checkout_fields_no_label');
+
+// Our hooked in function - $fields is passed via the filter!
+// Action: remove label from $fields
+function custom_wc_checkout_fields_no_label($fields) {
+    // loop by category
+    foreach ($fields as $category => $value) {
+        // loop by fields
+        foreach ($fields[$category] as $field => $property) {
+            // remove label property
+            unset($fields[$category][$field]['label']);
+        }
+    }
+     return $fields;
+}

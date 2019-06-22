@@ -124,7 +124,7 @@ form.checkout {
 		border: .2rem solid $main-blue;
 	}
 	input{padding: 8px 5px;}
-	form.woocommerce-checkout label{display: none;}
+	.woocommerce form .form-row label{line-height: 1 !important; margin-left: 2px !important;}
 }
 
 .woocommerce-additional-fields{display: none;}
@@ -316,3 +316,4 @@ form.checkout {
 }
 
 .stars{color: #FFBE3E}
+
