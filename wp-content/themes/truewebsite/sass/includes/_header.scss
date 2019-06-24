@@ -86,7 +86,6 @@
         width: 100%;
         height: 100vh;
         //background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-        background-position: center;
         background-size:cover;
         //clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
        // background-image: linear-gradient( to right bottom, rgba(126, 213, 111, .8), rgba(40, 180, 131, .8));
@@ -97,11 +96,15 @@
         margin: 0;
         width: 80%;
         position: absolute;
-        top: 45%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         span{display: block;}
+        h2{
+            margin-bottom: 1rem !important;
+            @media screen and (max-width: 768px){margin-bottom: 3rem !important;}
+        }
         h2 span:first-child{
             animation: moveInLeft 1s ease-out;
         }

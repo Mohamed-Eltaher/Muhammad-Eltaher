@@ -1,0 +1,2 @@
+2019-06-24T11:34:08+00:00 CRITICAL Out of memory (allocated 27262976) (tried to allocate 1835008 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 528
+

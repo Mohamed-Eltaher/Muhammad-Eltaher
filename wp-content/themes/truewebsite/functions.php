@@ -462,7 +462,7 @@ echo do_shortcode('[woocommerce_cart]');
 add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
 
 function mylogo() {
-	echo "<h1 class='checkout-logo'>BodyCheers</h1>";
+	echo the_custom_logo();
 }
 
 // Custome checkout fields

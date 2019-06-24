@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <section class="custome-header">
-	<img alt="" style=" background-image:linear-gradient( to right bottom, rgba(125, 129, 111, .9), rgba(40, 0, 131, .3)), url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+	<img alt="" style=" background-image:linear-gradient( to right bottom, rgba(125, 129, 111, .2), rgba(40, 0, 131, .2)), url('<?php header_image(); ?>')" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
 	
 	<!--<video autoplay loop id="video-background" muted plays-inline>
 		<source src="<?php //echo wp_get_attachment_url(get_theme_mod('video_option')); ?>" type="video/mp4">
