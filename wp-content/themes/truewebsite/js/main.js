@@ -37,10 +37,10 @@ $(document).ready(function(){
         if ($(document).scrollTop() > 50) {
             $('.nav').addClass('affix');
             console.log("OK");
-            $('.logo a').addClass('expand-nav');
+            $('.logo a img').addClass('expand-nav');
         } else {
             $('.nav').removeClass('affix');
-            $('.logo a').removeClass('expand-nav');
+            $('.logo a img').removeClass('expand-nav');
         }
     });
 

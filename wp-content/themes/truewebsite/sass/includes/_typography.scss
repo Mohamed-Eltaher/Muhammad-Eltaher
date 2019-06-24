@@ -124,7 +124,10 @@ p{
 }
 
 .expand-nav{
-	font-size: 3.5rem !important;
+	@media screen and (min-width:782px) {
+		width: 250px !important;
+		margin:0 !important;
+	}
 }
 
 .live-search{

@@ -1,0 +1,272 @@
+2019-06-23T14:10:30+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:30+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:31+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:32+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:33+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:34+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:35+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:36+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:38+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:39+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:40+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:41+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:42+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:43+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:43+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:10:44+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:13:06+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:13:11+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:14:18+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:14:27+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 114688 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\countries.php on line 218
+
+2019-06-23T14:14:30+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T14:14:45+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 458752 bytes) in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\states.php on line 911
+
+2019-06-23T16:53:16+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:17+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:17+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:19+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:19+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:20+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:20+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:21+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:21+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:21+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:21+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:22+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:27+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:28+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\404.php(1): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+
+2019-06-23T16:53:28+00:00 CRITICAL Uncaught Error: Call to undefined function custom_logo() in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\front-page.php(7): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\truewebsite\header.php on line 17
+

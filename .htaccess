@@ -10,7 +10,6 @@ RewriteRule . /wordpress/index.php [L]
 
 # END WordPress
 
-# TN - START EXPIRES CACHING #
 ExpiresActive On
 ExpiresByType text/css "access 1 month"
 ExpiresByType text/html "access 1 month"

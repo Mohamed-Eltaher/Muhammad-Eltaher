@@ -81,8 +81,8 @@ if ( ! function_exists( 'hamo_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'max-height'      => 250,
+			'max-width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -470,7 +470,7 @@ add_filter('woocommerce_default_address_fields', 'override_default_address_check
 function override_default_address_checkout_fields( $address_fields ) {
     $address_fields['first_name']['placeholder'] = 'First Name';
     $address_fields['last_name']['placeholder'] = 'Last Name';
-    $address_fields['address_1']['placeholder'] = 'Street address[House number and street name]';
+    $address_fields['address_1']['placeholder'] = 'Street address [House number and street name]';
     $address_fields['state']['placeholder'] = 'State / Country';
     $address_fields['postcode']['placeholder'] = 'Postcode / ZIP';
     $address_fields['city']['placeholder'] = 'City';
@@ -501,4 +501,150 @@ function custom_wc_checkout_fields_no_label($fields) {
         }
     }
      return $fields;
+}
+
+
+/**
+ * @snippet       Plus Minus Quantity Buttons @ WooCommerce Single Product Page
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=90052
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 3.5.1
+ * @donate $9     https://businessbloomer.com/bloomer-armada/
+ */
+ 
+// -------------
+// 1. Show Buttons
+ 
+add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_plus' );
+ 
+function bbloomer_display_quantity_plus() {
+   echo '<button type="button" class="plus" >+</button>';
+}
+ 
+add_action( 'woocommerce_after_add_to_cart_quantity', 'bbloomer_display_quantity_minus' );
+ 
+function bbloomer_display_quantity_minus() {
+   echo '<button type="button" class="minus" >-</button>';
+}
+ 
+// -------------
+// 2. Trigger jQuery script
+ 
+add_action( 'wp_footer', 'bbloomer_add_cart_quantity_plus_minus' );
+ 
+function bbloomer_add_cart_quantity_plus_minus() {
+   // Only run this on the single product page
+   if ( ! is_product() ) return;
+   ?>
+      <script type="text/javascript">
+          
+      jQuery(document).ready(function($){   
+          
+         $('form.cart').on( 'click', 'button.plus, button.minus', function() {
+ 
+            // Get current quantity values
+            var qty = $( this ).closest( 'form.cart' ).find( '.qty' );
+            var val   = parseFloat(qty.val());
+            var max = parseFloat(qty.attr( 'max' ));
+            var min = parseFloat(qty.attr( 'min' ));
+            var step = parseFloat(qty.attr( 'step' ));
+ 
+            // Change the value if plus or minus
+            if ( $( this ).is( '.plus' ) ) {
+               if ( max && ( max <= val ) ) {
+                  qty.val( max );
+               } else {
+                  qty.val( val + step );
+               }
+            } else {
+               if ( min && ( min >= val ) ) {
+                  qty.val( min );
+               } else if ( val > 1 ) {
+                  qty.val( val - step );
+               }
+            }
+             
+         });
+          
+      });
+          
+      </script>
+   <?php
+}
+
+
+/**
+ * @snippet       “Secure payments” image @ Checkout Page
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=111758
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 3.5.4
+ * @donate $9     https://businessbloomer.com/bloomer-armada/
+ */
+ 
+add_action( 'woocommerce_review_order_after_submit', 'bbloomer_trust_place_order' );
+  
+function bbloomer_trust_place_order() {
+    echo '<img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/9_bdg_secured_by_pp_2line.png" style="margin: 1em auto">';
+}
+
+
+/**
+ * @snippet       Automatically Update Cart on Quantity Change - WooCommerce
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=73470
+ * @author        Rodolfo Melogli
+ * @compatible    Woo 3.5.1
+ */
+ 
+add_action( 'wp_footer', 'bbloomer_cart_refresh_update_qty' ); 
+ 
+function bbloomer_cart_refresh_update_qty() { 
+   if (is_cart()) { 
+      ?> 
+      <script type="text/javascript"> 
+         jQuery('div.woocommerce').on('click', 'input.qty', function(){ 
+            jQuery("[name='update_cart']").trigger("click"); 
+         }); 
+      </script> 
+      <?php 
+   } 
+}
+
+
+
+/**
+* @snippet   Change autofocus field @ WooCommerce Checkout
+* @how-to   Watch tutorial @ https://businessbloomer.com/?p=19055
+* @sourcecode   https://businessbloomer.com/?p=
+* @author   Rodolfo Melogli
+* @testedwith   WooCommerce 3.3.4
+*/
+ 
+add_filter( 'woocommerce_checkout_fields', 'bbloomer_change_autofocus_checkout_field' );
+ 
+function bbloomer_change_autofocus_checkout_field( $fields ) {
+//$fields['billing']['billing_first_name']['autofocus'] = true;
+$fields['billing']['billing_email']['autofocus'] = true;
+return $fields;
+}
+
+
+
+
+/**
+ * @snippet       Move / ReOrder Fields @ Checkout Page, WooCommerce version 3.0+
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=19571
+ * @author        Rodolfo Melogli
+ * @compatible    Woo 3.5.3
+ * @donate $9     https://businessbloomer.com/bloomer-armada/
+ */
+ 
+add_filter( 'woocommerce_billing_fields', 'bbloomer_move_checkout_email_field', 10, 1 );
+ 
+function bbloomer_move_checkout_email_field( $address_fields ) {
+    $address_fields['billing_email']['priority'] = 5;
+    return $address_fields;
 }

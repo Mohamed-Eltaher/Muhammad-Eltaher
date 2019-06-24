@@ -14,7 +14,7 @@
 	<nav class="nav">	
 		<div class="container">
 			<div class="logo site-title">
-				<a href="<?php bloginfo('url') ?>" style="color: <?php echo get_header_textcolor(); ?>"><?php bloginfo('name') ?></a>
+				<a href="<?php bloginfo('url') ?>" style="color: <?php echo get_header_textcolor(); ?>"><?php the_custom_logo() ?></a>
 			</div>
 
 			<div id="search-icon" class="search">

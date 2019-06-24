@@ -78,6 +78,7 @@ form.checkout {
 		width: 100%;
 		float: none;
 		margin-right: 0;
+		margin-bottom: 40px;
 	}
 }
 .woocommerce-checkout .woocommerce{overflow: hidden;}
@@ -103,7 +104,9 @@ form.checkout {
 		.page-margin{padding-top: 14% !important}
 		.wpmc-tabs-wrapper .wpmc-tab-text{ display: block !important; }
 	}
-	#coupon_code{ padding: 1px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
+	
+	#coupon_code{ padding: 1px 7px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
+	.woocommerce .quantity .qty {padding: 0;}
 	.upper-bar, .main_list, .search, .site-footer{display: none;}
 	@media screen and (max-width: 782px){
 	.navTrigger {
@@ -148,6 +151,18 @@ form.checkout {
 .flex-viewport{
 	height: 500px !important;
 	@media screen and (max-width: 768px) { height: 375px !important; }
+}
+
+
+.single-product div.product form.cart .quantity {
+    float: none;
+    margin: 0;
+    display: inline-block;
+    width: 80%;
+}
+
+.single-product div.product form.cart {
+    .plus, .minus{font-size: 1.2rem }
 }
 
 .woocommerce div.product div.images .flex-control-thumbs li img{opacity: 1 !important;}
@@ -316,4 +331,3 @@ form.checkout {
 }
 
 .stars{color: #FFBE3E}
-
