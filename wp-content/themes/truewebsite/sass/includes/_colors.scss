@@ -2,7 +2,7 @@
 
 .about, .bloge, .contact, .nav, .affix, .custome-header, .comments-area, body.login, .category { background: $main-gray;}
 
-.fa-search, .nav .search, .fa-times-circle, .intro { color: green }
+.fa-search, .nav .search, .fa-times-circle, .intro { color: $main-blue }
 
 .nav div.main_list ul li.active a{
 	color: #000;
