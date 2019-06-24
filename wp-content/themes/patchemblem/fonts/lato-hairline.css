@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'LatoHairline';
-    src: url('lato-hairline.eot');
-    src: url('lato-hairline.eot') format('embedded-opentype'),
-         url('lato-hairline.woff2') format('woff2'),
-         url('lato-hairline.woff') format('woff'),
-         url('lato-hairline.ttf') format('truetype'),
-         url('lato-hairline.svg#LatoHairline') format('svg');
-}
