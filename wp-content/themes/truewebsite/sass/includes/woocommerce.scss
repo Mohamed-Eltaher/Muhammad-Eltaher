@@ -271,7 +271,7 @@ form.checkout {
 }
 
 
-.page-id-514 .site-main{background-color: $main-gray}
+.page-id-31 .site-main, .page-id-26 .site-main{background-color: $main-gray}
 
 @media screen and (max-width: 768px){
 	.page-id-514 .page-margin{padding-top: 15% !important;}
@@ -333,14 +333,12 @@ form.checkout {
 
 
 // aditional css for plugins
-
+// sticky add to cart plugin
 .mg-wsac-fix-sticky-bar div.mg-wsac-wrap{padding: 5px 0 !important}
-
-.name-col-width{margin-top: 17px !important;}
 
 .mg-wsac-wrap{font-size: 2rem}
 
 .name-col-width {
     margin-top: 9px !important;
-	    margin-right: 60px;
+	margin-right: 10px;
 }

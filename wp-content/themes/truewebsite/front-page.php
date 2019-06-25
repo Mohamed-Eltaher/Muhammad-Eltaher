@@ -22,9 +22,9 @@ get_header(); ?>
 
 		<section class="bloge best-seller">
 			<div class="container">
-				<?php if(have_posts()) { ?>
-					<h1 class="blog-head special-head">Best Seller</h1>
-					<div class="blog-posts">
+				<h1 class="blog-head special-head">Best Seller</h1>
+				<div class="blog-posts">
+					<?php if(have_posts()) { ?>
 						<div class="blog-posts">
 							<?php 
 							while(have_posts()) {
@@ -34,6 +34,7 @@ get_header(); ?>
 						</div>
 					<?php } ?>
 				</div>
+
 			</div>
 		</section>
 
@@ -80,7 +81,7 @@ get_header(); ?>
 		<section class="bloge">
 			<div class="container">
 				<?php if(have_posts()) { ?>
-					<h1 class="blog-head special-head">Latest Posts</h1>		
+				<h1 class="blog-head special-head">Latest Posts</h1>		
 					<div class="blog-posts">
 						<?php 
 						query_posts('post_type=post');
