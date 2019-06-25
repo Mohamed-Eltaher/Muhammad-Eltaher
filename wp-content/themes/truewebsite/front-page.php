@@ -14,7 +14,7 @@ get_header(); ?>
 		</video> -->
 		
 		<div class="intro site-description">
-			<h2><span>BodyCheers </span>
+			<h2><span><?php bloginfo('name') ?></span>
 				<span>Easily Improve Your Body.</span></h2>
 				<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="read-more">Shop Now</a>
 			</div>
@@ -22,9 +22,9 @@ get_header(); ?>
 
 		<section class="bloge best-seller">
 			<div class="container">
-				<h1 class="blog-head special-head">Best Seller</h1>
-				<div class="blog-posts">
-					<?php if(have_posts()) { ?>
+				<?php if(have_posts()) { ?>
+					<h1 class="blog-head special-head">Best Seller</h1>
+					<div class="blog-posts">
 						<div class="blog-posts">
 							<?php 
 							while(have_posts()) {
@@ -34,7 +34,6 @@ get_header(); ?>
 						</div>
 					<?php } ?>
 				</div>
-
 			</div>
 		</section>
 
@@ -80,8 +79,8 @@ get_header(); ?>
 		<!-- Blog Section -->
 		<section class="bloge">
 			<div class="container">
-				<h1 class="blog-head special-head">Latest Posts</h1>		
 				<?php if(have_posts()) { ?>
+					<h1 class="blog-head special-head">Latest Posts</h1>		
 					<div class="blog-posts">
 						<?php 
 						query_posts('post_type=post');
