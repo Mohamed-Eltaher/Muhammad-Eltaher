@@ -30,7 +30,8 @@
 		margin: 7% auto 5%;
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
 		.qty{padding: 7px; @media screen and (max-width: 768px){padding: 7px;}}
-		.variations select{font-size: 2.5rem;}
+		.variations select{font-size: 2rem;}
+		.woocommerce div.product form.cart .variations select{padding: 5px !important;}
 	}
 	.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;} 
@@ -50,6 +51,12 @@
 .woocommerce-products-header{margin-bottom: 3%;}
 
 .archive .content-area{background-color: $main-gray}
+
+.variation-Size p{
+	font-size: 1rem;
+	    line-height: 2;
+	    margin: 0 !important;
+}
 
 /* checkout page */
 .entry-title, .page-title{
@@ -341,4 +348,8 @@ form.checkout {
 .name-col-width {
     margin-top: 9px !important;
 	margin-right: 10px;
+}
+
+.mg-wsac-wrap{
+	a:active, a:focus, a:hover{color: #FFF !important;}
 }
