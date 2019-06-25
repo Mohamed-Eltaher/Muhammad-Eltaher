@@ -22,9 +22,9 @@ get_header(); ?>
 
 		<section class="bloge best-seller">
 			<div class="container">
+				<?php if(have_posts()) { ?>
 				<h1 class="blog-head special-head">Best Seller</h1>
 				<div class="blog-posts">
-					<?php if(have_posts()) { ?>
 						<div class="blog-posts">
 							<?php 
 							while(have_posts()) {
