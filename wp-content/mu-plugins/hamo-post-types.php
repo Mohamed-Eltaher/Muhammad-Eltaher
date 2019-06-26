@@ -34,6 +34,7 @@ function hamo_post_types() {
   ));
 
   //Language
+  /*
   register_post_type('language', array(
     'supports'  => array('title', 'editor'),
     'rewrite' => array('slug' => 'languages'),
@@ -47,7 +48,7 @@ function hamo_post_types() {
       'singular_name' => 'language'
     ),
     'menu_icon' => 'dashicons-awards'
-  ));
+  )); */
 
   //Professors
   /*
