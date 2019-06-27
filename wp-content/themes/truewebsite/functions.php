@@ -504,7 +504,7 @@ function custom_wc_checkout_fields_no_label($fields) {
  
 // -------------
 // 1. Show Buttons
- 
+ /*
 add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_plus' );
  
 function bbloomer_display_quantity_plus() {
@@ -560,7 +560,7 @@ function bbloomer_add_cart_quantity_plus_minus() {
           
       </script>
    <?php
-}
+}*/
 
 
 /**

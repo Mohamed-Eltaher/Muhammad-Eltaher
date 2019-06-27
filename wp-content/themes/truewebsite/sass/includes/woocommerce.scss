@@ -19,9 +19,11 @@
 		 font-size: 3rem !important;
 			//.woocommerce .site-main .qty{padding: 14px !important;}
 			.woocommerce div.product form.cart .button{width: 100% !important}
+			.woocommerce div.product form.cart div.quantity{width: 100% !important}
 		 }
 
 	}
+
 	.woocommerce-breadcrumb {font-size: 2rem;}
 	.woocommerce-ordering select{font-size: 2rem;}
 	.site-main{
@@ -169,12 +171,14 @@ form.checkout {
     float: none;
     margin: 0;
     display: inline-block;
-    width: 80%;
+    width: 100%;
 }
 
-.single-product div.product form.cart {
-    .plus, .minus{font-size: 1.2rem }
+.woocommerce div.product form.cart div.quantity{text-align: center;}
+.screen-reader-text{
+	display: contents;
 }
+.woocommerce .entry-summary .quantity .qty{margin-top: 10px;}
 
 .woocommerce div.product div.images .flex-control-thumbs li img{opacity: 1 !important;}
 .woocommerce-product-details__short-description{margin-bottom: 15px; font-weight: bold;
