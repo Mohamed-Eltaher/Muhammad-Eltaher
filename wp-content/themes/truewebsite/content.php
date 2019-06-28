@@ -11,7 +11,7 @@
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<div class="post-info">
 			<?php hamo_posted_on(); ?>
-			<?php hamo_posted_by(); ?>
+			<?php // hamo_posted_by(); ?>
 		</div>
 		<?php the_excerpt(); ?>
 		<a href="<?php the_permalink(); ?>" class="read-more">read more</a>

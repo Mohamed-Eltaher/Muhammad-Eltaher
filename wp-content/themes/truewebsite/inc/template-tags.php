@@ -73,13 +73,13 @@ if ( ! function_exists( 'hamo_entry_footer' ) ) :
 			} */
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		/* if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'hamo' ),
+					/*	__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'hamo' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -90,7 +90,7 @@ if ( ! function_exists( 'hamo_entry_footer' ) ) :
 				)
 			);
 			echo '</span>';
-		}
+		} */
 
 		edit_post_link(
 			sprintf(
