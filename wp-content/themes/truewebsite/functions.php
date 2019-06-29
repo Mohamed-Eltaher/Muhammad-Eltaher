@@ -375,6 +375,15 @@ function mytheme_add_woocommerce_support() {
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
+// theme woocommerce support
+add_action( 'after_setup_theme', 'bctheme_setup' );
+
+function bctheme_setup() {
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+}
+
 // remove ralated products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
@@ -392,15 +401,6 @@ add_filter( 'woocommerce_product_tabs', 'my_custom_desc_function' );
 function my_custom_desc_function($desc) {
 	unset($desc['description']);
 	return $desc;
-}
-
-// theme woocommerce support
-add_action( 'after_setup_theme', 'bctheme_setup' );
-
-function bctheme_setup() {
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
 }
 
 // changing desc location
@@ -448,12 +448,12 @@ echo do_shortcode('[woocommerce_cart]');
 }
 
 // print your logo on checkout page
-add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
+/*add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
 
 function mylogo() {
 	echo the_custom_logo();
 }
-
+*/
 // Custome checkout fields
 add_filter('woocommerce_default_address_fields', 'override_default_address_checkout_fields', 20, 1);
 function override_default_address_checkout_fields( $address_fields ) {
@@ -637,3 +637,13 @@ function bbloomer_move_checkout_email_field( $address_fields ) {
     $address_fields['billing_email']['priority'] = 5;
     return $address_fields;
 }
+
+
+// display quantity labal
+add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_echo_qty_front_add_cart' );
+ 
+function bbloomer_echo_qty_front_add_cart() {
+ echo '<div class="qty">Quantity </div>'; 
+}
+
+

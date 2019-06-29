@@ -121,7 +121,8 @@ form.checkout {
 	
 	#coupon_code{ padding: 1px 7px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
 	.woocommerce .quantity .qty {padding: 0;}
-	.upper-bar, .main_list, .search, .site-footer{display: none;}
+	.upper-bar, .main_list, .search, .col-1, .col-2{display: none;}
+	.gurantee{margin-bottom: -25px;}
 	@media screen and (max-width: 782px){
 	.navTrigger {
 	    display: none;
@@ -174,10 +175,8 @@ form.checkout {
     width: 100%;
 }
 
-.woocommerce div.product form.cart div.quantity{text-align: center;}
-.screen-reader-text{
-	display: contents;
-}
+.woocommerce-variation-add-to-cart{text-align: center;}
+
 .woocommerce .entry-summary .quantity .qty{margin-top: 10px;}
 
 .woocommerce div.product div.images .flex-control-thumbs li img{opacity: 1 !important;}
@@ -290,9 +289,8 @@ form.checkout {
 .page-id-31 .site-main, .page-id-26 .site-main{background-color: $main-gray}
 
 @media screen and (max-width: 768px){
-	.page-id-514 .page-margin, .page-id-31 .page-margin{padding-top: 15% !important;}
+	.page-id-34 .page-margin, .page-id-31 .page-margin, .page-id-3 .page-margin, .page-id-26 .page-margin, .page-id-29 .page-margin{padding-top: 15% !important;}
 }
-
 /* testmonials*/
 
 //@import url("https://use.typekit.net/ivq4uiu.css");
