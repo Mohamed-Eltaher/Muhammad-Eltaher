@@ -476,7 +476,7 @@ function override_billing_checkout_fields( $fields ) {
 
 
 // WooCommerce Checkout Fields Hook
-add_filter('woocommerce_checkout_fields','custom_wc_checkout_fields_no_label');
+/* add_filter('woocommerce_checkout_fields','custom_wc_checkout_fields_no_label');
 
 // Our hooked in function - $fields is passed via the filter!
 // Action: remove label from $fields
@@ -490,7 +490,7 @@ function custom_wc_checkout_fields_no_label($fields) {
         }
     }
      return $fields;
-}
+} */
 
 
 /**
