@@ -33,7 +33,7 @@
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
 		.qty{padding: 7px; @media screen and (max-width: 768px){padding: 7px;}}
 		.variations select{font-size: 2rem !important;}
-		.woocommerce div.product form.cart .variations select{padding: 5px !important;}
+		div.product form.cart .variations select{padding: 5px !important;}
 	}
 	.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;} 
@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 768px){
 .woocommerce-cart .page-margin {
-    padding: 10% 0 0 0!important;
+    padding: 15% 0 0 0!important;
 	}
 }
 

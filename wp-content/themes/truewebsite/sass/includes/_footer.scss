@@ -1,5 +1,8 @@
 /* Footer Section */
-.single-post .site-footer{margin-bottom: -110px; margin-top: 50px;}
+.single-post .site-footer{
+	margin-bottom: -110px; margin-top: 50px;
+	@media screen and (max-width: 768px){margin-bottom: -125px;}
+}
 .single-post .gurantee{ @media screen and (max-width: 768px){padding: 0;}}
 
 .site-footer{
