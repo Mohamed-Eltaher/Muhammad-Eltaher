@@ -33,7 +33,7 @@
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
 		.qty{padding: 7px; @media screen and (max-width: 768px){padding: 7px;}}
 		.variations select{font-size: 2rem !important;}
-		div.product form.cart .variations select{padding: 5px !important;}
+		div.product form.cart .variations select{padding: 5px !important; background-color: transparent;}
 	}
 	.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;} 

@@ -22,7 +22,7 @@
 		</div>
 		<div class="col-2">
 			<p> 2019 Copyright &copy; <?php bloginfo('name') ?>.com | All Rights Reserved.</p>
-			<img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.patch-emblem.com/wp-content/themes/patchemblem/images/payment-methods-icons.png" alt="">
+			<img src="<?php echo get_template_directory_uri() . '/img/payment-methods-icons.png' ?>" alt="">
 		</div>
 	</div>
 </div>
