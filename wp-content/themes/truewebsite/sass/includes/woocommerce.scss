@@ -35,7 +35,7 @@
 		.variations select{font-size: 2rem !important;}
 		div.product form.cart .variations select{padding: 5px !important; background-color: transparent;}
 	}
-	.star-rating span::before{color: #ffb600;}
+	//.star-rating span::before{color: #ffb600;}
 	.star-rating {float: none;} 
 
 	form .form-row  #order_comments{font-size: 1.5rem}
@@ -281,7 +281,6 @@ form.checkout {
     background: #14BFF4;
     font-size: 1rem;
     padding: 1px;
-    margin: 3px;
 }
 
 
