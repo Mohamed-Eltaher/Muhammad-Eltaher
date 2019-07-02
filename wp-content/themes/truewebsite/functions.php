@@ -1,5 +1,12 @@
 <?php
+// include custom jQuery
+function shapeSpace_include_custom_jquery() {
 
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 // To remove Ver of wp for security
 require get_template_directory() . '/inc/cleanup.php';
 
@@ -148,7 +155,7 @@ function hamo_scripts() {
 
 	wp_enqueue_style( 'font-awmesome', get_template_directory_uri() . '/sass/all.min.css');
 
-	wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js", array(), '', true );
+	//wp_enqueue_script( 'hamo-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js", array(), '', true );
 
 	wp_enqueue_script( 'bundle-js', get_template_directory_uri() . '/js/min-js/bundle.min.js', array(), '', true );
 
