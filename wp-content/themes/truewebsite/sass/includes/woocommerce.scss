@@ -121,7 +121,7 @@ form.checkout {
 	}
 	
 	#coupon_code{ padding: 1px 7px !important; @media screen and (max-width: 768px) {padding: 5px !important;} }
-	.woocommerce .quantity .qty {padding: 0;}
+	.woocommerce .quantity .qty {padding: 0; font-weight: bold;}
 	.upper-bar, .main_list, .search, .col-1, .col-2{display: none;}
 	.gurantee{margin-bottom: -25px;}
 	@media screen and (max-width: 782px){
