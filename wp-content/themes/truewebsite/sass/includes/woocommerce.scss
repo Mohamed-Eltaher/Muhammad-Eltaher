@@ -7,7 +7,7 @@
 .woocommerce{
 	.entry-summary{
 		font-size: 2rem;
-		list-style-type: inherit !important;
+		li {list-style-type: inherit !important;}
 		.quantity{
 			float: none !important;
 			.qty{
