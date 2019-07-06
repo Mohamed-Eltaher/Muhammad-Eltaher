@@ -365,3 +365,87 @@ form.checkout {
 /* colors of pages */
 
 .page-id-29, .page-id-34, .page-id-3{ background-color: $main-gray; }
+
+
+/* faq accordion */
+
+
+.content {
+  width: 100%;
+}
+
+.centerplease {
+  margin: 2rem 0;
+
+}
+
+.question {
+  position: relative;
+  background: $main-gray;
+  color: $main-blue;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+.answers {
+  background: #fbfbfb;
+  padding: 0px 15px;
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  z-index: 5;
+  font-size: 2em;
+  color:$main-blue;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+
+
+.page-id-26{
+	.question, .plus{
+		font-size: 3rem;
+	}
+	.plus{margin-top: 17px;}
+	.answers{font-size: 2rem;}
+}

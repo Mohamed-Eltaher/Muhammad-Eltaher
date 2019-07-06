@@ -207,9 +207,9 @@ function hamo_adjust_queries($query) {
 		$query->set('meta_query', array(
 			array(
 				'key'     => 'course_date',
-	 			'compare' => '<',
-	 			'value'   => $today,
-	 			'type'    => 'numeric'
+				'compare' => '<',
+				'value'   => $today,
+				'type'    => 'numeric'
 			)
 		));
 	}
@@ -222,10 +222,10 @@ add_Action('pre_get_posts', 'hamo_adjust_queries');
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 function special_nav_class ($classes, $item) {
-    if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
-        $classes[] = 'active ';
-    }
-    return $classes;
+	if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
+		$classes[] = 'active ';
+	}
+	return $classes;
 }
 
 
@@ -234,22 +234,22 @@ function special_nav_class ($classes, $item) {
 add_action('admin_init', 'redirectSubsToFrontend');
 
 function redirectSubsToFrontend() {
-  $ourCurrentUser = wp_get_current_user();
+	$ourCurrentUser = wp_get_current_user();
 
-  if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber') {
-    wp_redirect(site_url('/'));
-    exit;
-  }
+	if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber') {
+		wp_redirect(site_url('/'));
+		exit;
+	}
 }
 
 add_action('wp_loaded', 'noSubsAdminBar');
 
 function noSubsAdminBar() {
-  $ourCurrentUser = wp_get_current_user();
+	$ourCurrentUser = wp_get_current_user();
 
-  if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber') {
-    show_admin_bar(false);
-  }
+	if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber') {
+		show_admin_bar(false);
+	}
 }
 
 // Customize Login Screen
@@ -257,20 +257,20 @@ function noSubsAdminBar() {
 add_filter('login_headerurl', 'ourHeaderUrl');
 
 function ourHeaderUrl() {
-  return esc_url(site_url('/'));
+	return esc_url(site_url('/'));
 }
 
 add_action('login_enqueue_scripts', 'ourLoginCSS');
 
 function ourLoginCSS() {
-  wp_enqueue_style( 'hamo-style', get_template_directory_uri() . '/sass/main.css' );
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+	wp_enqueue_style( 'hamo-style', get_template_directory_uri() . '/sass/main.css' );
+	wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 }
 
 add_filter('login_headertitle', 'ourLoginTitle');
 
 function ourLoginTitle() {
-  return get_bloginfo('name');
+	return get_bloginfo('name');
 }
 
 
@@ -293,10 +293,10 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 add_filter( 'wp_default_scripts', 'remove_jquery_migrate' );
 
 function remove_jquery_migrate( &$scripts){
-    if(!is_admin()){
-        $scripts->remove( 'jquery');
-        $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.2.1' );
-    }
+	if(!is_admin()){
+		$scripts->remove( 'jquery');
+		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.2.1' );
+	}
 }
 
 // Website speed optimization
@@ -310,7 +310,7 @@ add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 */
 // remove gutenberg css
 function wpassist_remove_block_library_css(){
-    wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library' );
 } 
 add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
 
@@ -321,7 +321,7 @@ remove_action('wp_print_styles', 'print_emoji_styles');*/
 
 // remove wp-embed that used to embed posts from other websites
 function my_deregister_scripts(){
-  wp_deregister_script( 'wp-embed' );
+	wp_deregister_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
@@ -339,12 +339,12 @@ add_action( 'wp_footer', 'my_deregister_scripts' );
  */
 add_filter( 'wp_check_filetype_and_ext', 'wpse_file_and_ext_webp', 10, 4 );
 function wpse_file_and_ext_webp( $types, $file, $filename, $mimes ) {
-    if ( false !== strpos( $filename, '.webp' ) ) {
-        $types['ext'] = 'webp';
-        $types['type'] = 'image/webp';
-    }
+	if ( false !== strpos( $filename, '.webp' ) ) {
+		$types['ext'] = 'webp';
+		$types['type'] = 'image/webp';
+	}
 
-    return $types;
+	return $types;
 }
 
 /**
@@ -360,9 +360,9 @@ function wpse_file_and_ext_webp( $types, $file, $filename, $mimes ) {
  */
 add_filter( 'upload_mimes', 'wpse_mime_types_webp' );
 function wpse_mime_types_webp( $mimes ) {
-    $mimes['webp'] = 'image/webp';
+	$mimes['webp'] = 'image/webp';
 
-  return $mimes;
+	return $mimes;
 }
 
 
@@ -379,9 +379,9 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 add_action( 'after_setup_theme', 'bctheme_setup' );
 
 function bctheme_setup() {
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
 }
 
 // remove ralated products
@@ -414,7 +414,7 @@ function description() {
 remove_action( 'woocommerce_review_before', 'woocommerce_review_display_gravatar', 10 );
 
 // use this if you want to change add to cart text
- add_filter('woocommerce_product_single_add_to_cart_text', 'woo_custom_single_add_to_cart_text');
+add_filter('woocommerce_product_single_add_to_cart_text', 'woo_custom_single_add_to_cart_text');
 
 function woo_custom_single_add_to_cart_text() {
 	return __('buy now', 'woocommerce');
@@ -440,10 +440,10 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 // checkout cart
 
 add_action( 'woocommerce_after_checkout_form', 'bbloomer_cart_on_checkout_page_only', 5 );
- 
+
 function bbloomer_cart_on_checkout_page_only() {
- 
-echo do_shortcode('[woocommerce_cart]');
+
+	echo do_shortcode('[woocommerce_cart]');
 
 }
 
@@ -457,20 +457,20 @@ function mylogo() {
 // Custome checkout fields
 add_filter('woocommerce_default_address_fields', 'override_default_address_checkout_fields', 20, 1);
 function override_default_address_checkout_fields( $address_fields ) {
-    $address_fields['first_name']['placeholder'] = 'First Name';
-    $address_fields['last_name']['placeholder'] = 'Last Name';
-    $address_fields['address_1']['placeholder'] = 'Street address [House number and street name]';
-    $address_fields['state']['placeholder'] = 'State / Country';
-    $address_fields['postcode']['placeholder'] = 'Postcode / ZIP';
-    $address_fields['city']['placeholder'] = 'City';
-    return $address_fields;
+	$address_fields['first_name']['placeholder'] = 'First Name';
+	$address_fields['last_name']['placeholder'] = 'Last Name';
+	$address_fields['address_1']['placeholder'] = 'Street address [House number and street name]';
+	$address_fields['state']['placeholder'] = 'State / Country';
+	$address_fields['postcode']['placeholder'] = 'Postcode / ZIP';
+	$address_fields['city']['placeholder'] = 'City';
+	return $address_fields;
 }
 
 add_filter( 'woocommerce_checkout_fields' , 'override_billing_checkout_fields', 20, 1 );
 function override_billing_checkout_fields( $fields ) {
     //$fields['billing']['billing_phone']['placeholder'] = 'Telefon';
-    $fields['billing']['billing_email']['placeholder'] = 'Email';
-    return $fields;
+	$fields['billing']['billing_email']['placeholder'] = 'Email';
+	return $fields;
 }
 
 
@@ -490,7 +490,7 @@ function custom_wc_checkout_fields_no_label($fields) {
         }
     }
      return $fields;
-} */
+ } */
 
 
 /**
@@ -501,7 +501,7 @@ function custom_wc_checkout_fields_no_label($fields) {
  * @compatible    WooCommerce 3.5.1
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
- 
+
 // -------------
 // 1. Show Buttons
  /*
@@ -571,11 +571,11 @@ function bbloomer_add_cart_quantity_plus_minus() {
  * @compatible    WooCommerce 3.5.4
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
- 
+
 add_action( 'woocommerce_review_order_after_submit', 'bbloomer_trust_place_order' );
-  
+
 function bbloomer_trust_place_order() {
-    echo '<img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/9_bdg_secured_by_pp_2line.png" style="margin: 1em auto">';
+	echo '<img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/9_bdg_secured_by_pp_2line.png" style="margin: 1em auto">';
 }
 
 
@@ -586,19 +586,19 @@ function bbloomer_trust_place_order() {
  * @author        Rodolfo Melogli
  * @compatible    Woo 3.5.1
  */
- 
+
 add_action( 'wp_footer', 'bbloomer_cart_refresh_update_qty' ); 
- 
+
 function bbloomer_cart_refresh_update_qty() { 
-   if (is_cart()) { 
-      ?> 
-      <script type="text/javascript"> 
-         jQuery('div.woocommerce').on('click', 'input.qty', function(){ 
-            jQuery("[name='update_cart']").trigger("click"); 
-         }); 
-      </script> 
-      <?php 
-   } 
+	if (is_cart()) { 
+		?> 
+		<script type="text/javascript"> 
+			jQuery('div.woocommerce').on('click', 'input.qty', function(){ 
+				jQuery("[name='update_cart']").trigger("click"); 
+			}); 
+		</script> 
+		<?php 
+	} 
 }
 
 
@@ -610,13 +610,13 @@ function bbloomer_cart_refresh_update_qty() {
 * @author   Rodolfo Melogli
 * @testedwith   WooCommerce 3.3.4
 */
- 
+
 add_filter( 'woocommerce_checkout_fields', 'bbloomer_change_autofocus_checkout_field' );
- 
+
 function bbloomer_change_autofocus_checkout_field( $fields ) {
 //$fields['billing']['billing_first_name']['autofocus'] = true;
-$fields['billing']['billing_email']['autofocus'] = true;
-return $fields;
+	$fields['billing']['billing_email']['autofocus'] = true;
+	return $fields;
 }
 
 
@@ -630,20 +630,52 @@ return $fields;
  * @compatible    Woo 3.5.3
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
- 
+
 add_filter( 'woocommerce_billing_fields', 'bbloomer_move_checkout_email_field', 10, 1 );
- 
+
 function bbloomer_move_checkout_email_field( $address_fields ) {
-    $address_fields['billing_email']['priority'] = 5;
-    return $address_fields;
+	$address_fields['billing_email']['priority'] = 5;
+	return $address_fields;
 }
 
 
 // display quantity labal
 add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_echo_qty_front_add_cart' );
- 
+
 function bbloomer_echo_qty_front_add_cart() {
- echo '<div class="qty">Quantity </div>'; 
+	echo '<div class="qty">Quantity </div>'; 
 }
 
 
+add_action( 'woocommerce_single_product_summary', 'faq', 70 );
+function faq() {
+
+	if( have_rows('faq') ):
+
+		?>
+		<div class='centerplease entry-title'>
+			FAQ
+		</div>
+		<br>
+		
+			<div class="content">
+				<?php  while ( have_rows('faq') ) : the_row(); ?>
+				<div>
+					<input type="checkbox" id="<?php echo get_sub_field('id') ?>" name="q"  class="questions">
+					<div class="plus">+</div>
+					<label for="<?php echo get_sub_field('id') ?>" class="question">
+						<?php the_sub_field('faq_question'); ?>
+					</label>
+					<div class="answers">
+						<?php the_sub_field('faq_answer'); ?>
+					</div>
+				</div>
+				<?php endwhile; ?>
+			</div>
+		
+	<?php else :
+
+    // no rows found
+
+	endif;
+}
