@@ -364,7 +364,7 @@ form.checkout {
 
 /* colors of pages */
 
-.page-id-29, .page-id-34, .page-id-3{ background-color: $main-gray; }
+//.page-id-29, .page-id-34, .page-id-3{ background-color: $main-gray; }
 
 
 /* faq accordion */
@@ -447,5 +447,5 @@ form.checkout {
 		font-size: 3rem;
 	}
 	.plus{margin-top: 17px;}
-	.answers{font-size: 2rem;}
+	.answers{font-size: 2rem; z-index: 1 !important}
 }
