@@ -1,11 +1,12 @@
 /* contact Page */
 .page-id-24{background-color: $main-gray}
+.page-id-24 .site-footer{margin-bottom: -48px !important}
 .contact {
 	max-height: 100vh;
 	text-align: center;
 	padding: 2% 0 7% 0;
 	@media screen and (max-width: 768px) {
-		padding: 14% 0 30% 0 !important;
+		padding: 16% 0 30% 0 !important;
 	}
 	input, textarea{
 		width: 45rem;
