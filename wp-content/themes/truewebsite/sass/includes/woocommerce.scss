@@ -7,7 +7,7 @@
 .woocommerce{
 	.entry-summary{
 		font-size: 2rem;
-		li {list-style-type: inherit !important;}
+		li {list-style-type: inherit !important; margin: 10px !important;}
 		.quantity{
 			float: none !important;
 			.qty{
@@ -17,7 +17,7 @@
 		}
 		.single_add_to_cart_button{width: 100%;}
 		@media screen and (max-width: 768px) {
-		 font-size: 3rem !important;
+		 font-size: 2.2rem !important;
 			//.woocommerce .site-main .qty{padding: 14px !important;}
 			.woocommerce div.product form.cart .button{width: 100% !important}
 			.woocommerce div.product form.cart div.quantity{width: 100% !important}
