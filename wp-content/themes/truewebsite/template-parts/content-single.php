@@ -6,7 +6,7 @@
 		?>
 	</div>
 	<div class="post-content">	
-		<span class="date"><?php the_date(); ?></span>
+		<span class="date">( <?php the_date(); ?> )</span>
 		<?php the_content(); ?>
 	</div>
 </div>

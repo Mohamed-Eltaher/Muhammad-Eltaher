@@ -20,7 +20,7 @@
 			.post-content{
 				h2:hover{cursor: inherit;}
 				margin-top: 2rem;
-				.date{font-size: 2rem;}
+				.date{font-size: 1.5rem; font-weight: bold;}
 
 			}
 		}
@@ -56,7 +56,6 @@
 					width: 48%;
 					font-size: 1.3rem;
 					padding: .5rem;
-					.post-info{font-size: 1.5rem;}
 					@media screen and (max-width: 768px) {
 						font-size: inherit;
 						width: 70%
