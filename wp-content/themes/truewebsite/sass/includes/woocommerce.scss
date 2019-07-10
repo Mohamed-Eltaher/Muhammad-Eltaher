@@ -297,14 +297,15 @@ form.checkout {
 .testm{padding: 0 !important;}
 .testm .container, .is-multiline{overflow: hidden;}
 .container .testimonial-wrapper {
-  margin: 1% 2% 2% .5%;
+  margin: 1% 2% 1% 0;
   transition: all 0.3s ease-in-out;
-  width: 46.5%;
+  width: 23%;
   float: left;
   overflow: hidden;
   @media screen and (max-width: 768px){
   	width: 100%;
   	float: none;
+  	margin-bottom: 4%;
   }
 }
 .container .testimonial-wrapper:hover {
@@ -330,7 +331,6 @@ form.checkout {
   color: $main-blue;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  padding-top: 15px;
   font-family: poppins, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;

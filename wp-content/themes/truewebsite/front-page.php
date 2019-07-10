@@ -52,7 +52,7 @@ get_header(); ?>
 		if($mainTestimonials->have_posts()) { ?>
 			<section class="bloge testm">
 				<div class="container">
-					<h1 class="blog-head special-head">testimonial</h1>
+					<h1 class="blog-head special-head">What They Say About Us</h1>
 					<div class="columns has-text-centered is-multiline">		
 						<?php 
 						while($mainTestimonials->have_posts()) {
