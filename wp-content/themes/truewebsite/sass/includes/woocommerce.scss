@@ -37,7 +37,7 @@
 		div.product form.cart .variations select{padding: 5px !important; background-color: transparent;}
 	}
 	.star-rating span::before{color: #ffb600;}
-	.star-rating {float: none;} 
+	.star-rating {float: none; margin: 4px 4px 0 0 !important} 
 
 	form .form-row  #order_comments{font-size: 1.5rem}
 
@@ -289,7 +289,8 @@ form.checkout {
 //.page-id-31 .site-main, .page-id-26 .site-main{background-color: $main-gray}
 
 @media screen and (max-width: 768px){
-	.page-id-34 .page-margin, .page-id-31 .page-margin, .page-id-3 .page-margin, .page-id-26 .page-margin, .page-id-29 .page-margin{padding-top: 15% !important;}
+	.page-id-34 .page-margin, .page-id-31 .page-margin, .page-id-3 .page-margin,
+	 .page-id-26 .page-margin, .page-id-29 .page-margin, .page-id-816 .page-margin{padding-top: 15% !important;}
 }
 /* testmonials*/
 
