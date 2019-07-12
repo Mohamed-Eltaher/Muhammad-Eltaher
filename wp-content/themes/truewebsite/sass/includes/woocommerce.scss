@@ -37,7 +37,8 @@
 		div.product form.cart .variations select{padding: 5px !important; background-color: transparent;}
 	}
 	.star-rating span::before{color: #ffb600;}
-	.woocommerce-Tabs-panel .star-rating {float: none; margin: 4px 4px 0 0 !important} 
+	.star-rating {float: none;} 
+	.woocommerce-Tabs-panel .star-rating {margin: 4px 4px 0 0 !important} 
 
 	form .form-row  #order_comments{font-size: 1.5rem}
 
