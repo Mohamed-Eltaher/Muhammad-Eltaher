@@ -443,17 +443,38 @@ add_action( 'woocommerce_after_checkout_form', 'bbloomer_cart_on_checkout_page_o
 
 function bbloomer_cart_on_checkout_page_only() {
 
-	echo do_shortcode('[woocommerce_cart]');
+	echo do_shortcode('[woocommerce_cart]'); ?>
+	
+	<table class="order-summary">
+		<tbody>
+			<tr>
+				<th>Subtotal</th>
+				<td><?php wc_cart_totals_subtotal_html(); ?></td>
+			</tr>
 
-}
+			<tr>
+				<th>Shipping</th>
+				<td><?php wc_cart_totals_shipping_html(); ?> <span class="woocommerce-Price-amount">Free Shipping</span></td>
+			</tr>
+			<tr>
+
+				<th>Total</th>
+				<td><?php wc_cart_totals_order_total_html(); ?></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div style="position:relative;padding:10px 0px"><div class="wyustit" style="position:relative;z-index:1;text-align:center"><span style="background:#fafafa;padding:0 15px">Why choose us?</span></div><div style="display:table;vertical-align:middle;border-spacing:0px 20px"><div class="wyuscs"><div class="wyuscs1"><img src="https://cdn.shopify.com/s/files/1/1319/2435/t/4/assets/mail-truck.png"></div><div class="wyuscs2"><span>Over 3500 successfully shipped orders</span><p>We made as much happy customers as many orders we shipped. You simply have to join our big family.</p></div></div></div></div>
+<?php }
+
 
 // print your logo on checkout page
-/*add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
+add_action( 'woocommerce_before_checkout_form_cart_notices', "mylogo" );
 
 function mylogo() {
 	echo the_custom_logo();
 }
-*/
+
 // Custome checkout fields
 add_filter('woocommerce_default_address_fields', 'override_default_address_checkout_fields', 20, 1);
 function override_default_address_checkout_fields( $address_fields ) {
@@ -572,11 +593,11 @@ function bbloomer_add_cart_quantity_plus_minus() {
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
 
-add_action( 'woocommerce_review_order_after_submit', 'bbloomer_trust_place_order' );
+/* add_action( 'woocommerce_review_order_after_submit', 'bbloomer_trust_place_order' );
 
 function bbloomer_trust_place_order() {
 	echo '<img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/9_bdg_secured_by_pp_2line.png" style="margin: 1em auto">';
-}
+} */
 
 
 /**

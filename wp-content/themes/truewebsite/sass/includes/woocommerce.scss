@@ -73,7 +73,7 @@
 .cart_totals tbody{background-color: $main-gray}
 @media screen and (max-width: 768px){
 .woocommerce-checkout .page-margin {
-    padding: 10% 0 0 0!important;
+    padding: 0 0 0 0!important;
 	}
 }
 
@@ -89,7 +89,20 @@ form.checkout {
 		width: 100%;
 		float: none;
 		margin-right: 0;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
+	}
+}
+
+.woocommerce-checkout table.order-summary{
+	width: 45%;
+	padding: 5px;
+	border: 1px solid $main-blue;
+	th{text-align: left}
+	td{text-align: right}
+	span{font-size: 2rem;}
+	@media screen and (max-width: 768px){
+		width: 100%;
+		display: none;
 	}
 }
 .woocommerce-checkout .woocommerce{overflow: hidden;}
@@ -103,9 +116,9 @@ form.checkout {
     }
 }
 .woocommerce-checkout .woocommerce-cart-form{
-	margin-top: 80px; font-size: 1.3rem; background: $main-gray;
+	margin-top: 110px; font-size: 1.3rem; background: $main-gray;
 	@media screen and (max-width: 768px) {
-		margin-top: 0; font-size: 2rem;
+		margin-top: 0; font-size: 1.7rem; display: none;
 	}
 }
 
@@ -115,9 +128,11 @@ form.checkout {
 	}
 }
 .woocommerce-checkout{
+	nav, .upper-bar, .entry-header{display: none;}
+	.page-margin{padding-top: 0 !important}
 	.content-area{background-color: $main-gray;}
 	@media screen and (max-width: 768px) {
-		.page-margin{padding-top: 14% !important}
+		.page-margin{padding-top: 0 !important}
 		.wpmc-tabs-wrapper .wpmc-tab-text{ display: block !important; }
 	}
 	
@@ -457,3 +472,29 @@ form.checkout {
  .woocommerce-loop-product__title{font-size: 1.9rem !important}
  .woocommerce-review-link{font-size: 1.7rem !important}
 
+
+
+.wyuscs{
+	display: flex;
+	span{font-weight: bold;}
+	p{font-size: 1.5rem;}
+}
+.wyuscs1{
+	width: 30%;
+	@media screen and (max-width: 768px){width: 50%;}
+}
+ .wyustit:before {
+     border-top: 1px solid #dfdfdf;
+     content: "";
+     margin: 0 auto;
+     position: absolute;
+     top: 50%;
+     left: 55%;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     z-index: -1;
+     @media screen and (max-width: 768px){
+     	left: 0;
+     }
+ }
