@@ -20,7 +20,7 @@
     .custom-logo-link{height: 60px;}
     img{
         margin-top: 5px;
-        @media screen and (max-width: 768px){margin-top: -4px;}
+        @media screen and (max-width: 768px){margin: 0 0 0 25px; max-width: 72% !important;}
     }
 
 }
@@ -260,4 +260,22 @@
     text-align: center;
     font-size: 1.6rem;
     font-weight: bolder;
+}
+
+
+.cart-mobile{display: none;}
+ @media screen and (max-width: 781px){
+    .cart-mobile{
+        display: block; margin: -4px;
+        a{font-size: 2.5rem;}
+    }
+ }
+
+@media screen and (max-width: 781px){
+     .fa-user-circle{display: none !important;}
+}
+
+
+@media screen and (min-width: 781px){
+    .menu-item-1402{display: none !important;}
 }
