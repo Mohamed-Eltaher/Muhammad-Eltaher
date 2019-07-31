@@ -32,7 +32,7 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 	// Function used to shrink nav bar removing paddings and adding black background
-
+/*
 	$(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
             $('.nav').addClass('affix');
@@ -42,7 +42,7 @@ $(document).ready(function(){
             $('.nav').removeClass('affix');
             $('.logo a img').removeClass('expand-nav');
         }
-    });
+    }); */
 
     // Live Search
     /*
@@ -58,7 +58,7 @@ $(document).ready(function(){
         }
     }); */
 
-    $('#search-icon .fa-search').click(function () {
+   /*  $('#search-icon .fa-search').click(function () {
         $('.search-form').addClass('visible');
         $('body').addClass('no-scroll');
         $('.live-search').css('display', 'block');
@@ -77,7 +77,7 @@ $(document).ready(function(){
         //clearTimeout(clear);
         //clear = setTimeout(getResults(), 2000);
         
-    });
+    }); */
 
     $('.flex-control-nav li').on('click', function() {
         $(this).addClass('product-border').siblings().removeClass('product-border');
@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 
 
-/* Light YouTube Embeds by @Muhammad */
+/* Light YouTube Embeds by @Muhammad 
 
    document.addEventListener("DOMContentLoaded",
        function() {
@@ -201,3 +201,4 @@ $(document).ready(function(){
          vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
      } } }
      window.onload = init;
+*/
