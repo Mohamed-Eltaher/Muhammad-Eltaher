@@ -133,7 +133,7 @@ function hamo_extend_excerpt_length($length) {
 	}elseif(is_category()){
 		return 50;
 	}else {
-		return 40;
+		return 30;
 	}
 }
 
