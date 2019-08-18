@@ -13,6 +13,8 @@
 			.qty{
 				width: 100%;
 				margin-bottom: 15px;
+				text-align: center;
+				font-weight: bold;
 			}
 		}
 		.single_add_to_cart_button{width: 100%;}
@@ -306,7 +308,7 @@ form.checkout {
 
 @media screen and (max-width: 768px){
 	.page-id-34 .page-margin, .page-id-31 .page-margin, .page-id-3 .page-margin,
-	 .page-id-26 .page-margin, .page-id-29 .page-margin, .page-id-816 .page-margin, .page-id-13 .page-margin{padding-top: 15% !important;}
+	 .page-id-26 .page-margin, .page-id-29 .page-margin, .page-id-816 .page-margin, .page-id-13 .page-margin, .page-id-924 .page-margin{padding-top: 15% !important;}
 }
 /* testmonials*/
 
@@ -498,3 +500,7 @@ form.checkout {
      	left: 0;
      }
  }
+
+
+
+ .yith-wcaf{font-size: 2rem !important;}
