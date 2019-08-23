@@ -20,7 +20,7 @@
 			<div id="search-icon" class="search">
 				<a href="https://bodycheers.com/my-account/"><i class="fas fa-user-circle fa-3x"></i></a>
 				<!--<i class="fas fa-search fa-3x"></i> -->
-				<li class="cart-mobile wpmenucartli wpmenucart-display-standard menu-item menu-item-type-post_type menu-item-object-page" id="wpmenucartli"><a class="wpmenucart-contents empty-wpmenucart-visible" href="http://localhost/wordpress/shop/" title="Start shopping"><i class="wpmenucart-icon-shopping-cart-0"></i><span class="amount">£0.00</span></a></li>
+				<li class="cart-mobile wpmenucartli wpmenucart-display-standard menu-item menu-item-type-post_type menu-item-object-page" id="wpmenucartli"><a class="wpmenucart-contents empty-wpmenucart-visible" href="https://bodycheers.com/cart/" title="Start shopping"><i class="wpmenucart-icon-shopping-cart-0"></i><span class="amount">£0.00</span></a></li>
 					<!--<a href="<?php // echo wc_get_cart_url(); ?>">
 						<i class="fas fa-shopping-cart fa-3x"></i>
 					</a> -->
