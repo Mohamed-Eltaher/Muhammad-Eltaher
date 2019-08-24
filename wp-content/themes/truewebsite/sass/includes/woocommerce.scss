@@ -35,7 +35,7 @@
 		margin: 7% auto 5%;
 			@media screen and (max-width: 768px) { margin: 18% auto 20%; }
 		.qty{padding: 7px; @media screen and (max-width: 768px){padding: 7px;}}
-		.variations select{font-size: 2rem !important;}
+		.variations select{font-size: 2rem !important; border-color: $main-blue;}
 		div.product form.cart .variations select{padding: 5px !important; background-color: transparent;}
 	}
 	.star-rating span::before{color: #ffb600;}
@@ -195,7 +195,7 @@ form.checkout {
 
 .woocommerce-variation-add-to-cart{text-align: center;}
 
-.woocommerce .entry-summary .quantity .qty{margin-top: 10px; font-weight: bold;}
+.woocommerce .entry-summary .quantity .qty{margin-top: 10px; font-weight: bold; border-color: $main-blue;}
 
 .woocommerce div.product div.images .flex-control-thumbs li img{opacity: 1 !important;}
 .woocommerce-product-details__short-description{margin-bottom: 15px; font-weight: bold;
@@ -504,3 +504,8 @@ form.checkout {
 
 
  .yith-wcaf{font-size: 2rem !important;}
+
+
+ /* hurry up timer plugin */
+ .woo-sctr-shortcode-wrap-wrap.woo-sctr-shortcode-wrap-wrap-1{margin-top: -4rem !important;
+     text-align: left !important;}
