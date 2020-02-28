@@ -21,7 +21,7 @@
 			?>		
 		</div>
 		<div class="col-2">
-			<p> 2019 Copyright &copy; <?php bloginfo('name') ?>.com | All Rights Reserved.</p>
+			<p> 2020 Copyright &copy; <?php bloginfo('name') ?>.com | All Rights Reserved.</p>
 			<img src="<?php echo get_template_directory_uri() . '/img/payment-methods-icons.png' ?>" alt="">
 		</div>
 	</div>

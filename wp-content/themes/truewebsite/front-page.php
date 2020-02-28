@@ -15,7 +15,7 @@ get_header(); ?>
 		
 		<div class="intro site-description">
 			<h2><span><?php bloginfo('name') ?></span>
-				<span>Easily Improve Your Body.</span></h2>
+				<span>For Your Beauty.</span></h2>
 				<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="read-more">Shop Now</a>
 			</div>
 		</section> 
