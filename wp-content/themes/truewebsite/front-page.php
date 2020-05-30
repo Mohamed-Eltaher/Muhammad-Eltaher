@@ -15,7 +15,7 @@ get_header(); ?>
 		
 		<div class="intro site-description">
 			<h2><span><?php bloginfo('name') ?></span>
-				<span>For Your Beauty.</span></h2>
+				<span>Easily Improve Your Body</span></h2>
 				<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="read-more">Shop Now</a>
 			</div>
 		</section> 
@@ -52,7 +52,7 @@ get_header(); ?>
 		if($mainTestimonials->have_posts()) { ?>
 			<section class="bloge testm">
 				<div class="container">
-					<h1 class="blog-head special-head">What They Say About Us</h1>
+					<h1 class="blog-head special-head">We Are Biased. Hear It From The Customers</h1>
 					<div class="columns has-text-centered is-multiline">		
 						<?php 
 						while($mainTestimonials->have_posts()) {
