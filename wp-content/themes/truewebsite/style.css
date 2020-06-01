@@ -1148,10 +1148,8 @@ p {
   font-size: 2rem; }
 
 .comments-area .comment-list li {
-  font-size: 2rem; }
-  @media screen and (max-width: 768px) {
-    .comments-area .comment-list li {
-      font-size: 3rem; } }
+  font-size: 1.7rem;
+  /*@media screen and (max-width: 768px){font-size: 3rem} */ }
 
 .comment-form label {
   font-size: 2rem;
@@ -2248,6 +2246,8 @@ p {
       max-width: 100%; }
     .singl .wrapper-post .single-post-page .post-content {
       margin-top: 2rem; }
+      .singl .wrapper-post .single-post-page .post-content a {
+        color: #25a9de; }
       .singl .wrapper-post .single-post-page .post-content li {
         list-style-type: disc !important; }
       .singl .wrapper-post .single-post-page .post-content h2:hover {
